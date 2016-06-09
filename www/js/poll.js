@@ -1,3 +1,5 @@
+var qanimation = require("./questions_animation.js");
+
 module.exports = {
   init: function(questions){
 
@@ -18,6 +20,7 @@ function initPoll(questions){
 
     console.log("Called initPoll with the following questions as parameters, ", questions);
 
+    qanimation.qanimate(questions);
 
 }
 

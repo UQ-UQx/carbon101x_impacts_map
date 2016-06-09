@@ -150,7 +150,7 @@ class Lti {
 		    'lti_message_type'=>'basic-lti-launch-request',
 		    'oauth_callback'=>'about:blank',
             'custom_lti_variable_B'=>'New Value for Variable B',
-            'custom_lti_variable_D'=>'8'
+            //'custom_lti_variable_D'=>'8'
 		);
 	}
 	

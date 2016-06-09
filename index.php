@@ -56,7 +56,7 @@
 </script>
 <div class="content">
 
-    <h1>Welcome to the LTI base module</h1>
+    <h1 class="mainHeaderTitle">Welcome to the LTI base module</h1> 
 
     <p>This is an LTI boiler plate built on PHP</p>
     <p>You will find that this version now includes the usage of NPM packages, e.g. Browserify, Jquery, Bootstrap ... etc.</p>

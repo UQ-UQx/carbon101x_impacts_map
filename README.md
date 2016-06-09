@@ -1,4 +1,4 @@
-# Graph
+# PSYC101.1x
 
 # Installation 
 

@@ -17,6 +17,7 @@ var my_poll = require("./poll.js");
 
 
 
+
 $(document).ready(function(){
 
 
@@ -28,6 +29,21 @@ $(document).ready(function(){
     var results = my_poll.getResults(poll_questions);
 
     console.log(results);
+
+    var lti_data = $("#lti-data").data();
+
+    console.log('A', lti_data);
+
+    if(lti_data['ltivalidate']) {
+
+    }
+    else {
+    	$("#lack-lti-data p:first").text("Lack of LTI data");	
+    }
+
+
+
+
 
 
 });

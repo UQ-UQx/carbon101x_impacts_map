@@ -43,7 +43,11 @@ These steps will ensure that your js and css are being watched by grunt and will
 ?>
 ```
 
-# Config Setup
+### Database Setup
+1. Create database and user account for this database. The information is needed by config.php
+2. Create tables by import psyc101_1x.sql to the above database
+
+### Config Setup
 1. Edit config.php with your respective LTI keys and optional database details
 2. Host on a https server (LTI with edX requires HTTPS)
 3. Add the respective keys in the edX advanced settings
@@ -52,11 +56,11 @@ These steps will ensure that your js and css are being watched by grunt and will
 That's it! you're done with the setup :)
 
 
-# Usage
+### Usage
 1. use test.php with LTI to confirm that everything is connecting
 2. on each page, include <?php require_once('inc/header.php'); ?> at the top
 3. to ensure valid LTI, make sure to run $lti->requirevalid(); directly after header.php
 4. for production ensure that test flag is set to false in lib/lti.php
 
-# Testing
+### Testing
 For testing we recommend the LTI 1.1 testbed, available at: http://www.imsglobal.org/developers/LTI/test/v1p1/lms.php

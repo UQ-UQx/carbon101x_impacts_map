@@ -1,7 +1,7 @@
 <?php 
 
     require_once('inc/header.php'); 
-    require_once('scripts/getLtiData.php');
+    require_once('scripts/get_lti_data.php');
 
 ?>
 </head>
@@ -30,7 +30,23 @@
 
     <div class='input-div' id='add-activity'>
         <p class='title'>Add Activity</p>
-        <form action='scripts/add_activity.php' method='post'>
+        <form id='add-activity-form' action='scripts/add_activity.php' method='post'>
+        Title:<br>
+        <input type='text' id='activity-title'><br>
+        Intro Screen:<br>
+        <textarea id='activity-intro-screen' rows='10' cols='80'>
+        </textarea><br>
+        Final Screen:<br>
+        <textarea id='activity-final-screen' rows='10' cols='80'>
+        </textarea><br>
+        <input type='submit' value='Submit'>
+        </form>
+    </div>
+
+    <div class='input-div' id='edit-activity'>
+        <p class='title'>Edit Activity</p>
+        <form id='edit-activity-form' action='scripts/edit_activity.php' method='post'>
+        <input type='text' id='activity-id'><br>
         Title:<br>
         <input type='text' id='activity-title'><br>
         Intro Screen:<br>

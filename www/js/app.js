@@ -35,10 +35,34 @@ $(document).ready(function(){
     console.log('A', lti_data);
 
     if(lti_data['ltivalidate']) {
+    	if(lti_data['userroles'] == 'Instructor') {
+    		if(lti_data['activityid'] == -1) {
+    			$("#lack-lti-data").css('display', 'none');
+    			$("#edit-activity").css('display', 'none');
+    			$("#add-activity").css('display', 'block');
+    		}
+    		else {
+    			$("#lack-lti-data").css('display', 'none');
+    			$("#add-activity").css('display', 'none');
+    			$("#edit-activity").css('display', 'block');
+
+    			$.ajax({
+    				type: "POST",
+    				url: 'scripts/get_activity.php',
+    				data: "activity_id=" + lti_data['activityid'],
+    				dataType: 'json',
+    				success: function(response) {
+    					console.log('response', response)
+    				}
+
+    			});
+    		}
+    	}
 
     }
     else {
-    	$("#lack-lti-data p:first").text("Lack of LTI data");	
+    	$("#lack-lti-data").css('display', 'block');	
+    	$(".input-div").css('display', 'none');
     }
 
 

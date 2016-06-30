@@ -1,6 +1,6 @@
 <?php
 	$ltivars = $lti->calldata();
-	print_r($ltivars);
+	//print_r($ltivars);
 
 	$ltidata_validate = True;
 	$userId = '';

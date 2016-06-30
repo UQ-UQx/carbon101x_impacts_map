@@ -2,6 +2,8 @@
 
     require_once('inc/header.php'); 
     require_once('scripts/get_lti_data.php');
+    //$ltidata_validate = False;
+    $activityId = 10;
 
 ?>
 </head>
@@ -24,11 +26,11 @@
     <div class='lti-data' id='lti-data' data-userid="<?php echo $userId; ?>" data-userroles="<?php echo $userRoles; ?>" 
     data-courseid="<?php echo $courseId; ?>" data-activityId="<?php echo $activityId; ?>" data-ltivalidate="<?php echo $ltidata_validate; ?>" > 
 
-    <div class='warning-div' id='lack-lti-data'>
-        <p></p>
+    <div class='warning-div' id='lack-lti-data' style='display:none'>
+        <p>Lack of LTI data</p>
     </div>
 
-    <div class='input-div' id='add-activity'>
+    <div class='input-div' id='add-activity'  style='display:none'>
         <p class='title'>Add Activity</p>
         <form id='add-activity-form' action='scripts/add_activity.php' method='post'>
         Title:<br>
@@ -43,7 +45,7 @@
         </form>
     </div>
 
-    <div class='input-div' id='edit-activity'>
+    <div class='input-div' id='edit-activity'  style='display:none'>
         <p class='title'>Edit Activity</p>
         <form id='edit-activity-form' action='scripts/edit_activity.php' method='post'>
         <input type='text' id='activity-id'><br>

@@ -26,8 +26,11 @@
 		Db::config( 'database', $config['db']['dbname'] );
 		Db::config( 'user',     $config['db']['username'] );
 		Db::config( 'password', $config['db']['password'] );
-	}
-	
+		if(array_key_exists('port', $config['db'])) {
+			Db::config( 'port', $config['db']['port'] );
+		}
+		$db = Db::instance();
+	}	
 ?>
 	
 <?php

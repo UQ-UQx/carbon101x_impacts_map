@@ -21,11 +21,13 @@ class Lti {
 		$this->config = $config;
 		if(!empty($_POST)) {
 			$this->ltivars = $_POST;
+			$this->ltivars['data_source'] = 'POST';
 		}
         if($this->testing) {
         	if(!isset($this->ltivars["oauth_consumer_key"])) {
         		$this->valid = true;
 				$this->usedummydata();
+				$this->ltivars['data_source'] = 'Dummy Data';
         	}
         }
         if(!$this->testing || isset($this->ltivars["oauth_consumer_key"])){

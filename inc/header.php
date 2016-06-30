@@ -30,6 +30,7 @@
 			Db::config( 'port', $config['db']['port'] );
 		}
 		$db = Db::instance();
+		print_r($db);
 	}	
 ?>
 	

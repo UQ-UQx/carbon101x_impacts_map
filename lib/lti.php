@@ -21,7 +21,6 @@ class Lti {
 		$this->config = $config;
 		if(!empty($_POST)) {
 			$this->ltivars = $_POST;
-			$this->ltivars['data_source'] = 'POST';
 		}
         if($this->testing) {
         	if(!isset($this->ltivars["oauth_consumer_key"])) {
@@ -48,6 +47,7 @@ class Lti {
 					$this->valid = true;
 				} catch (Exception $e) {
 					$this->errors = 'Bad LTi Validation (possible incorrect secret) - '.$e->getMessage();
+					print $this->errors;
 				}
 			} else {
 				$this->errors = 'Invalid consumer key';

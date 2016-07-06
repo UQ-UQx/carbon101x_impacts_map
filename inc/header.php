@@ -3,6 +3,7 @@
 <head>
 <!-- Remove this livereload line on production -->
 <script src="//localhost:35729/livereload.js"></script>
+
 <!-- Remove this livereload line on production -->
 
 	
@@ -16,21 +17,34 @@
 
 
 <?php
-	require_once('config.php');
-	require_once('lib/lti.php');
+	$root = dirname(__DIR__);
+	require_once($root . '/config.php');
+	require_once($root . '/lib/lti.php');
+	$warning_msg = '';
 	$lti = new Lti($config,true);
+	$lti_valid = $lti->is_valid();
+	if(!$lti->is_valid()) {
+		$warning_msg .= '<p>LTI Invalid.</p>';
+	}
+
 	if(isset($config['use_db']) && $config['use_db']) {
-		require_once('lib/db.php');
-		Db::config( 'driver',   'mysql' );
-		Db::config( 'host',     $config['db']['hostname'] );
-		Db::config( 'database', $config['db']['dbname'] );
-		Db::config( 'user',     $config['db']['username'] );
-		Db::config( 'password', $config['db']['password'] );
-		if(array_key_exists('port', $config['db'])) {
-			Db::config( 'port', $config['db']['port'] );
+		try {
+			require_once($root . '/lib/db.php');
+			Db::config( 'driver',   'mysql' );
+			Db::config( 'host',     $config['db']['hostname'] );
+			Db::config( 'database', $config['db']['dbname'] );
+			Db::config( 'user',     $config['db']['username'] );
+			Db::config( 'password', $config['db']['password'] );
+			/*
+			if(array_key_exists('port', $config['db'])) {
+				Db::config( 'port', $config['db']['port'] );
+			}
+			*/
+			$db = Db::instance();
 		}
-		$db = Db::instance();
-		print_r($db);
+		catch (Exception $e) {
+			$warning_msg .= '<p>' . $e->getMessage() . '</p>';
+		}
 	}	
 ?>
 	

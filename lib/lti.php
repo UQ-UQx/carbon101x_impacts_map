@@ -1,7 +1,7 @@
 <?php
-
-require_once('config.php');
-require_once('OAuth.php');
+$root = dirname(__DIR__);
+require_once($root . '/config.php');
+require_once($root . '/lib/OAuth.php');
 
 class Lti {
 
@@ -151,8 +151,7 @@ class Lti {
 		    'oauth_signature'=>'dSffHcwBbfyR01HQloYJIQRu9T0',
 		    'lti_message_type'=>'basic-lti-launch-request',
 		    'oauth_callback'=>'about:blank',
-            'custom_lti_variable_B'=>'New Value for Variable B',
-            //'custom_lti_variable_D'=>'8'
+            'custom_activity_id' => -1,
 		);
 	}
 	

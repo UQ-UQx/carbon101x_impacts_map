@@ -2,8 +2,9 @@
 
     require_once('inc/header.php'); 
     require_once('scripts/get_lti_data.php');
-    //$ltidata_validate = False;
-    $activityId = 10;
+
+    //$activityId = 10;
+    //print $warning_msg;
 
 ?>
 </head>
@@ -24,22 +25,25 @@
     </dl>
 
     <div class='lti-data' id='lti-data' data-userid="<?php echo $userId; ?>" data-userroles="<?php echo $userRoles; ?>" 
-    data-courseid="<?php echo $courseId; ?>" data-activityId="<?php echo $activityId; ?>" data-ltivalidate="<?php echo $ltidata_validate; ?>" > 
+    data-courseid="<?php echo $courseId; ?>" data-activityId="<?php echo $activityId; ?>" data-warningmsg="<?php echo $warning_msg; ?>"> </div>
 
-    <div class='warning-div' id='lack-lti-data' style='display:none'>
-        <p>Lack of LTI data</p>
+    <div class='warning-div' id='warning-msg-div' style='display:block'>
+
     </div>
 
     <div class='input-div' id='add-activity'  style='display:none'>
         <p class='title'>Add Activity</p>
-        <form id='add-activity-form' action='scripts/add_activity.php' method='post'>
+        <form id='add-activity-form' name='add-activity-form' action='add_activity.php' method='post'>
         Title:<br>
-        <input type='text' id='activity-title'><br>
-        Intro Screen:<br>
-        <textarea id='activity-intro-screen' rows='10' cols='80'>
+        <input type='text' id='activity-title' name='activity-title' required><br>
+        Intro Screen A:<br>
+        <textarea id='activity-intro-screen-a' name='activity-intro-screen-a' rows='10' cols='80' required>
+        </textarea><br>
+        Intro Screen B:<br>
+        <textarea id='activity-intro-screen-b' name='activity-intro-screen-b' rows='10' cols='80' required>
         </textarea><br>
         Final Screen:<br>
-        <textarea id='activity-final-screen' rows='10' cols='80'>
+        <textarea id='activity-final-screen' name='activity-final-screen' rows='10' cols='80' required>
         </textarea><br>
         <input type='submit' value='Submit'>
         </form>
@@ -47,15 +51,18 @@
 
     <div class='input-div' id='edit-activity'  style='display:none'>
         <p class='title'>Edit Activity</p>
-        <form id='edit-activity-form' action='scripts/edit_activity.php' method='post'>
-        <input type='text' id='activity-id'><br>
+        <form id='edit-activity-form' name='edit-activity-form' action='scripts/edit_activity.php' method='post'>
+        <input type='text' id='activity-id' name='activity-id'><br>
         Title:<br>
-        <input type='text' id='activity-title'><br>
-        Intro Screen:<br>
-        <textarea id='activity-intro-screen' rows='10' cols='80'>
+        <input type='text' id='activity-title' name='activity-title' required><br>
+        Intro Screen A:<br>
+        <textarea id='activity-intro-screen-a' name='activity-intro-screen-a' rows='10' cols='80' required>
+        </textarea><br>
+        Intro Screen B:<br>
+        <textarea id='activity-intro-screen-b' name='activity-intro-screen-b' rows='10' cols='80' required>
         </textarea><br>
         Final Screen:<br>
-        <textarea id='activity-final-screen' rows='10' cols='80'>
+        <textarea id='activity-final-screen' name='activity-final-screen' rows='10' cols='80' required="">
         </textarea><br>
         <input type='submit' value='Submit'>
         </form>

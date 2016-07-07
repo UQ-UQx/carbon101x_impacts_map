@@ -28,7 +28,8 @@ DROP TABLE IF EXISTS `Activities`;
 CREATE TABLE `Activities` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `Title` varchar(256) DEFAULT '',
-  `IntroScreen` text NOT NULL,
+  `IntroScreenA` text NOT NULL,
+  `IntroScreenB` text NOT NULL,
   `FinalScreen` text NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;

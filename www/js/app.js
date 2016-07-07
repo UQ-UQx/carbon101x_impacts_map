@@ -56,7 +56,7 @@ $(document).ready(function(){
         $("#warning-msg-div").css('display', 'block');
     }
     else {
-    	if(lti_data['userroles'] == 'Instructor') {
+    	if(lti_data['userroles'] == 'Instructor' || lti_data['userroles'] == 'Administrator') {
     		if(lti_data['activityid'] == -1) {
     			$("#warning-msg-div").css('display', 'none');
     			$("#edit-activity").css('display', 'none');

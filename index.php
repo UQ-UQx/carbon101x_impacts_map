@@ -3,10 +3,12 @@
     require_once('inc/header.php'); 
     require_once('scripts/get_lti_data.php');
 
-    $activityId = 27;
+    //$activityId = 27;
     //print $warning_msg;
-    if($activityId > 0 and $warning_msg == '') {
-        require_once('scripts/get_activity.php');
+    if($warning_msg == '') {
+	    if($activityId > 0)  {
+        	require_once('scripts/get_activity.php');
+        }
     }
 
 ?>

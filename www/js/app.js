@@ -62,21 +62,18 @@ $(document).ready(function(){
     			$("#edit-activity").css('display', 'none');
     			$("#add-activity").css('display', 'block');
     		}
-    		else {
+    		if(lti_data['activityid'] > 0) {
     			$("#warning-msg-div").css('display', 'none');
     			$("#add-activity").css('display', 'none');
     			$("#edit-activity").css('display', 'block');
 
-    			$.ajax({
-    				type: "POST",
-    				url: 'scripts/get_activity.php',
-    				data: "activity_id=" + lti_data['activityid'],
-    				dataType: 'json',
-    				success: function(response) {
-    					console.log('response', response)
-    				}
-
-    			});
+                var activity = lti_data['activity'];
+                console.log(activity);
+                $('#edit-activity-id').val(lti_data['activityid']);
+                $('#edit-activity-title').val(activity['Title']);
+                $('#edit-activity-intro-screen-a').val(activity['IntroScreenA']);
+                $('#edit-activity-intro-screen-b').val(activity['IntroScreenB']);
+                $('#edit-activity-final-screen').val(activity['FinalScreen']);
     		}
     	}
         else {

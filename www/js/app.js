@@ -76,7 +76,45 @@ $(document).ready(function(){
                 $('#edit-activity-final-screen').val(activity['FinalScreen']);
     		}
     	}
-        else {
+        else if(lti_data['userroles'] == 'Student'){
+            $.ajax({
+                url: 'scripts/get_student_data.php',
+                type: 'POST',
+                dataType: 'json',
+                data: {
+                    "activity_id": lti_data['activityid'],
+                    "user_id": lti_data['userid'],
+                }
+            })
+            .done(function(response) {
+                console.log("success");
+                console.log(response);
+            })
+            .fail(function() {
+                console.log("error");
+            })
+            .always(function() {
+                console.log("complete");
+            });
+            
+
+/*
+            $.ajax({
+                url: 'scripts/get_student_data.php',
+                type: 'POST',
+                dataType: 'json',
+                data: {"activity_id": lti_data['activityid']}
+            })
+            .done(function() {
+                console.log("success");
+            })
+            .fail(function() {
+                console.log("error");
+            })
+            .always(function() {
+                console.log("complete");
+            });
+*/
 
         }
     }

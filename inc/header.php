@@ -29,18 +29,17 @@
 
 	if(isset($config['use_db']) && $config['use_db']) {
 		try {
+			require_once($root . '/inc/db_connection.php');
+			$db = Db::instance();
+			/*
 			require_once($root . '/lib/db.php');
 			Db::config( 'driver',   'mysql' );
 			Db::config( 'host',     $config['db']['hostname'] );
 			Db::config( 'database', $config['db']['dbname'] );
 			Db::config( 'user',     $config['db']['username'] );
 			Db::config( 'password', $config['db']['password'] );
-			/*
-			if(array_key_exists('port', $config['db'])) {
-				Db::config( 'port', $config['db']['port'] );
-			}
-			*/
 			$db = Db::instance();
+			*/
 		}
 		catch (Exception $e) {
 			$warning_msg .= '<p>' . $e->getMessage() . '</p>';

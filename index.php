@@ -3,7 +3,14 @@
     require_once('inc/header.php'); 
     require_once('scripts/get_lti_data.php');
 
-    //$activityId = 27;
+    $activityId = 27;
+    $userRoles = 'Student';
+    $userId = 33;
+
+
+    $activity = '';
+
+
     //print $warning_msg;
     if($warning_msg == '') {
 	    if($activityId > 0)  {
@@ -31,8 +38,8 @@
 
     <div class='lti-data' id='lti-data' data-userid="<?php echo $userId; ?>" data-userroles="<?php echo $userRoles; ?>" 
     data-courseid="<?php echo $courseId; ?>" data-activityId='<?php echo $activityId; ?>' data-warningmsg="<?php echo $warning_msg; ?>" 
-     <?php 
-         printf('data-activity="%s"', htmlspecialchars($activity, ENT_QUOTES, 'UTF-8'));
+     <?php
+        printf('data-activity="%s"', htmlspecialchars($activity, ENT_QUOTES, 'UTF-8'));
      ?>
     > </div>
 
@@ -76,6 +83,9 @@
         </textarea><br>
         <input type='submit' value='Submit'>
         </form>
+    </div>
+
+    <div class='activity-div'>
     </div>
 
 

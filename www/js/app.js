@@ -17,6 +17,7 @@ require("jquery-knob");
 var my_poll = require("./poll.js");
 
 //var form_validation = require("./form_validation.js");
+var likert_slider = require("./slider.js");
 
 
 
@@ -77,6 +78,11 @@ $(document).ready(function(){
     		}
     	}
         else if(lti_data['userroles'] == 'Student'){
+            $(".input-div").css('display', 'none');
+            $('.activity-div').empty();
+
+            var activity = lti_data['activity'];
+
             $.ajax({
                 url: 'scripts/get_student_data.php',
                 type: 'POST',
@@ -87,26 +93,31 @@ $(document).ready(function(){
                 }
             })
             .done(function(response) {
+                $('.activity-div').append('<h2>' + activity['Title'] + '</h2>');
+
                 console.log("success");
                 console.log(response);
-            })
-            .fail(function() {
-                console.log("error");
-            })
-            .always(function() {
-                console.log("complete");
-            });
-            
+                if(response['user_input']) {
+                    // User already inputted
+                    var div_final = $('<div class="div-final">' + activity['FinalScreen'] + '</div>');
+                    $('.activity-div').append(div_final);
 
-/*
-            $.ajax({
-                url: 'scripts/get_student_data.php',
-                type: 'POST',
-                dataType: 'json',
-                data: {"activity_id": lti_data['activityid']}
-            })
-            .done(function() {
-                console.log("success");
+                }
+                else {
+                    console.log('NO INPUTED');
+                    if(response['student_in_group']['AssignedGroup'] == 'A') {
+                        var div_intro = $('<div class="div-intro div-a">' + activity['IntroScreenA'] + '</div>');
+                    }
+                    else if (response['student_in_group']['AssignedGroup'] == 'B') {
+                        var div_intro = $('<div class="div-intro div-b">' + activity['IntroScreenB'] + '</div>');
+                    }
+                    $('.activity-div').append(div_intro);
+                    likert_slider.appendsliderto($('.activity-div'));
+                }
+
+                $('.activity-div').css('display', 'block');
+
+
             })
             .fail(function() {
                 console.log("error");
@@ -114,14 +125,9 @@ $(document).ready(function(){
             .always(function() {
                 console.log("complete");
             });
-*/
 
         }
     }
 
-});
-
-$('.input-element').change(function() {
-    console.log($(this));
 });
 

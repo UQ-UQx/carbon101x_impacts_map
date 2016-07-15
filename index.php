@@ -44,7 +44,6 @@
     > </div>
 
     <div class='warning-div' id='warning-msg-div' style='display:block'>
-
     </div>
 
     <div class='input-div' id='add-activity'  style='display:none'>
@@ -86,6 +85,9 @@
     </div>
 
     <div class='activity-div'>
+    </div>
+
+    <div class='testslider'>
     </div>
 
 

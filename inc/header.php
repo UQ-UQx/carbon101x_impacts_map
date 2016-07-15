@@ -15,6 +15,8 @@
 	<link rel="stylesheet" type="text/css" 
 	href="node_modules/font-awesome/css/font-awesome.min.css"></link>
 
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
 
 <?php
 	$root = dirname(__DIR__);

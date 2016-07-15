@@ -73,13 +73,13 @@
 		//$db->read('StudentInput', )
 		$conditions = array(
 			'StudentInGroupID' => $student_in_group->id,
-			'ActivityID' => $student_in_group->activity_id
+			'ActivityID' => $student_in_group->ActivityID
 		);
 		$result = $db->select('StudentInput', '*', $conditions)->fetch();
 
 		$result_all = array();
 		if($result) {
-			$select = $db->read('StudentInput', $student_in_group->activity_id, 'ActivityID');
+			$select = $db->read('StudentInput', $student_in_group->ActivityID, 'ActivityID');
 			while($row = $select->fetch()) {
 				array_push($result_all, $row);
 			}

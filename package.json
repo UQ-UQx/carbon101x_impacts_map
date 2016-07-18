@@ -26,9 +26,10 @@
   "dependencies": {
     "blueimp-file-upload": "^9.12.1",
     "bootstrap": "^3.3.6",
-    "jquery": "^2.2.2",
-    "jquery-knob": "^1.2.11",    
+    "dimple-js": "^2.1.4",
     "font-awesome": "^4.5.0",
+    "jquery": "^2.2.2",
+    "jquery-knob": "^1.2.11",
     "jquery-ui": "^1.10.5",
     "jquery-validation": "^1.15.0",
     "mathjs": "^3.2.1",

@@ -17,8 +17,9 @@ require("jquery-knob");
 var my_poll = require("./poll.js");
 
 //var form_validation = require("./form_validation.js");
-var likert_slider = require("./slider.js");
 
+var likert_slider = require("./slider.js");
+var chart_container = require("./chart.js");
 
 
 $(document).ready(function(){
@@ -47,7 +48,7 @@ $(document).ready(function(){
 
     var lti_data = $("#lti-data").data();
 
-    console.log('AB', lti_data);
+    console.log('lti-data', lti_data);
 
 
     if(lti_data['warningmsg']) {
@@ -113,6 +114,9 @@ $(document).ready(function(){
                     }
                     $('.activity-div').append(div_intro);
                     likert_slider.appendsliderto($('.activity-div'));
+                    $('#studentingroup_id').val(response['student_in_group']['id']);
+                    $('#activity_id').val(response['student_in_group']['ActivityID']);
+                    //console.log($('#student_data'));
                 }
 
                 $('.activity-div').css('display', 'block');

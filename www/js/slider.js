@@ -53,13 +53,15 @@ function likert_slider_div(container) {
 }
 
 function likert_slider_form() {
-	var action = "save_input.php";
+	//var action = "save_input.php";
+    var action = "";
 	var slider_form = $('<form id="likert_slider_form" name="likert_slider_form" action="' + action + '" method="post"></form>');
-	var student_data = $('<input type="hidden" name="student_data" data-student="">');
+	var studentingroup_id = $('<input type="hidden" name="studentingroup_id" id="studentingroup_id" value="">');
+    var activity_id = $('<input type="hidden" name="activity_id" id="activity_id" value="">');
 	var slider_text = $('<input type="text" name="slider_text" id="slider_text">');
-	var submit = $('<input type="submit" value="Sumit">');
+	var submit = $('<input type="submit" name="submit_input" value="Sumit">');
 
-	slider_form.append(student_data, slider_text, submit);
+	slider_form.append(studentingroup_id, activity_id, slider_text, submit);
 
 
 	return slider_form;

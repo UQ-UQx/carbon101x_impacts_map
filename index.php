@@ -18,6 +18,8 @@
         }
     }
 
+    require_once('save_input1.php');
+
 ?>
 </head>
 <body>

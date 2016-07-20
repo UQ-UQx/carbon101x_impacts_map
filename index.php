@@ -3,7 +3,7 @@
     require_once('inc/header.php'); 
     require_once('scripts/get_lti_data.php');
 
-    $activityId = 27;
+    $activityId = 17;
     $userRoles = 'Student';
     $userId = 33;
 
@@ -18,7 +18,7 @@
         }
     }
 
-    require_once('save_input1.php');
+    require_once('save_input.php');
 
 ?>
 </head>
@@ -88,10 +88,6 @@
 
     <div class='activity-div'>
     </div>
-
-    <div class='testslider'>
-    </div>
-
 
 </div>
 <script type="text/javascript" src="build/js/app.js"></script>

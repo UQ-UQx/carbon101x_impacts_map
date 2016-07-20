@@ -4,7 +4,7 @@
 		//print_r($db);
 		print_r($_POST);
 
-		echo $warning_msg;
+		//echo $warning_msg;
 
 		if(empty($_POST['studentingroup_id'])) {
 			$warning_msg .= '<p>POST var: studentingroup_id is not available.</p>';
@@ -21,13 +21,16 @@
 				$db->create('StudentInput', array(
 					'StudentInGroupID' => $_POST['studentingroup_id'],
 					'Response' => $_POST['slider_text'],
-					'ActivityID' => $_POST['activity_id']
+					'ActivityID' => $_POST['activity_id'],
+					'AssignedGroup' => $_POST['assigned_group'],
 				));
 			}
 			catch(Exception $e) {
 				$warning_msg .= '<p>' . $e->getMessage() . '</p>';
 			}
 		}
+
+		echo '<META HTTP-EQUIV="Refresh" Content="0; URL=index.php">';
     }
 
 ?>

@@ -96,13 +96,14 @@ $(document).ready(function(){
             .done(function(response) {
                 $('.activity-div').append('<h2>' + activity['Title'] + '</h2>');
 
-                console.log("success");
-                console.log(response);
+                //console.log("success");
+                console.log('response', response);
                 if(response['user_input']) {
                     // User already inputted
+                    console.log('HAD INPUTED');
                     var div_final = $('<div class="div-final">' + activity['FinalScreen'] + '</div>');
                     $('.activity-div').append(div_final);
-
+                    chart_container.appendchartto($('.activity-div'), response['all_input']);
                 }
                 else {
                     console.log('NO INPUTED');
@@ -116,6 +117,7 @@ $(document).ready(function(){
                     likert_slider.appendsliderto($('.activity-div'));
                     $('#studentingroup_id').val(response['student_in_group']['id']);
                     $('#activity_id').val(response['student_in_group']['ActivityID']);
+                    $('#assigned_group').val(response['student_in_group']['AssignedGroup']);
                     //console.log($('#student_data'));
                 }
 

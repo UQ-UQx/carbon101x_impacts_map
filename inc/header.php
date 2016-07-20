@@ -3,9 +3,10 @@
 <head>
 <!-- Remove this livereload line on production -->
 <script src="//localhost:35729/livereload.js"></script>
-
 <!-- Remove this livereload line on production -->
 
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://dimplejs.org/dist/dimple.v2.1.6.min.js"></script>
 	
 	<link rel="stylesheet" type="text/css" href="build/css/app.min.css"></link>
 

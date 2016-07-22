@@ -5,9 +5,9 @@
 # http://www.sequelpro.com/
 # https://github.com/sequelpro/sequelpro
 #
-# Host: 127.0.0.1 (MySQL 5.5.38)
+# Host: localhost (MySQL 5.6.19)
 # Database: psyc101_1x
-# Generation Time: 2016-06-28 06:20:05 +0000
+# Generation Time: 2016-07-22 05:51:04 +0000
 # ************************************************************
 
 
@@ -20,13 +20,14 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 
-# Dump of table Activities
+# Dump of table activities
 # ------------------------------------------------------------
 
 DROP TABLE IF EXISTS `Activities`;
 
 CREATE TABLE `Activities` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `Edx_courseid` varchar(256) DEFAULT NULL,
   `Title` varchar(256) DEFAULT '',
   `IntroScreenA` text NOT NULL,
   `IntroScreenB` text NOT NULL,
@@ -45,7 +46,6 @@ CREATE TABLE `StudentInGroup` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `edx_userid` varchar(256) NOT NULL DEFAULT '',
   `ActivityID` int(11) unsigned NOT NULL,
-  `Edx_courseid` varchar(256) NOT NULL DEFAULT '',
   `AssignedGroup` varchar(64) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -61,6 +61,8 @@ CREATE TABLE `StudentInput` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `StudentInGroupID` int(11) unsigned NOT NULL,
   `Response` int(11) NOT NULL,
+  `ActivityID` int(11) unsigned NOT NULL,
+  `AssignedGroup` varchar(64) NOT NULL DEFAULT '',
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 

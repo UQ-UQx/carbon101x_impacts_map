@@ -3,40 +3,24 @@
     require_once('inc/header.php'); 
     require_once('scripts/get_lti_data.php');
 
-    $activityId = 17;
+    // Test data
+    $activityId = 11;
     $userRoles = 'Student';
-    $userId = 33;
+    $userId = 34;
 
-
+    // Get the activity information based on $activityId
     $activity = '';
-
-
-    //print $warning_msg;
     if($warning_msg == '') {
 	    if($activityId > 0)  {
         	require_once('scripts/get_activity.php');
         }
     }
 
-    require_once('save_input.php');
-
+    //require_once('save_input.php');
 ?>
 </head>
 <body>
 <div class="content">
-
-    <h1 class="mainHeaderTitle">Welcome to the LTI base module</h1> 
-
-    <p>This is an LTI boiler plate built on PHP</p>
-    <p>You will find that this version now includes the usage of NPM packages, e.g. Browserify, Jquery, Bootstrap ... etc.</p>
-    <p>If you need any other external libraries, check to see if it exists on the NPM registry and is being maintained</p>
-
-    <button type="button" class="gradebutton">Send Grade</button>
-
-    
-    <dl>
-      <dt>LTI Call Data</dt><dd><pre><?php print_r($ltivars);?></pre></dd>
-    </dl>
 
     <div class='lti-data' id='lti-data' data-userid="<?php echo $userId; ?>" data-userroles="<?php echo $userRoles; ?>" 
     data-courseid="<?php echo $courseId; ?>" data-activityId='<?php echo $activityId; ?>' data-warningmsg="<?php echo $warning_msg; ?>" 
@@ -51,6 +35,7 @@
     <div class='input-div' id='add-activity'  style='display:none'>
         <p class='title'>Add Activity</p>
         <form id='add-activity-form' name='add-activity-form' action='add_activity.php' method='post'>
+        <input type="hidden" name="course_id" value="<?php echo $courseId;?>">
         Title:<br>
         <input type='text' id='add-activity-title' name='activity-title' required><br>
         Intro Screen A:<br>

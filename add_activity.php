@@ -6,6 +6,7 @@
 	if($warning_msg == '') {
 		try {
 			$db->create('Activities', array(
+				'Edx_courseid' => $_POST['course_id'],
 				'Title' => $_POST['activity-title'],
 				'IntroScreenA' => $_POST['activity-intro-screen-a'],
 				'IntroScreenB' => $_POST['activity-intro-screen-b'],

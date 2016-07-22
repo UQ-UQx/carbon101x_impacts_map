@@ -14,27 +14,12 @@ require("jquery-knob");
 
 // Files that you create can also be included in any JS file, 
 // however their path has to be specified as they are not part of NPM
-var my_poll = require("./poll.js");
-
+//var my_poll = require("./poll.js");
 //var form_validation = require("./form_validation.js");
-
 var likert_slider = require("./slider.js");
 var chart_container = require("./chart.js");
 
-
 $(document).ready(function(){
-
-/*
-    $('#add-activity-form').validate({
-        rules: {
-            'activity-introscreen': {
-                required: true
-            }
-        }, 
-    });
-*/
-
-
 /*
     // example of how you can use your JS code in other files
     var poll_questions = ["Question A", "Question B", "Question C"];
@@ -122,7 +107,6 @@ $(document).ready(function(){
                 }
 
                 $('.activity-div').css('display', 'block');
-
 
             })
             .fail(function() {

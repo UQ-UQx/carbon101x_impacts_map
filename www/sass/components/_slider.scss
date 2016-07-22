@@ -1,12 +1,19 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the slider component.
 // -----------------------------------------------------------------------------
-.slider-container {
-	border: solid;
+.slider-container, .slider_form_container {
 	padding: 5px;
 	margin: 10px;
+}
+
+.slider-container {
+	border: solid;
+	height:80px;	
 	width: 670px;
-	height:80px;
+}
+
+.slider_form_container {
+	//text-align:center;
 }
 
 .label_box {

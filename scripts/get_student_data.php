@@ -4,8 +4,6 @@
 	$edx_userid = $_POST['user_id'];
 	$activity_id = $_POST['activity_id'];
 
-
-
 	$response = array();
 	$response['a'] = 'apple';
 	$response['activity_id'] = $_POST['activity_id'];
@@ -68,8 +66,8 @@
 		return $data;
 	}
 
-	function query_student_input($db, $student_in_group) {
 
+	function query_student_input($db, $student_in_group) {
 		//$db->read('StudentInput', )
 		$conditions = array(
 			'StudentInGroupID' => $student_in_group->id,

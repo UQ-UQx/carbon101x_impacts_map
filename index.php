@@ -4,7 +4,7 @@
     require_once('scripts/get_lti_data.php');
 
     // Test data
-    $activityId = 11;
+    $activityId = 3;
     $userRoles = 'Student';
     $userId = 34;
 

@@ -7,19 +7,26 @@ module.exports = {
 }
 
 function histo_chart_div(container, data) {
-	var chart_div = $('<div class="chart-container" id="chart_div"></div>');
+	var chart_div = $('<div class="row"><div class="col-xs-12 col-md-10 col-md-offset-1 chart-container" id="chart_div"></div></div>');
 	container.append(chart_div);
 
-	var svg = dimple.newSvg('#chart_div', 590, 400);
+	var svg = dimple.newSvg('#chart_div', "100%", "100%");
 	var format_data = format_chartdata(data);
 
 	var chart = new dimple.chart(svg, data);
-	chart.setBounds(80, 30, 480, 330);
+
+	chart.setMargins("60px", "30px", "60px", "70px");
+	//chart.setBounds(80, 30, 480, 330);
 	chart.addMeasureAxis("x", "NumOfStudents");
 	chart.addCategoryAxis("y", ["Response", "AssignedGroup"]);
 	chart.addSeries("AssignedGroup", dimple.plot.bar);
-	chart.addLegend(60, 10, 510, 20, "right");
+	chart.addLegend("-100px", "30px", "100px", "-70px");
 	chart.draw();
+
+	// Add a method to draw the chart on resize of the window
+	window.onresize = function() {
+		chart.draw(0, true);
+	}	
 	/*
 	 var data = [
       { "Word":"Hello", "Awesomeness":2000 },

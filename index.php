@@ -4,9 +4,9 @@
     require_once('scripts/get_lti_data.php');
 
     // Test data
-    $activityId = 3;
+    $activityId = 38;
     $userRoles = 'Student';
-    $userId = 34;
+    $userId = 8;
 
     // Get the activity information based on $activityId
     $activity = '';
@@ -16,11 +16,12 @@
         }
     }
 
-    //require_once('save_input.php');
+    //$warning_msg = "HAHA, I AM WARNING MESSAGE.";
+
 ?>
 </head>
 <body>
-<div class="content">
+<div class="container">
 
     <div class='lti-data' id='lti-data' data-userid="<?php echo $userId; ?>" data-userroles="<?php echo $userRoles; ?>" 
     data-courseid="<?php echo $courseId; ?>" data-activityId='<?php echo $activityId; ?>' data-warningmsg="<?php echo $warning_msg; ?>" 
@@ -29,15 +30,18 @@
      ?>
     > </div>
 
-    <div class='warning-div' id='warning-msg-div' style='display:block'>
+    
+    <div class='row'>
+    <div class='warning-div col-md-12' id='warning-msg-div' style='display:block'></div>
     </div>
 
-    <div class='input-div' id='add-activity'  style='display:none'>
-        <p class='title'>Add Activity</p>
+    <div class='row'>
+    <div class='input-div col-md-12' id='add-activity'  style='display:none'>
+        <h3>Add Activity</h3>
         <form id='add-activity-form' name='add-activity-form' action='add_activity.php' method='post'>
         <input type="hidden" name="course_id" value="<?php echo $courseId;?>">
         Title:<br>
-        <input type='text' id='add-activity-title' name='activity-title' required><br>
+        <input type='text' id='add-activity-title' name='activity-title'><br>
         Intro Screen A:<br>
         <textarea id='add-activity-intro-screen-a' name='activity-intro-screen-a' rows='10' cols='80' required>
         </textarea><br>
@@ -47,17 +51,18 @@
         Final Screen:<br>
         <textarea id='add-activity-final-screen' name='activity-final-screen' rows='10' cols='80' required>
         </textarea><br>
-        <input type='submit' value='Submit'>
+        <input type='submit' value='Submit' class="btn btn-primary">
         </form>
     </div>
+    </div>
 
-    <div class='input-div' id='edit-activity'  style='display:none'>
-        <p class='title'>Edit Activity</p>
-        <form id='edit-activity-form' name='edit-activity-form' action='edit_activity.php' method='post'>
-        Activity ID:<br>       
-        <input type='text' id='edit-activity-id' name='activity-id' ><br>
+    <div class='row'>
+    <div class='input-div col-md-12' id='edit-activity'  style='display:none'>
+        <h3>Edit Activity</h3>
+        <form id='edit-activity-form' name='edit-activity-form' action='edit_activity.php' method='post'> 
+        <input type='hidden' id='edit-activity-id' name='activity-id' value=''><br>
         Title:<br>
-        <input type='text' id='edit-activity-title' name='activity-title' required><br>
+        <input type='text' id='edit-activity-title' name='activity-title'><br>
         Intro Screen A:<br>
         <textarea id='edit-activity-intro-screen-a' name='activity-intro-screen-a' rows='10' cols='80' required>
         </textarea><br>
@@ -67,11 +72,14 @@
         Final Screen:<br>
         <textarea id='edit-activity-final-screen' name='activity-final-screen' rows='10' cols='80' required>
         </textarea><br>
-        <input type='submit' value='Submit'>
+        <input type='submit' value='Submit' class="btn btn-primary">
         </form>
     </div>
+    </div>
 
-    <div class='activity-div'>
+    <div class="row">
+    <div class='activity-div col-md-12'>
+    </div>
     </div>
 
 </div>

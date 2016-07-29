@@ -2,5 +2,4 @@ node_modules
 config.php
 build
 
-*.tsv
-*.xlsx
+trash/

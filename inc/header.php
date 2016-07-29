@@ -8,8 +8,6 @@
 <script src="lib/d3.min.js"></script>
 <script src="lib/dimple.min.js"></script>
 	
-	<link rel="stylesheet" type="text/css" href="build/css/app.min.css"></link>
-
 	<link rel="stylesheet" type="text/css" 
 	href="node_modules/bootstrap/dist/css/bootstrap.min.css"></link>
 
@@ -17,6 +15,10 @@
 	href="node_modules/font-awesome/css/font-awesome.min.css"></link>
 
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+	<link rel="stylesheet" type="text/css" href="build/css/app.min.css"></link>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 <?php

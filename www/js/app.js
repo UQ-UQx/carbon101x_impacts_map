@@ -79,24 +79,29 @@ $(document).ready(function(){
                 }
             })
             .done(function(response) {
-                $('.activity-div').append('<h2>' + activity['Title'] + '</h2>');
+                if(activity['Title']) {
+                    $('.activity-div').append('<h2>' + activity['Title'] + '</h2>');
+                }
 
                 //console.log("success");
                 console.log('response', response);
                 if(response['user_input']) {
                     // User already inputted
                     console.log('HAD INPUTED');
-                    var div_final = $('<div class="div-final">' + activity['FinalScreen'] + '</div>');
+                    //var div_final = $('<div class="div-final">' + activity['FinalScreen'] + '</div>');
+                    var div_final = $(activity['FinalScreen']);
                     $('.activity-div').append(div_final);
                     chart_container.appendchartto($('.activity-div'), response['all_input']);
                 }
                 else {
                     console.log('NO INPUTED');
                     if(response['student_in_group']['AssignedGroup'] == 'A') {
-                        var div_intro = $('<div class="div-intro div-a">' + activity['IntroScreenA'] + '</div>');
+                        //var div_intro = $('<div class="div-intro div-a">' + activity['IntroScreenA'] + '</div>');
+                        var div_intro = $(activity['IntroScreenA']);
                     }
                     else if (response['student_in_group']['AssignedGroup'] == 'B') {
-                        var div_intro = $('<div class="div-intro div-b">' + activity['IntroScreenB'] + '</div>');
+                        //var div_intro = $('<div class="div-intro div-b">' + activity['IntroScreenB'] + '</div>');
+                        var div_intro = $(activity['IntroScreenB']);
                     }
                     $('.activity-div').append(div_intro);
                     likert_slider.appendsliderto($('.activity-div'));

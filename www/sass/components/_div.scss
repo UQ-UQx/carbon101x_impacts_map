@@ -1,0 +1,49 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the div component.
+// -----------------------------------------------------------------------------
+.container{
+	max-width: 700px;
+}
+
+.info-div {
+	background-color: WhiteSmoke;
+}
+
+.info-div-center {
+	text-align: center;
+}
+
+
+.person-a, .person-b {
+	border: solid 1px;
+}
+
+.word-list, .person-img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.word-list {
+	width: 35%;
+	text-align: center;
+	box-sizing: border-box;
+	margin: 0px;
+}
+
+.list-group {
+	//margin-bottom: 10px;
+}
+
+.person-img {
+	width: 60%;
+	box-sizing: border-box;
+	margin: 0px;
+}
+
+.chart-container {
+	height: 300px;
+}
+
+.warning-div {
+    background-color: MistyRose;
+}

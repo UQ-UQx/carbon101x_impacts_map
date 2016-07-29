@@ -9,7 +9,7 @@ module.exports = {
 var DEFAULT_SLIDER_VALUE = 4;
 
 function likert_slider_div(container) {
-    var slider_div = $('<div class="slider-container"></div>');
+    var slider_div = $('<div class="slider-container col-md-12"></div>');
     var label_begin = $('<div class="label_box label_begin">Not at all</div>');
     var label_end = $('<div class="label_box label_end">Very much</div>');
     var likert_slider = $('<div class="slider"></div>');
@@ -41,12 +41,13 @@ function likert_slider_div(container) {
     });
 
     slider_div.append(label_begin, likert_slider, label_end);
+    var slider_div_container = $('<div class="row"></div>');
+    slider_div_container.append(slider_div);
 
-    var slider_form_div = $('<div class="slider_form_container"></div>');
-
+    var slider_form_div = $('<div class="slider_form_container class="row"></div>');
     slider_form_div.append(likert_slider_form());
 
-    container.append(slider_div,slider_form_div);
+    container.append(slider_div_container,slider_form_div);
 }
 
 function likert_slider_form() {
@@ -57,7 +58,7 @@ function likert_slider_form() {
     var assigned_group = $('<input type="hidden" name="assigned_group" id="assigned_group" value="">');
     var activity_id = $('<input type="hidden" name="activity_id" id="activity_id" value="">');
 	var slider_text = $('<input type="text" name="slider_text" id="slider_text" style="display:none">');
-	var submit = $('<input type="submit" name="submit_input" value="Sumit">');
+	var submit = $('<input type="submit" name="submit_input" value="Submit" class="btn btn-primary">');
 
     slider_text.val(DEFAULT_SLIDER_VALUE);
 	slider_form.append(studentingroup_id, activity_id, assigned_group, slider_text, submit);

@@ -22,12 +22,17 @@
 ?>	
 </head>
 <body>
-   <div class='warning-div' id='warning-msg-div' style='display:block'>
-       <?php echo $warning_msg; ?>	
-   </div>
-   <div class='info-div' id='add-activity-info-div' style='display:block'>
-       <?php echo $info_msg; ?>
-   </div>
-
+<div class="container">
+	<div class="row">
+		<div class='warning-div col-md-12' id='warning-msg-div' style='display:block'>
+			<?php echo $warning_msg; ?>	
+		</div>
+	</div>
+	<div class="row">
+	    <div class='info-div col-md-12' id='add-activity-info-div' style='display:block'>
+	        <?php echo $info_msg; ?>
+	    </div>
+    </div>
+</div>   
 </body>
 </html>

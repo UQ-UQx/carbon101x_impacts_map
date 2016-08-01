@@ -6,7 +6,7 @@
     // Test data
     $activityId = 38;
     $userRoles = 'Student';
-    $userId = 8;
+    $userId = 90;
 
     // Get the activity information based on $activityId
     $activity = '';
@@ -22,6 +22,12 @@
 </head>
 <body>
 <div class="container">
+
+    <dl>
+      <dt>LTI Call Data</dt><dd><pre><?php print_r($ltivars);?></pre></dd>
+    </dl>
+
+
 
     <div class='lti-data' id='lti-data' data-userid="<?php echo $userId; ?>" data-userroles="<?php echo $userRoles; ?>" 
     data-courseid="<?php echo $courseId; ?>" data-activityId='<?php echo $activityId; ?>' data-warningmsg="<?php echo $warning_msg; ?>" 

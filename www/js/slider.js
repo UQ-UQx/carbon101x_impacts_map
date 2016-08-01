@@ -44,12 +44,29 @@ function likert_slider_div(container) {
     var slider_div_container = $('<div class="row"></div>');
     slider_div_container.append(slider_div);
 
-    var slider_form_div = $('<div class="slider_form_container class="row"></div>');
-    slider_form_div.append(likert_slider_form());
+    //var slider_form_div = $('<div class="slider_form_container class=row"></div>');
+    //slider_form_div.append(likert_slider_form());
+    //container.append(slider_div_container,slider_form_div);
 
-    container.append(slider_div_container,slider_form_div);
+    
+    
+    container.append(slider_div_container, likert_slider_submit());
+
 }
 
+
+function likert_slider_submit() {
+    //var submit = $('<input type="submit" name="submit_input" value="Submit" ')
+    var slider_text = $('<input type="text" name="slider_text" id="slider_text" >');
+    var submit_btn = $('<button id="submit_btn" type="button" class="btn btn-primary">Submit</button>');
+    var submit_div = $('<div class="row"></div>');
+    slider_text.val(DEFAULT_SLIDER_VALUE);
+
+    submit_div.append(slider_text, submit_btn);
+    return submit_div;
+}
+
+/*
 function likert_slider_form() {
 	var action = "save_input.php";
     //var action = "";
@@ -65,3 +82,4 @@ function likert_slider_form() {
 
 	return slider_form;
 }
+*/

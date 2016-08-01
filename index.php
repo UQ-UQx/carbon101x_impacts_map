@@ -6,7 +6,7 @@
     // Test data
     $activityId = 38;
     $userRoles = 'Student';
-    $userId = 90;
+    $userId = 96;
 
     // Get the activity information based on $activityId
     $activity = '';

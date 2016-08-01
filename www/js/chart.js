@@ -47,8 +47,10 @@ function format_chartdata(data) {
 
 	for(i=0; i < format_data.length; i++) {
 		format_data[i]['NumOfStudents'] = 1;
+		format_data[i]['Response'] = parseInt(data[i]['Response']);
 	}
 
+	/*
 	var ActivityID = format_data[0]['ActivityID'];
 	var AssignedGroup = format_data[0]['AssignedGroup'];
 
@@ -71,8 +73,9 @@ function format_chartdata(data) {
 		format_data.push(dummy_obj2);
 
 	}
+	*/
 
-	console.log('format_data', format_data);
+	//console.log('format_data', format_data);
 
 	return format_data;
 }

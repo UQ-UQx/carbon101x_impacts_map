@@ -22,17 +22,6 @@ var chart_container = require("./chart.js");
 
 $(document).ready(function(){
 
-/*
-    // example of how you can use your JS code in other files
-    var poll_questions = ["Question A", "Question B", "Question C"];
-
-    my_poll.init(poll_questions);
-
-    var results = my_poll.getResults(poll_questions);
-
-    console.log(results);
-*/
-
     var lti_data = $("#lti-data").data();
     var response_data = [];
 
@@ -68,8 +57,6 @@ $(document).ready(function(){
     	}
         else if(lti_data['userroles'] == 'Student'){
             $(".input-div").css('display', 'none');
-            $('.activity-div').empty();
-
             var activity = lti_data['activity'];
             actionbydata();
         }
@@ -92,8 +79,6 @@ $(document).ready(function(){
                     }
             })
             .done(function(response) {
-                $('.activity-div').empty();
-
                 console.log('response', response);
                 if(response['warning_msg']) {
                     $(".input-div").css('display', 'none');
@@ -104,7 +89,6 @@ $(document).ready(function(){
                 else {
                     actionbydata();
                 }
-
             })
             .fail(function() {
                 console.log("error");
@@ -117,7 +101,8 @@ $(document).ready(function(){
 
 
     function actionbydata() {
-        //console.log('gaga');
+        $('.activity-div').empty();
+
         $.ajax({
             url: 'scripts/get_student_data.php',
             type: 'POST',
@@ -126,7 +111,6 @@ $(document).ready(function(){
                 "activity_id": lti_data['activityid'],
                 "user_id": lti_data['userid'],
             }
-
         })
         .done(function(response2) {
             response_data = response2;
@@ -156,14 +140,9 @@ $(document).ready(function(){
                 }
                 $('.activity-div').append(div_intro);
                 likert_slider.appendsliderto($('.activity-div'));
-                $('#studentingroup_id').val(response2['student_in_group']['id']);
-                $('#activity_id').val(response2['student_in_group']['ActivityID']);
-                $('#assigned_group').val(response2['student_in_group']['AssignedGroup']);
-                //console.log($('#student_data'));
             }
 
             $('.activity-div').css('display', 'block');
-
         })
         .fail(function() {
             console.log("error");

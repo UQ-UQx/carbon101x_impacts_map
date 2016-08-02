@@ -5,7 +5,7 @@
 	$activity_id = $_POST['activity_id'];
 
 	$response = array();
-	$response['a'] = 'apple';
+	//$response['a'] = 'apple';
 	$response['activity_id'] = $_POST['activity_id'];
 	$response['user_id'] = $_POST['user_id'];
 

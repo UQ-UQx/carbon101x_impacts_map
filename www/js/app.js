@@ -76,6 +76,10 @@ $(document).ready(function(){
                         'activity_id': response_data['student_in_group']['ActivityID'],
                         'assigned_group': response_data['student_in_group']['AssignedGroup'],
                         'slider_text': $('#slider_text').val(),
+                        'lti_id': lti_data['ltiid'],
+                        'lis_outcome_service_url': lti_data['lisoutcome'],
+                        'lis_result_sourcedid': lti_data['lisresult'],
+                        'user_id': lti_data['userid'],
                     }
             })
             .done(function(response) {

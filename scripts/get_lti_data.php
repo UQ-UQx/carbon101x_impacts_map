@@ -1,6 +1,11 @@
 <?php
 	$ltivars = $lti->calldata();
 	//print_r($ltivars);
+	
+	// Extra data needed
+	$lti_id = $lti->lti_id();
+	$lis_outcome_service_url =  $lti->grade_url();
+	$lis_result_sourcedid = $lti->result_sourcedid();	
 
 	$ltivars_warning_msg = '';
 

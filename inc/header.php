@@ -4,7 +4,8 @@
 <!-- Remove this livereload line on production -->
 <script src="//localhost:35729/livereload.js"></script>
 <!-- Remove this livereload line on production -->
-<base href="/PSYC101.1x_poll/" />
+<!-- <base href="/PSYC101.1x_poll/" />  -->
+<base href="/psyc101/1x/PSYC101.1x_poll/" />
 <script src="lib/d3.min.js"></script>
 <script src="lib/dimple.min.js"></script>
 	

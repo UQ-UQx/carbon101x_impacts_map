@@ -4,9 +4,9 @@
     require_once('scripts/get_lti_data.php');
 
     // Test data
-    $activityId = 38;
-    $userRoles = 'Student';
-    $userId = 98;
+    //$activityId = 38;
+    //$userRoles = 'Student';
+    //$userId = 98;
 
     // Get the activity information based on $activityId
     $activity = '';
@@ -22,15 +22,10 @@
 </head>
 <body>
 <div class="container">
-
-    <dl>
-      <dt>LTI Call Data</dt><dd><pre><?php print_r($ltivars);?></pre></dd>
-    </dl>
-
-    <div class='lti-data' id='lti-data' data-userid="<?php echo $userId; ?>" data-userroles="<?php echo $userRoles; ?>" 
+    <div class='lti-data' id='lti-data' data-userid="<?php echo $userId; ?>" data-userroles="<?php echo $userRoles; ?>" data-ltiId="<?php echo $lti_id; ?>" data-lisOutcome="<?php echo $lis_outcome_service_url; ?>" data-lisResult="<?php echo $lis_result_sourcedid; ?>" 
     data-courseid="<?php echo $courseId; ?>" data-activityId='<?php echo $activityId; ?>' data-warningmsg="<?php echo $warning_msg; ?>" 
      <?php
-        printf('data-activity="%s"', htmlspecialchars($activity, ENT_QUOTES, 'UTF-8'));
+        printf('data-activity="%s" ', htmlspecialchars($activity, ENT_QUOTES, 'UTF-8'));
      ?>
     > </div>
 

@@ -1,12 +1,24 @@
 <?php
 
     $response = array();
-	$response['b'] = 'banana';
-	$response['post'] = $_POST;
+	//$response['b'] = 'banana';
+	//$response['post'] = $_POST;
+	
+	//error_log("ankith test", 0);
 
 
 	require_once('../inc/db_connection.php');
 	require_once('../lib/grade.php');
+	require_once('../config.php');
+	require_once('../lib/lti.php');
+	
+	$lti = new Lti($config,true);
+	$vars = array('user_id'=>$_POST['user_id'],'oauth_consumer_key'=>$_POST['lti_id'], 'lis_outcome_service_url'=>$_POST['lis_outcome_service_url'], 'lis_result_sourcedid'=>$_POST['lis_result_sourcedid']);
+	$lti->setltivars($vars);
+
+	
+	//error_log(json_encode($_POST),0);	
+	//error_log(json_encode($lti->calldata()), 0);
 
 	$warning_msg = '';
 
@@ -32,6 +44,11 @@
 				'ActivityID' => $_POST['activity_id'],
 				'AssignedGroup' => $_POST['assigned_group'],
 			));
+		    // Send grade
+            $grade = 1;
+            if($lti->grade_url() != 'No Grade URL') {
+                send_grade($grade,$lti);
+            }
 		}
 		catch(Exception $e) {
 			$warning_msg .= '<p>' . $e->getMessage() . '</p>';

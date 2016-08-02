@@ -26,7 +26,7 @@ class Lti {
         	if(!isset($this->ltivars["oauth_consumer_key"])) {
         		$this->valid = true;
 				$this->usedummydata();
-				$this->ltivars['data_source'] = 'Dummy Data';
+				//$this->ltivars['data_source'] = 'Dummy Data';
         	}
         }
         if(!$this->testing || isset($this->ltivars["oauth_consumer_key"])){

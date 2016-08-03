@@ -117,36 +117,41 @@ $(document).ready(function(){
             }
         })
         .done(function(response2) {
-            response_data = response2;
-            if(activity['Title']) {
-                $('.activity-div').append('<h2>' + activity['Title'] + '</h2>');
-            }
+	        console.log('response2', response2);
 
-            //console.log("success");
-            console.log('response2', response2);
-            if(response2['user_input']) {
-                // User already inputted
-                console.log('HAD INPUTED');
-                //var div_final = $('<div class="div-final">' + activity['FinalScreen'] + '</div>');
-                var div_final = $(activity['FinalScreen']);
-                $('.activity-div').append(div_final);
-                chart_container.appendchartto($('.activity-div'), response2['all_input']);
+            response_data = response2;            
+            if(response2['warning_msg']) {
+                $(".input-div").css('display', 'none');
+                $("#warning-msg-div").empty();
+                $("#warning-msg-div").append(response2['warning_msg']);
+                $("#warning-msg-div").css('display', 'block');
             }
-            else {
-                console.log('NO INPUTED');
-                if(response2['student_in_group']['AssignedGroup'] == 'A') {
-                    //var div_intro = $('<div class="div-intro div-a">' + activity['IntroScreenA'] + '</div>');
-                    var div_intro = $(activity['IntroScreenA']);
-                }
-                else if (response2['student_in_group']['AssignedGroup'] == 'B') {
-                    //var div_intro = $('<div class="div-intro div-b">' + activity['IntroScreenB'] + '</div>');
-                    var div_intro = $(activity['IntroScreenB']);
-                }
-                $('.activity-div').append(div_intro);
-                likert_slider.appendsliderto($('.activity-div'));
+            else {           
+	            if(activity['Title']) {
+	                $('.activity-div').append('<h2>' + activity['Title'] + '</h2>');
+	            }
+	
+	            if(response2['user_input']) {
+	                // User already inputted
+	                console.log('HAD INPUTED');
+	                var div_final = $(activity['FinalScreen']);
+	                $('.activity-div').append(div_final);
+	                chart_container.appendchartto($('.activity-div'), response2['all_input']);
+	            }
+	            else {
+	                console.log('NO INPUTED');
+	                if(response2['student_in_group']['AssignedGroup'] == 'A') {
+	                    var div_intro = $(activity['IntroScreenA']);
+	                }
+	                else if (response2['student_in_group']['AssignedGroup'] == 'B') {
+	                    var div_intro = $(activity['IntroScreenB']);
+	                }
+	                $('.activity-div').append(div_intro);
+	                likert_slider.appendsliderto($('.activity-div'));
+	            }
+	
+	            $('.activity-div').css('display', 'block');
             }
-
-            $('.activity-div').css('display', 'block');
         })
         .fail(function() {
             console.log("error");
@@ -155,16 +160,5 @@ $(document).ready(function(){
             console.log("complete");
         });        
     }
-
-
-/*
-            // Send grade
-            $grade = 1;
-            if($lti->grade_url() != 'No Grade URL') {
-                send_grade($grade,$lti);
-            }
-*/
-
-
 });
 

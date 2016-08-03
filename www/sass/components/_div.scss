@@ -13,9 +13,18 @@
 	text-align: center;
 }
 
+.person-a-div {
+	padding-right: 3px;
+}
+
+.person-b-div {
+	padding-left: 3px;
+}
 
 .person-a, .person-b {
 	border: solid 1px;
+	border-color: Darkgrey;
+	border-radius: 3px;
 }
 
 .word-list, .person-img {
@@ -28,6 +37,7 @@
 	text-align: center;
 	box-sizing: border-box;
 	margin: 0px;
+	padding-left: 5px;
 }
 
 .list-group {
@@ -35,7 +45,7 @@
 }
 
 .person-img {
-	width: 60%;
+	width: 61%;
 	box-sizing: border-box;
 	margin: 0px;
 }

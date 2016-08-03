@@ -13,7 +13,7 @@
 				'FinalScreen' => $_POST['activity-final-screen'],
 				));
 			$insert_id = $db->id();
-			$info_msg .= 'You had successfully added this activity. The activity id is <b>' . $insert_id . '</b>. Please keep it for futher useage.';
+			$info_msg .= 'You have successfully added this activity. The activity id is <b>' . $insert_id . '</b>. Please keep it for further usage.';
 		}
 		catch(Exception $e) {
 			$warning_msg .= '<p>' . $e->getMessage() . '</p>';			

@@ -14,7 +14,7 @@
 				);
 			$db->update('Activities', $data, $_POST['activity-id']);
 
-			$info_msg .= 'You had successfully updated this activity. The activity id is <b>' . $_POST['activity-id'] . '</b>. Please keep it for futher useage.';
+			$info_msg .= 'You have successfully updated this activity. The activity id is <b>' . $_POST['activity-id'] . '</b>. Please keep it for further usage.';
 		}
 		catch(Exception $e) {
 			$warning_msg .= '<p>' . $e->getMessage() . '</p>';			

@@ -17,7 +17,7 @@ function histo_chart_div(container, data) {
 
 	chart.setMargins("60px", "30px", "60px", "70px");
 	//chart.setBounds(80, 30, 480, 330);
-	chart.addMeasureAxis("x", "NumOfStudents");
+	chart.addMeasureAxis("x", "Number Of Students");
 	chart.addCategoryAxis("y", ["Response", "AssignedGroup"]);
 	chart.addSeries("AssignedGroup", dimple.plot.bar);
 	chart.addLegend("-100px", "30px", "100px", "-70px");
@@ -46,7 +46,7 @@ function format_chartdata(data) {
 	var format_data = data;
 
 	for(i=0; i < format_data.length; i++) {
-		format_data[i]['NumOfStudents'] = 1;
+		format_data[i]['Number Of Students'] = 1;
 		format_data[i]['Response'] = parseInt(data[i]['Response']);
 	}
 

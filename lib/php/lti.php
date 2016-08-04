@@ -1,7 +1,6 @@
 <?php
-$root = dirname(__DIR__);
-require_once($root . '/config.php');
-require_once($root . '/lib/OAuth.php');
+$root = dirname(dirname(__DIR__));
+require_once($root . '/lib/php/OAuth.php');
 
 class Lti {
 

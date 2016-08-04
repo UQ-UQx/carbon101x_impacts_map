@@ -45,7 +45,7 @@ These steps will ensure that your js and css are being watched by grunt and will
 
 ### Database Setup
 1. Create database and user account for this database. The information is needed by config.php
-2. Create tables by import psyc101_1x.sql to the above database
+2. Create tables by import psyc101_1x_correlation.sql to the above database
 
 ### Config Setup
 1. Edit config.php with your respective LTI keys and optional database details

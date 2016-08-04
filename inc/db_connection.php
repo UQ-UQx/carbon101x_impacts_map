@@ -1,7 +1,7 @@
 <?php
 	$root = dirname(__DIR__);
 	require_once($root . '/config.php');
-	require_once($root . '/lib/db.php');
+	require_once($root . '/lib/php/db.php');
 
 	Db::config( 'driver',   'mysql' );
 	Db::config( 'host',     $config['db']['hostname'] );

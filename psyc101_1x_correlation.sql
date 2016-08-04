@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.6.19)
 # Database: psyc101_1x
-# Generation Time: 2016-07-22 05:51:04 +0000
+# Generation Time: 2016-08-04 05:29:11 +0000
 # ************************************************************
 
 
@@ -20,51 +20,38 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 
-# Dump of table activities
+# Dump of table CorrelationActivities
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `Activities`;
+DROP TABLE IF EXISTS `CorrelationActivities`;
 
-CREATE TABLE `Activities` (
+CREATE TABLE `CorrelationActivities` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `Edx_courseid` varchar(256) DEFAULT NULL,
-  `Title` varchar(256) DEFAULT '',
-  `IntroScreenA` text NOT NULL,
-  `IntroScreenB` text NOT NULL,
-  `FinalScreen` text NOT NULL,
+  `edx_courseid` varchar(256) DEFAULT NULL,
+  `Title` varchar(256) DEFAULT NULL,
+  `IntroText` text,
+  `Question1` text NOT NULL,
+  `Question1Scale` int(11) unsigned NOT NULL,
+  `Question2` text NOT NULL,
+  `Question2Scale` int(11) unsigned NOT NULL,
+  `SPText` text,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
 
-# Dump of table StudentInGroup
+# Dump of table CorrelationStudentInput
 # ------------------------------------------------------------
 
-DROP TABLE IF EXISTS `StudentInGroup`;
+DROP TABLE IF EXISTS `CorrelationStudentInput`;
 
-CREATE TABLE `StudentInGroup` (
+CREATE TABLE `CorrelationStudentInput` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `edx_userid` varchar(256) NOT NULL DEFAULT '',
   `ActivityID` int(11) unsigned NOT NULL,
-  `AssignedGroup` varchar(64) NOT NULL DEFAULT '',
+  `Question1Response` int(11) NOT NULL,
+  `Question2Response` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
-
-
-# Dump of table StudentInput
-# ------------------------------------------------------------
-
-DROP TABLE IF EXISTS `StudentInput`;
-
-CREATE TABLE `StudentInput` (
-  `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
-  `StudentInGroupID` int(11) unsigned NOT NULL,
-  `Response` int(11) NOT NULL,
-  `ActivityID` int(11) unsigned NOT NULL,
-  `AssignedGroup` varchar(64) NOT NULL DEFAULT '',
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 
 

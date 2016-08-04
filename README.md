@@ -1,4 +1,4 @@
-# PSYC101.1x
+# PSYC101.1x_Correlation
 
 # Installation 
 

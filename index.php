@@ -2,9 +2,13 @@
     require_once('inc/header.php'); 
 
     // For testing
-    if(is_null($ltivars['custom_activity_id'])) {
-        $ltivars['custom_activity_id'] = -1;
+    //$ltivars['custom_activity_id'] = 1;
+
+
+    if($warning_msg == '' && $ltivars['custom_activity_id'] != -1) {
+        //require_once('scripts/get_activity.php');
     }
+
 ?>
 <script type="text/javascript">
     var ltivars = <?php echo json_encode($ltivars); ?>;
@@ -39,7 +43,35 @@
         <!-- add-activity -->
         <div class="row">
             <div class="col-md-12 input-div" id="add-activity">
-            abc
+                <h3>Add Activity</h3>
+                <form id='add-activity-form' name='add-activity-form' action='add_activity.php' method='post'>
+                <input type="hidden" name="course_id" value="<?php echo $ltivars['context_id'];?>">
+
+                Title:<br>
+                <input type='text' id='add-activity-title' name='activity-title' size='60'><br><br>
+
+                Activity Intro Text:<br>
+                <textarea id='add-activity-intro' name='activity-intro' rows='10' cols='80' required>
+                </textarea><br><br>
+
+                Question 1:<br>
+                <textarea id='add-activity-q1' name='activity-q1' rows='10' cols='80' required>
+                </textarea><br>
+                Question 1 Scale (Number):
+                <input type='text' id='add-activity-q1scale' name='activity-q1scale' size='5'><br><br>
+
+                Question 2:<br>
+                <textarea id='add-activity-q2' name='activity-q2' rows='10' cols='80' required>
+                </textarea><br>
+                Question 2 Scale (Number):
+                <input type='text' id='add-activity-q2scale' name='activity-q2scale' size='5'><br><br>
+
+                Scatterplot diplay text:<br>
+                <textarea id='add-activity-sptext' name='activity-sptext' rows='10' cols='80'>
+                </textarea><br><br>
+
+                <input type='submit' value='Save' class="btn btn-primary">
+                </form>            
             </div>
         </div>
         <?php

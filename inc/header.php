@@ -26,6 +26,7 @@
 	require_once($root . '/lib/php/lti.php');
 
 	$warning_msg = '';
+	$ltivars = array();
 
 	// Initial $ltivars
 	if(empty($_SESSION['ltivars'])) {

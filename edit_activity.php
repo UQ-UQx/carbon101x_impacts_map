@@ -6,15 +6,20 @@
 
 	if($warning_msg == '') {
 		try {
+			
 			$data = array(
-				'Title' => $_POST['activity-title'],
-				'IntroScreenA' => $_POST['activity-intro-screen-a'],
-				'IntroScreenB' => $_POST['activity-intro-screen-b'],
-				'FinalScreen' => $_POST['activity-final-screen'],
+				'Title' => isset($_POST['activity-title']) ? $_POST['activity-title'] : '',
+				'IntroText' => isset($_POST['activity-intro']) ? $_POST['activity-intro'] : '',
+				'Question1' => $_POST['activity-q1'],
+				'Question1Scale' => $_POST['activity-q1scale'],
+				'Question2' => $_POST['activity-q2'],
+				'Question2Scale' => $_POST['activity-q2scale'],
+				'SPText' => isset($_POST['activity-sptext']) ? $_POST['activity-sptext'] : '',
 				);
-			$db->update('Activities', $data, $_POST['activity-id']);
+			$db->update('CorrelationActivities', $data, $_POST['activity-id']);
 
 			$info_msg .= 'You have successfully updated this activity. The activity id is <b>' . $_POST['activity-id'] . '</b>. Please keep it for further usage.';
+			
 		}
 		catch(Exception $e) {
 			$warning_msg .= '<p>' . $e->getMessage() . '</p>';			

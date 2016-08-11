@@ -3,10 +3,17 @@
 
     // For testing
     $ltivars['custom_activity_id'] = 5;
+    $ltivars['roles'] = 'Student';
+    $ltivars['user_id'] = 99;
 
     
     if($warning_msg == '' && $ltivars['custom_activity_id'] != -1) {
         require_once('scripts/get_activity.php');
+    }
+
+    // Get Student data
+    if($warning_msg == '' && $ltivars['roles'] == 'Student') {
+        require_once('scripts/get_student_data.php');
     }
     
 
@@ -110,18 +117,16 @@
         ?>
         <?php
                     }
-                    else if($lti_data['roles'] == 'Student'){
+                    else if($ltivars['roles'] == 'Student'){
+                        if(empty($student_input)) {
+                            echo 'empty';
+                        }
+                        else {
+                            print_r($all_inputs);
+                        }
                     }
                 }
         ?>
-
-
-
-
-
-
-
-
     </div>
 
 <script type="text/javascript" src="build/js/app.js"></script>

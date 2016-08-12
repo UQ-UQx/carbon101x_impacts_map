@@ -14,9 +14,19 @@ require("jquery-knob");
 
 // Files that you create can also be included in any JS file, 
 // however their path has to be specified as they are not part of NPM
+var sliders = require('./slider.js');
 
 $(document).ready(function(){
     console.log('ltivars', ltivars);
+    console.log('activity', activity);
+    console.log('studentInput', studentInput);
+    console.log('allInputs', allInputs);
+
+    if(ltivars['roles'] == 'Student' && !studentInput) {
+    	console.log('input');
+    	sliders.initSlider($('#slider_1'), $('#slider1_text'), activity['Question1Scale']);
+    	sliders.initSlider($('#slider_2'), $('#slider2_text'), activity['Question2Scale']);
+    }
 
 });
 

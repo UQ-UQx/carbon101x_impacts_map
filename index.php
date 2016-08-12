@@ -7,6 +7,10 @@
     $ltivars['user_id'] = 99;
 
     
+    $activity = '';
+    $student_input = '';
+    $all_inputs = '';
+
     if($warning_msg == '' && $ltivars['custom_activity_id'] != -1) {
         require_once('scripts/get_activity.php');
     }
@@ -15,11 +19,12 @@
     if($warning_msg == '' && $ltivars['roles'] == 'Student') {
         require_once('scripts/get_student_data.php');
     }
-    
-
 ?>
 <script type="text/javascript">
     var ltivars = <?php echo json_encode($ltivars); ?>;
+    var activity = <?php echo json_encode($activity); ?>;
+    var studentInput = <?php echo json_encode($student_input); ?>;
+    var allInputs = <?php echo json_encode($all_inputs); ?>;
 </script>
 
 </head>
@@ -114,12 +119,34 @@
 
         <?php
                         }
-        ?>
-        <?php
                     }
                     else if($ltivars['roles'] == 'Student'){
                         if(empty($student_input)) {
-                            echo 'empty';
+        ?>
+        <!-- Screen ask for students inputs -->
+        <div class="row">
+            <div class="col-md-12 student-input-div">
+            <?php
+                if(!empty($activity->Title)) {
+                    echo '<h2>' . $activity->Title . '</h2>';
+                }
+                echo $activity->IntroText;
+            ?>
+            <div id='question1-div' class='question-div'>
+                <h4>Question 1</h4>
+                <?php echo $activity->Question1; ?>
+                <div class="slider" id="slider_1"></div>
+                <input type="text" name="slider1_text" id="slider1_text">
+                <h4>Question 2</h4>
+                <?php echo $activity->Question2; ?>
+                <div class="slider" id="slider_2"></div>
+                <input type="text" name="slider2_text" id="slider2_text">
+                <br>
+                <button id="submit_btn" type="button" class="btn btn-primary">Next</button>
+            </div>
+            </div>
+        </div>
+        <?php
                         }
                         else {
                             print_r($all_inputs);

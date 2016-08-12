@@ -1,10 +1,26 @@
 require("jquery-ui");
 
 module.exports = {
+/*    
 	appendsliderto: function(container) {
 		likert_slider_div(container);
 	}
+*/
+    initSlider: function(slider_div, slider_text, scale) {
+        createSlider(slider_div, scale);
+    }
 }
+
+function createSlider(slider_div, scale) {
+    console.log('slider_div', slider_div);
+    slider_div.slider({
+        min: 1,
+        max: scale,
+        step: 1,
+    });
+}
+
+/*
 
 var DEFAULT_SLIDER_VALUE = 4;
 
@@ -58,3 +74,4 @@ function likert_slider_submit() {
     submit_div.append(slider_text, submit_btn);
     return submit_div;
 }
+*/

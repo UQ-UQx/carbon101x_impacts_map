@@ -29,11 +29,13 @@
 
 	$warning_msg = '';
 	$ltivars = array();
+	//unset($_SESSION['ltivars']);
 
 	// Initial $ltivars
 	if(empty($_SESSION['ltivars'])) {
 		$lti = new Lti($config, true);
 		$lti_valid = $lti->is_valid();
+
 		if($lti_valid) {
 			$_SESSION['ltivars'] = $lti->calldata();
 		}

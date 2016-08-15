@@ -28,5 +28,31 @@ $(document).ready(function(){
     	sliders.initSlider($('#slider_2'), $('#slider2_text'), activity['Question2Scale']);
     }
 
+    $('#submit_btn').click(function() {
+    	console.log('clicked');
+
+        $.ajax({
+            url: 'scripts/save_student_data.php',
+            type: 'POST',
+            dataType: 'json',
+            data: {
+            	//'edx_userid': ltivars['user_id'],
+            	//'ActivityID': ltivars['custom_activity_id'],
+            	'Q1Response': $('#slider1_text').val(),
+            	'Q2Response': $('#slider2_text').val()
+            }
+        })
+        .done(function(response) {
+        	console.log("done", response);
+        })
+        .fail(function() {
+            console.log("error");
+        })
+        .always(function() {
+            console.log("complete");
+        }); 
+
+    });
+
 });
 

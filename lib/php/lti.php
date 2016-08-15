@@ -152,6 +152,11 @@ class Lti {
 		    'oauth_callback'=>'about:blank',
             'custom_activity_id' => -1,
 		);
+		
+		// For testing
+	    $this->ltivars['custom_activity_id'] = 5;
+	    $this->ltivars['roles'] = 'Student';
+	    $this->ltivars['user_id'] = 99;	    
 	}
 	
 }

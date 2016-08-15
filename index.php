@@ -1,11 +1,5 @@
 <?php
     require_once('inc/header.php'); 
-
-    // For testing
-    $ltivars['custom_activity_id'] = 5;
-    $ltivars['roles'] = 'Student';
-    $ltivars['user_id'] = 99;
-
     
     $activity = '';
     $student_input = '';

@@ -1,12 +1,22 @@
 <?php
+	session_start();
 
     $response = array();
-	//$response['b'] = 'banana';
-	//$response['post'] = $_POST;
-	
-	//error_log("ankith test", 0);
+    $response['post'] = $_POST;
+    $response['session'] = $_SESSION;
+    echo json_encode($response);
+
+	require_once('../inc/db_connection.php');
+	require_once('../lib/grade.php');
+	require_once('../config.php');
+	require_once('../lib/lti.php');
+
+	$lti = new Lti($config, true);
+	$lti->setltivars($_SESSION['ltivars']);    
 
 
+
+/*
 	require_once('../inc/db_connection.php');
 	require_once('../lib/grade.php');
 	require_once('../config.php');
@@ -17,9 +27,6 @@
 	$lti->setltivars($vars);
 
 	
-	//error_log(json_encode($_POST),0);	
-	//error_log(json_encode($lti->calldata()), 0);
-
 	$warning_msg = '';
 
 	if(empty($_POST['studentingroup_id'])) {
@@ -61,3 +68,5 @@
 
     //$response['warning_msg'] ='werrraaa';
 	echo json_encode($response);
+*/
+?>

@@ -27,6 +27,17 @@ function createSlider(slider_div, slider_text, scale, defaultValue) {
         change: function(event, ui) {
             sliderSetValue(slider_text, ui.value);
         }
+    })
+    .each(function() {
+        var opt = $(this).data()['ui-slider'].options;
+        //console.log('data', opt);
+
+        var vals = opt.max - opt.min;
+
+        for(var i = 0; i <= vals; i++) {
+            var el = $('<label>' + (i + opt.min) + '</label>').css('left', (i/vals*100) + '%');
+            $(this).append(el);
+        }
     });
 }
 

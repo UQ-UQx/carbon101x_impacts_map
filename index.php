@@ -128,11 +128,12 @@
             ?>
             <div id='question1-div' class='question-div'>
                 <h4>Question 1</h4>
-                <?php echo $activity->Question1; ?>
+                <p><?php echo $activity->Question1; ?></p>
                 <div class="slider" id="slider_1"></div>
                 <input type="text" name="slider1_text" id="slider1_text">
+                <br>
                 <h4>Question 2</h4>
-                <?php echo $activity->Question2; ?>
+                <p><?php echo $activity->Question2; ?></p>
                 <div class="slider" id="slider_2"></div>
                 <input type="text" name="slider2_text" id="slider2_text">
                 <br>

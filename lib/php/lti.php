@@ -156,7 +156,7 @@ class Lti {
 		// For testing
 	    $this->ltivars['custom_activity_id'] = 5;
 	    $this->ltivars['roles'] = 'Student';
-	    $this->ltivars['user_id'] = 99;	    
+	    $this->ltivars['user_id'] = 101;	    
 	}
 	
 }

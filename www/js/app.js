@@ -15,6 +15,7 @@ require("jquery-knob");
 // Files that you create can also be included in any JS file, 
 // however their path has to be specified as they are not part of NPM
 var sliders = require('./slider.js');
+var charts = require('./chart.js');
 
 $(document).ready(function(){
     console.log('ltivars', ltivars);
@@ -22,11 +23,33 @@ $(document).ready(function(){
     console.log('studentInput', studentInput);
     console.log('allInputs', allInputs);
 
-    if(ltivars['roles'] == 'Student' && !studentInput) {
-    	console.log('input');
-    	sliders.initSlider($('#slider_1'), $('#slider1_text'), activity['Question1Scale']);
-    	sliders.initSlider($('#slider_2'), $('#slider2_text'), activity['Question2Scale']);
+
+
+
+//    if(ltivars['roles'] == 'Student' && !studentInput) {
+    if(ltivars['roles'] == 'Student') {
+    	if(studentInput) {
+    		var studentDisplayDiv = $('.student-display-div');
+	    	charts.appendchartto(studentDisplayDiv, allInputs);
+	    	$('.student-input-div').css('display', 'none');
+	    	$('.student-warning-div').css('display', 'none');
+	    	$('.student-display-div').css('display', 'block');
+    	}
+    	else {
+	    	console.log('input');
+	    	$('.student-input-div').css('display', 'block');
+	    	$('.student-warning-div').css('display', 'none');
+	    	$('.student-display-div').css('display', 'none');
+	    	sliders.initSlider($('#slider_1'), $('#slider1_text'), activity['Question1Scale']);
+	    	sliders.initSlider($('#slider_2'), $('#slider2_text'), activity['Question2Scale']);
+    	}
     }
+
+    function displayAllInputs(container, inputs) {
+    	// add all here, 1 divid get_student_data.php into two files, get_student_input and get_all_inputs
+    	charts.appendchartto(container, inputs);
+    }
+
 
     $('#submit_btn').click(function() {
     	console.log('clicked');
@@ -44,9 +67,29 @@ $(document).ready(function(){
         })
         .done(function(response) {
         	console.log("done", response);
+        	if(response['warning_msg']) {
+        		$(".student-warning-div").empty();
+		        $(".student-warning-div").append(response['warning_msg']);
+
+		    	$('.student-input-div').css('display', 'none');
+		    	$('.student-warning-div').css('display', 'block');
+		    	$('.student-display-div').css('display', 'none');        		
+        	}
+        	else {
+	    		var studentDisplayDiv = $('.student-display-div');
+		    	charts.appendchartto(studentDisplayDiv, allInputs);
+		    	$('.student-input-div').css('display', 'none');
+		    	$('.student-warning-div').css('display', 'none');
+		    	$('.student-display-div').css('display', 'block');
+        	}
         })
         .fail(function() {
-            console.log("error");
+    		$(".student-warning-div").empty();
+	        $(".student-warning-div").append('<p>#submit_btn ajax fails.</p>');
+
+	    	$('.student-input-div').css('display', 'none');
+	    	$('.student-warning-div').css('display', 'block');
+	    	$('.student-display-div').css('display', 'none');        		
         })
         .always(function() {
             console.log("complete");

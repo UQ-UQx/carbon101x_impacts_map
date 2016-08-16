@@ -115,37 +115,40 @@
                         }
                     }
                     else if($ltivars['roles'] == 'Student'){
-                        if(empty($student_input)) {
         ?>
         <!-- Screen ask for students inputs -->
-        <div class="row">
-            <div class="col-md-12 student-input-div">
+        <div id="student-div" class="row">
+            <div class="col-md-12 student-warning-div" style='display:none'>
+            </div>
+
+            <div class="col-md-12 student-input-div" style='display:none'>
             <?php
                 if(!empty($activity->Title)) {
                     echo '<h2>' . $activity->Title . '</h2>';
                 }
                 echo $activity->IntroText;
             ?>
-            <div id='question1-div' class='question-div'>
-                <h4>Question 1</h4>
-                <p><?php echo $activity->Question1; ?></p>
-                <div class="slider" id="slider_1"></div>
-                <input type="text" name="slider1_text" id="slider1_text">
-                <br>
-                <h4>Question 2</h4>
-                <p><?php echo $activity->Question2; ?></p>
-                <div class="slider" id="slider_2"></div>
-                <input type="text" name="slider2_text" id="slider2_text">
-                <br>
-                <button id="submit_btn" type="button" class="btn btn-primary">Next</button>
+                <div id='question1-div' class='question-div'>
+                    <h4>Question 1</h4>
+                    <p><?php echo $activity->Question1; ?></p>
+                    <div class="slider" id="slider_1"></div>
+                    <input type="text" name="slider1_text" id="slider1_text">
+                    <br>
+                    <h4>Question 2</h4>
+                    <p><?php echo $activity->Question2; ?></p>
+                    <div class="slider" id="slider_2"></div>
+                    <input type="text" name="slider2_text" id="slider2_text">
+                    <br>
+                    <button id="submit_btn" type="button" class="btn btn-primary">Next</button>
+                </div>
             </div>
+
+            <div class="col-md-12 student-display-div" style='display:none'>
+            display
             </div>
+
         </div>
         <?php
-                        }
-                        else {
-                            print_r($all_inputs);
-                        }
                     }
                 }
         ?>

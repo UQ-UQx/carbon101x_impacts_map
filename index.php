@@ -3,7 +3,7 @@
     
     $activity = '';
     $student_input = '';
-    $all_inputs = '';
+//    $all_inputs = '';
 
     if($warning_msg == '' && $ltivars['custom_activity_id'] != -1) {
         require_once('scripts/get_activity.php');
@@ -18,7 +18,6 @@
     var ltivars = <?php echo json_encode($ltivars); ?>;
     var activity = <?php echo json_encode($activity); ?>;
     var studentInput = <?php echo json_encode($student_input); ?>;
-    var allInputs = <?php echo json_encode($all_inputs); ?>;
 </script>
 
 </head>
@@ -62,13 +61,13 @@
 
                 Question 1:<br>
                 <textarea id='add-activity-q1' name='activity-q1' rows='10' cols='80' required></textarea><br>
-                Question 1 Scale (Number):
-                <input type='text' id='add-activity-q1scale' name='activity-q1scale' size='5' required><br><br>
+                Question 1 Scale Labels ( input as ---, ---, --- ):<br>
+                <input type='text' id='add-activity-q1scale' name='activity-q1scale' size='80' required><br><br>
 
                 Question 2:<br>
                 <textarea id='add-activity-q2' name='activity-q2' rows='10' cols='80' required></textarea><br>
-                Question 2 Scale (Number):
-                <input type='text' id='add-activity-q2scale' name='activity-q2scale' size='5' required><br><br>
+                Question 2 Scale Labels ( input as ---, ---, --- ):<br>
+                <input type='text' id='add-activity-q2scale' name='activity-q2scale' size='80' required><br><br>
 
                 Scatterplot diplay text:<br>
                 <textarea id='add-activity-sptext' name='activity-sptext' rows='10' cols='80'></textarea><br>
@@ -95,13 +94,13 @@
 
                 Question 1:<br>
                 <textarea id='edit-activity-q1' name='activity-q1' rows='10' cols='80' required><?php echo $activity->Question1; ?></textarea><br>
-                Question 1 Scale (Number):
-                <input type='text' id='edit-activity-q1scale' name='activity-q1scale' size='5' value='<?php echo $activity->Question1Scale; ?>' required><br><br>
+                Question 1 Scale ( input as ---, ---, --- ):<br>
+                <input type='text' id='edit-activity-q1scale' name='activity-q1scale' size='80' value='<?php echo $activity->Question1ScaleLabels; ?>' required><br><br>
 
                 Question 2:<br>
                 <textarea id='edit-activity-q2' name='activity-q2' rows='10' cols='80' required><?php echo $activity->Question2; ?></textarea><br>
-                Question 2 Scale (Number):
-                <input type='text' id='edit-activity-q2scale' name='activity-q2scale' size='5' value='<?php echo $activity->Question2Scale; ?>' required><br><br>
+                Question 2 Scale  ( input as ---, ---, --- ):<br>
+                <input type='text' id='edit-activity-q2scale' name='activity-q2scale' size='80' value='<?php echo $activity->Question2ScaleLabels; ?>' required><br><br>
 
                 Scatterplot diplay text:<br>
                 <textarea id='edit-activity-sptext' name='activity-sptext' rows='10' cols='80'><?php echo $activity->SPText; ?></textarea><br>
@@ -117,34 +116,57 @@
                     else if($ltivars['roles'] == 'Student'){
         ?>
         <!-- Screen ask for students inputs -->
-        <div id="student-div" class="row">
-            <div class="col-md-12 student-warning-div" style='display:none'>
-            </div>
-
-            <div class="col-md-12 student-input-div" style='display:none'>
-            <?php
-                if(!empty($activity->Title)) {
-                    echo '<h2>' . $activity->Title . '</h2>';
-                }
-                echo $activity->IntroText;
-            ?>
-                <div id='question1-div' class='question-div'>
-                    <h4>Question 1</h4>
-                    <p><?php echo $activity->Question1; ?></p>
-                    <div class="slider" id="slider_1"></div>
-                    <input type="text" name="slider1_text" id="slider1_text">
-                    <br>
-                    <h4>Question 2</h4>
-                    <p><?php echo $activity->Question2; ?></p>
-                    <div class="slider" id="slider_2"></div>
-                    <input type="text" name="slider2_text" id="slider2_text">
-                    <br>
-                    <button id="submit_btn" type="button" class="btn btn-primary">Next</button>
+        <div id="student-div">
+            <div class="student-warning-div" style='display:none'>
+                <div  class="row">
+                    <div class="col-md-12" id="student-warning">
+                    </div>
                 </div>
             </div>
 
-            <div class="col-md-12 student-display-div" style='display:none'>
-            display
+            <div class="student-input-div" style='display:none'>
+                <div class="row">            
+                    <div class="col-md-12" >
+                    <?php
+                        if(!empty($activity->Title)) {
+                            echo '<h2>' . $activity->Title . '</h2>';
+                        }
+                        echo '<p>' . $activity->IntroText . '</p>';
+                    ?>
+                        <div id='question1-div' class='question-div'>
+                            <h4>Question 1</h4>
+                            <p><?php echo $activity->Question1; ?></p>
+                            <div class="slider" id="slider_1"></div>
+                            <ul class="slider_description" id="slider_ul_1"></ul>
+                            <input type="text" name="slider1_text" id="slider1_text" style='display:none'>
+                        </div>
+                        <div id='question2-div' class='question-div'>
+                            <h4>Question 2</h4>
+                            <p><?php echo $activity->Question2; ?></p>
+                            <div class="slider" id="slider_2"></div>
+                            <ul class="slider_description" id="slider_ul_2"></ul>
+                            <input type="text" name="slider2_text" id="slider2_text" style='display:none'>
+                        </div>
+                        <button id="submit_btn" type="button" class="btn btn-primary">Next</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="student-display-div" style='display:none'>
+                <div class="row">
+                    <div class="col-md-12">
+                    <?php
+                        if(!empty($activity->Title)) {
+                            echo '<h2>' . $activity->Title . '</h2>';
+                        }
+                        echo '<p>' . $activity->SPText . '</p>';
+                    ?>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class='col-md-12 chart-div' id='chart_div'>
+                    </div>
+                </div>
             </div>
 
         </div>

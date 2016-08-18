@@ -2,77 +2,29 @@
 // This file contains all styles related to the slider component.
 // -----------------------------------------------------------------------------
 
-.slider-container {
-	display: table;
-	width: 100%;
-	//border: solid 1px;
-	//height: 80px;
-	//margin: 15px;
-	//padding: 5px 0px !important; 
-	//margin-left: 15px;
-}
-
-.label_box {
-	//display: inline-block;
-	width: 15%;
-	text-align: center;
-	//vertical-align: middle;
-	//margin: 20px;
-	//padding-bottom: 10px;
-	display: table-cell;
-  	vertical-align: middle;
-}
-
 .slider {
-	display: inline-block;
 	width: 100%;
-	margin: 2em auto;
+	margin: 2em auto auto auto;
 }
 
-.slider label {
-  position: absolute;
-  width: 20px;
-  margin-top: -30px;
-  margin-left: -10px;
-  text-align: center;	
+ul.slider_description {
+  margin:0    !important;
+  padding:0   !important;
+  //height:20px;
 }
 
-/*
-.slider-container, .slider_form_container {
-	padding: 5px;
-	margin: 10px;
+ul.slider_description li {
+  display: inline-block;
+  list-style-type:none;
+  text-align:center;
+  font-size:100%;
+  margin-top:5px;
+} 
+
+ul.slider_description li:first-child {
+  text-align:left;
 }
 
-.slider-container {
-	border: solid 1px;
-	height:80px;	
-	width: 670px;
+ul.slider_description li:last-child {
+  text-align:right;
 }
-
-
-.slider_form_container {
-	text-align:center;
-}
-
-.label_box {
-	border: none;
-    padding: 10px;
-    float: left;
-    font: 18px arial, sans-serif;
-    margin-top: 12px;
-}
-
-.slider, .ui-slider-range, .ui-slider-handle{
-  	width: 380px;
-  	background: #f4cccc;
-	border-color: #f4cccc;
-	float: left;
-}
-
-.slider {
-	padding: 5px;
-	float: left;
-	margin: 35px 25px 5px 25px;
-}
-*/
-

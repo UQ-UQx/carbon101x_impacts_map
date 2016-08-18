@@ -1,42 +1,39 @@
 require("jquery-ui");
 
 module.exports = {
-/*    
-	appendsliderto: function(container) {
-		likert_slider_div(container);
-	}
-*/
-    initSlider: function(slider_div, slider_text, scale) {
-        var defaultValue = (parseInt(scale) + 1)/ 2; 
-        createSlider(slider_div, slider_text, scale, defaultValue);
-        //console.log('scale', scale);
-        sliderSetValue(slider_text, defaultValue);
+    initSlider: function(slider_div, slider_ui, slider_text, scales) {
+        createSlider(slider_div,  slider_text, scales);
+        createSliderLabels(slider_ui, scales);
     }
 }
 
-function createSlider(slider_div, slider_text, scale, defaultValue) {
-    console.log('slider_div', slider_div);
+function createSliderLabels(slider_ui, scales) {
+    var oneBig = 100 / (scales.length -1);
+
+    $.each(scales, function(key, value) {
+        var w = oneBig;
+        if(key === 0|| key === scales.length-1) {
+            w = oneBig/2;
+        }
+        var li = $("<li style='width: " + w + "%'>" + value + "</li>");
+        slider_ui.append(li);
+    });
+}
+
+
+function createSlider(slider_div, slider_text, scales) {
+    var defaultValue = (scales.length -1) * 100 / 2;
+    sliderSetValue(slider_text, defaultValue);
+
     slider_div.slider({
-        min: 1,
-        max: scale,
-        step: 1,
+        min: 0,
+        max: 100* (scales.length -1),
         value: defaultValue,
         slide: function(event, ui) {
             sliderSetValue(slider_text, ui.value);
         },
         change: function(event, ui) {
             sliderSetValue(slider_text, ui.value);
-        }
-    })
-    .each(function() {
-        var opt = $(this).data()['ui-slider'].options;
-        //console.log('data', opt);
-
-        var vals = opt.max - opt.min;
-
-        for(var i = 0; i <= vals; i++) {
-            var el = $('<label>' + (i + opt.min) + '</label>').css('left', (i/vals*100) + '%');
-            $(this).append(el);
         }
     });
 }

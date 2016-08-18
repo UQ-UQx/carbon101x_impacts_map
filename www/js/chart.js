@@ -1,9 +1,11 @@
 //require("dimple-js");
 
 module.exports = {
-	appendchartto: function(container, data) {
+	appendchartto: function(container_id, data) {
 		//histo_chart_div(container, data);
-		console.log('chart ...');
+		console.log('chart ...', container_id, data);
+
+		//var svg = dimple.newSvg('')
 	}
 }
 

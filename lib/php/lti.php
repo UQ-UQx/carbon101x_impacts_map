@@ -150,13 +150,13 @@ class Lti {
 		    'oauth_signature'=>'dSffHcwBbfyR01HQloYJIQRu9T0',
 		    'lti_message_type'=>'basic-lti-launch-request',
 		    'oauth_callback'=>'about:blank',
-            'custom_activity_id' => -1,
+            'custom_activity_id' => 8,
 		);
 		
 		// For testing
-	    $this->ltivars['custom_activity_id'] = 5;
+	    $this->ltivars['custom_activity_id'] = 8;
 	    $this->ltivars['roles'] = 'Student';
-	    $this->ltivars['user_id'] = 101;	    
+	    $this->ltivars['user_id'] = 103;	    
 	}
 	
 }

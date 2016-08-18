@@ -10,9 +10,9 @@
 				'Title' => isset($_POST['activity-title']) ? $_POST['activity-title'] : '',
 				'IntroText' => isset($_POST['activity-intro']) ? $_POST['activity-intro'] : '',
 				'Question1' => $_POST['activity-q1'],
-				'Question1Scale' => $_POST['activity-q1scale'],
+				'Question1ScaleLabels' => $_POST['activity-q1scale'],
 				'Question2' => $_POST['activity-q2'],
-				'Question2Scale' => $_POST['activity-q2scale'],
+				'Question2ScaleLabels' => $_POST['activity-q2scale'],
 				'SPText' => isset($_POST['activity-sptext']) ? $_POST['activity-sptext'] : '',
 				));
 			$insert_id = $db->id();

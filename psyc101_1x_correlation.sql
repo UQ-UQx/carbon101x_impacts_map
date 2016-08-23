@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.6.19)
 # Database: psyc101_1x
-# Generation Time: 2016-08-04 05:29:11 +0000
+# Generation Time: 2016-08-23 04:54:33 +0000
 # ************************************************************
 
 
@@ -31,9 +31,9 @@ CREATE TABLE `CorrelationActivities` (
   `Title` varchar(256) DEFAULT NULL,
   `IntroText` text,
   `Question1` text NOT NULL,
-  `Question1Scale` int(11) unsigned NOT NULL,
+  `Question1ScaleLabels` varchar(256) NOT NULL DEFAULT '',
   `Question2` text NOT NULL,
-  `Question2Scale` int(11) unsigned NOT NULL,
+  `Question2ScaleLabels` varchar(256) NOT NULL DEFAULT '',
   `SPText` text,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
@@ -47,6 +47,7 @@ DROP TABLE IF EXISTS `CorrelationStudentInput`;
 
 CREATE TABLE `CorrelationStudentInput` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `edx_userid` varchar(256) NOT NULL,
   `ActivityID` int(11) unsigned NOT NULL,
   `Question1Response` int(11) NOT NULL,
   `Question2Response` int(11) NOT NULL,

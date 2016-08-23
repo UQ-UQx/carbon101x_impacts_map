@@ -65,8 +65,8 @@ $(document).ready(function(){
 		    	$('.student-display-div').css('display', 'none');        		
         	}
         	else {
-				var chartDiv = $('.chart-div');
-		    	charts.appendchartto(chartDiv, response['all_inputs']);
+				//var chartDiv = $('.chart-div');
+		    	charts.appendchartto('#chart_div', response['all_inputs']);
 		    	$('.student-input-div').css('display', 'none');
 		    	$('.student-warning-div').css('display', 'none');
 		    	$('.student-display-div').css('display', 'block');

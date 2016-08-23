@@ -22,7 +22,7 @@ function scatterplot_chart_div(container_id, data) {
     var y = chart.addCategoryAxis("y", 'Question2Response');
     y.title = "Question 2 (units)";
 
-    var s = chart.addSeries(null, dimple.plot.buble
+    var s = chart.addSeries(null, dimple.plot.buble);
     chart.draw();
     //chart.draw(0, true);
     

@@ -18,6 +18,7 @@ class Lti {
 		}
 
 		$this->config = $config;
+		//print_r($_POST);
 		if(!empty($_POST)) {
 			$this->ltivars = $_POST;
 		}
@@ -154,9 +155,11 @@ class Lti {
 		);
 		
 		// For testing
+		/*
 	    $this->ltivars['custom_activity_id'] = 8;
 	    $this->ltivars['roles'] = 'Student';
 	    $this->ltivars['user_id'] = 103;	    
+	    */
 	}
 	
 }

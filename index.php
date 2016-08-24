@@ -25,14 +25,16 @@
     <?php 
         if($ltivars['roles'] == 'Instructor' || $ltivars['roles'] == 'Administrator') {
             $info_title = '<p class="uqx-info text-center">Staff Role</p>'; 
-            $info_message = '<p class="text-info"></p>';
+            $info_message = '<p class="text-info">You have “Staff” access to this course and can edit the text of this activity. Please view the live version and switch to a student role to view the activity as a student.</br>This LTI tool can be used and customised in multiple edX course locations. A unique activity_id is required and must be set in Custom Parameters within the Edit LTI Block screen. When creating a new Correlation activity, set the activity_id to –1 (e.g. [“activity_id=-1”]). The add/edit activity screen will be displayed where you can add a title, activity intro screen, question 1, question 1 scale labels, question 2, question 2 scale labels and scatterplot display text. Once the activity is saved a new activity_id will be displayed. The new activity_id should be updated in Custom Parameters within the Edit LTI Block screen (e.g. ["activity_id=7”]).</p>';
             echo $info_title;
             echo $info_message;
         }
     ?>
+    <?php if($ltivars['roles'] == 'Administrator') { ?>
     <dl>
       <dt>LTI Call Data</dt><dd><pre><?php print_r($ltivars);?></pre></dd>
     </dl>
+    <?php } ?>
     <div class="container">
         <?php   if($warning_msg != "") { ?>
         <!-- warning-div -->
@@ -69,7 +71,7 @@
                 Question 2 Scale Labels ( input as ---, ---, --- ):<br>
                 <input type='text' id='add-activity-q2scale' name='activity-q2scale' size='80' required><br><br>
 
-                Scatterplot diplay text:<br>
+                Scatterplot Display Text:<br>
                 <textarea id='add-activity-sptext' name='activity-sptext' rows='10' cols='80'></textarea><br>
 
                 <input type='submit' value='Save' class="btn btn-primary">
@@ -94,15 +96,15 @@
 
                 Question 1:<br>
                 <textarea id='edit-activity-q1' name='activity-q1' rows='10' cols='80' required><?php echo $activity->Question1; ?></textarea><br>
-                Question 1 Scale ( input as ---, ---, --- ):<br>
+                Question 1 Scale Labels ( input as ---, ---, --- ):<br>
                 <input type='text' id='edit-activity-q1scale' name='activity-q1scale' size='80' value='<?php echo $activity->Question1ScaleLabels; ?>' required><br><br>
 
                 Question 2:<br>
                 <textarea id='edit-activity-q2' name='activity-q2' rows='10' cols='80' required><?php echo $activity->Question2; ?></textarea><br>
-                Question 2 Scale  ( input as ---, ---, --- ):<br>
+                Question 2 Scale Labels ( input as ---, ---, --- ):<br>
                 <input type='text' id='edit-activity-q2scale' name='activity-q2scale' size='80' value='<?php echo $activity->Question2ScaleLabels; ?>' required><br><br>
 
-                Scatterplot diplay text:<br>
+                Scatterplot Display Text:<br>
                 <textarea id='edit-activity-sptext' name='activity-sptext' rows='10' cols='80'><?php echo $activity->SPText; ?></textarea><br>
 
                 <input type='submit' value='Save' class="btn btn-primary">
@@ -119,8 +121,7 @@
         <div id="student-div">
             <div class="student-warning-div" style='display:none'>
                 <div  class="row">
-                    <div class="col-md-12" id="student-warning">
-                    </div>
+                    <div class="col-md-12" id="student-warning"></div>
                 </div>
             </div>
 
@@ -164,8 +165,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class='col-md-12 chart-div' id='chart_div'>
-                    </div>
+                    <div class='col-xs-12 col-md-10 col-md-offset-1 chart-container' id='chart_div'></div>
                 </div>
             </div>
 

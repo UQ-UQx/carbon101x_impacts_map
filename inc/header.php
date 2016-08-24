@@ -8,8 +8,8 @@
 <script src="//localhost:35729/livereload.js"></script>
 <!-- Remove this livereload line on production -->
 
-<base href="/PSYC101.1x_Correlation/" />
-<!-- <base href="/psyc101/1x/PSYC101.1x_poll/" /> -->
+<!-- <base href="/PSYC101.1x_Correlation/" /> -->
+<base href="/psyc101/1x/PSYC101.1x_Correlation/" />
 <script src="lib/js/d3.min.js"></script>
 <script src="lib/js/dimple.min.js"></script>
 	

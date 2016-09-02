@@ -2,6 +2,7 @@
 // Along with helpers such as mathJS and underscoreJS
 global.$ = global.jQuery = require("jquery");
 global.math = require('mathjs');
+//global.d3 = require("d3");
 global._ = require("underscore");
 
 // Any special library you want to use can be installed through npm and imported into the specifc files.
@@ -10,12 +11,13 @@ require('bootstrap');
 require('twbs-pagination');
 require("blueimp-file-upload");
 require("jquery-knob");
-//require("jquery-validation");
 
 // Files that you create can also be included in any JS file, 
 // however their path has to be specified as they are not part of NPM
 
 $(document).ready(function(){
+
+    var map = new Datamap({element: document.getElementById('fordatamaps')});
 
 
 });

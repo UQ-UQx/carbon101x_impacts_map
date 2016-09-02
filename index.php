@@ -3,7 +3,7 @@
 ?>
 <script type="text/javascript">
     var ltivars = <?php echo json_encode($ltivars); ?>;
-    var activity = <?php echo json_encode($activity); ?>;
+    //var activity = <?php echo json_encode($activity); ?>;
     var studentInput = <?php echo json_encode($student_input); ?>;
 </script>
 
@@ -19,6 +19,9 @@
     <dl>
       <dt>LTI Call Data</dt><dd><pre><?php print_r($ltivars);?></pre></dd>
     </dl>
+
+    <div class="ford3"></div>
+    <div id="fordatamaps" style="position: relative; width: 500px; height: 300px;"></div>
 </div>
 <script type="text/javascript" src="build/js/app.js"></script>
 </body>

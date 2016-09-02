@@ -9,13 +9,13 @@
 <!-- Remove this livereload line on production -->
 
 <!-- Input the base path here -->
-<!-- <base href="/psyc101/1x/PSYC101.1x_Correlation/" /> -->
-<script src="lib/js/d3.min.js"></script>
-<script src="lib/js/dimple.min.js"></script>
-	
+<base href="/carbon101x/carbon101x_impacts_map/" />
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
+<script src="node_modules/datamaps/dist/datamaps.world.min.js"></script>
+
 <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css"></link>
 <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css"></link>
-<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 
 
 <link rel="stylesheet" type="text/css" href="build/css/app.min.css"></link>

@@ -10,14 +10,36 @@ global._ = require("underscore");
 require('bootstrap');
 require('twbs-pagination');
 require("blueimp-file-upload");
-require("jquery-knob");
+//require("juqery-ui");
+//var mouse = require("jquery-ui/ui/widgets/mouse");
+//var slider = require("jquery-ui/ui/widgets/slider");
 
 // Files that you create can also be included in any JS file, 
 // however their path has to be specified as they are not part of NPM
+//var risks = require('./key_risks.js');
 
 $(document).ready(function(){
 
-    var map = new Datamap({element: document.getElementById('fordatamaps')});
+    var map = new Datamap({
+    	element: document.getElementById('fordatamaps'),    	
+    	//scope: 'aus'
+    	fills: {
+	    	defaultFill: 'rgba(23,48,210,0.9)'
+    	}
+	});
+
+	$('#forui').slider();
+
+	//risks.initRisks();
+
+		//$("input[type='radio']").checkboxradio();
+		/*
+		$(".risks").controlgroup({
+			direction: "vertical"
+		});*/
+		
+
+
 
 
 });

@@ -20,8 +20,112 @@
       <dt>LTI Call Data</dt><dd><pre><?php print_r($ltivars);?></pre></dd>
     </dl>
 
-    <div class="ford3"></div>
     <div id="fordatamaps" style="position: relative; width: 500px; height: 300px;"></div>
+
+    <div id="key_impacts_risks">
+        <h4>Key Impact Risks</h4>
+        <div class="risks">
+            <div class="radio">
+                <label><input type="radio" name="risk" id="risk-productivity" value="productivity">Reduced crop productivity</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="risk" id="risk-livestock" value="livestock">Adverse effects on livestock</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="risk" id="risk-fisheries" value="fisheries">Loss of fisheries</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="risk" id="risk-undernutrition" value="undernutrition">Undernutrition</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="risk" id="risk-waterscarcity" value="waterscarcity">Water scarcity</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="risk" id="risk-disease" value="disease">Disease</label>
+            </div>
+        </div>
+    </div>
+
+    <div id="risk_level">
+        <h4>Risk level:</h4>
+        <div class="list-group">
+            <div class="list-group-item row">
+                <div class="col-xs-2 level-label">Present</div>
+                <div class="col-xs-10 ">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" id="present_level" aria-valuemin="0" aria-valuemax="10"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group-item row">
+                <div class="col-xs-2 level-label">2 &#8451; Warming</div>
+                <div class="col-xs-10">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" id="degree2_level" aria-valuemin="0" aria-valuemax="10"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="list-group-item row">
+                <div class="col-xs-2 level-label">4 &#8451; Warming</div>
+                <div class="col-xs-10">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" id="degree4_level" aria-valuemin="0" aria-valuemax="10"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="risk_details">
+        <div class="details_title">
+            <img src="Assets/Africa/biodiversity-loss.png" id="title_img" class="img-responsive img-circle title_img ">
+            <h4 id="title_text" class="title_text">Title</h4>
+        </div>
+        <div class="details_drivers">
+            <div class="drivers_title">
+                <h5>Climatic drivers:</h5>
+            </div>
+            <div class="driver_img_container">
+                <div class="driver_img_div">
+                    <img src="Assets/Climate drivers/cyclones.png" class="driver_img">
+                    <span class="driver_tooltip">Tooltip texttttt</span>
+                </div>
+                <div class="driver_img_div">
+                    <img src="Assets/Climate drivers/drying-trend.png" class="driver_img">
+                    <span class="driver_tooltip">Tooltip text</span>
+                </div>
+                <div class="driver_img_div">
+                    <img src="Assets/Climate drivers/precipitation.png" class="driver_img">
+                    <span class="driver_tooltip">Tooltip text</span>
+                </div>
+            </div>
+        </div>
+        <div class="details_facts">
+            <h5>Key facts:</h5>
+            <ul>
+                <li>Cras justo odio</li>
+                <li>Dapibus ac facilisis in</li>
+                <li>Morbi leo risus</li>
+                <li>Porta ac consectetur ac</li>
+                <li>Vestibulum at eros</li>
+            </ul>       
+        </div>
+        <div class="details_sources">
+            <h5>Sources:</h5>
+            <ol>
+                <li>Cras justo odio</li>
+                <li>Dapibus ac facilisis in</li>
+                <li>Morbi leo risus</li>
+                <li>Porta ac consectetur ac</li>
+                <li>Vestibulum at eros</li>
+            </ol>
+        </div>
+    </div>
+
+
+    <div id="forui"></div>
+
+
 </div>
 <script type="text/javascript" src="build/js/app.js"></script>
 </body>

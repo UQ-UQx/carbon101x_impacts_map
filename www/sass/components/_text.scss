@@ -1,0 +1,25 @@
+/* title for Risk details */
+.title_text {
+	text-decoration: underline;
+}
+
+/* tooltip for Climatic drivers images */
+.driver_img_div .driver_tooltip {
+	visibility: hidden;
+	background-color: #777;
+	color: #fff;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0;
+
+	position: absolute;
+	z-index: 1;
+}
+
+.driver_img_div:hover .driver_tooltip {
+	visibility: visible;
+}
+
+h5 {
+	color: #325B7F !important;  
+}

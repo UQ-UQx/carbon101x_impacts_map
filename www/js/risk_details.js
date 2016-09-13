@@ -8,32 +8,49 @@ var risk_details = [
 			{
 				'id': 'productivity',
 				'name': 'Reduced crop productivity',
-				'level': [
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				],
-				'icon': '',
+				'level': {
+					'present': 2,
+					'degree2': 4,
+					'degree4': 6
+				},
+				'icon': 'disease.png',
 				'climatic_drivers': [
 					{
-						'title': '',
-						'img_file': '', 
+						'title': 'Drying trend',
+						'img_file': 'drying-trend.png', 
+					},
+					{
+						'title': 'Precipitation',
+						'img_file': 'precipitation.png', 
+					},
+					{
+						'title': 'Cyclone',
+						'img_file': 'cyclones.png', 
 					}
 				],
 				'key_facts':[
+					'Cras justo odio',
+					'Dapibus ac facilisis in',
+					'Morbi leo risus',
+					'Porta ac consectetur ac',
+					'Vestibulum at eros'
 				],
 				'sources': [
+					'Dapibus ac facilisis in',
+					'Morbi leo risus',
+					'Porta ac consectetur ac',
+					'Vestibulum at eros'
 				] 
 			},
 			//Risk: Adverse effects on livestock
 			{
 				'id': 'livestock',
 				'name': 'Adverse effects on livestock',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -50,11 +67,11 @@ var risk_details = [
 			{
 				'id': 'fisheries',
 				'name': 'Loss of fisheries',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -71,11 +88,11 @@ var risk_details = [
 			{
 				'id': 'undernutrition',
 				'name': 'Undernutrition',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -92,11 +109,11 @@ var risk_details = [
 			{
 				'id': 'waterscarcity',
 				'name': 'Water scarcity',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -113,11 +130,11 @@ var risk_details = [
 			{
 				'id': 'disease',
 				'name': 'Disease',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -141,11 +158,11 @@ var risk_details = [
 			{
 				'id': 'productivity',
 				'name': 'Reduced crop productivity',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -162,11 +179,11 @@ var risk_details = [
 			{
 				'id': 'livestock',
 				'name': 'Adverse effects on livestock',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -183,11 +200,11 @@ var risk_details = [
 			{
 				'id': 'fisheries',
 				'name': 'Loss of fisheries',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -204,11 +221,11 @@ var risk_details = [
 			{
 				'id': 'undernutrition',
 				'name': 'Undernutrition',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -225,11 +242,11 @@ var risk_details = [
 			{
 				'id': 'waterscarcity',
 				'name': 'Water scarcity',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -246,11 +263,11 @@ var risk_details = [
 			{
 				'id': 'disease',
 				'name': 'Disease',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -274,11 +291,11 @@ var risk_details = [
 			{
 				'id': 'productivity',
 				'name': 'Reduced crop productivity',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -295,11 +312,11 @@ var risk_details = [
 			{
 				'id': 'livestock',
 				'name': 'Adverse effects on livestock',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -316,11 +333,11 @@ var risk_details = [
 			{
 				'id': 'fisheries',
 				'name': 'Loss of fisheries',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -337,11 +354,11 @@ var risk_details = [
 			{
 				'id': 'undernutrition',
 				'name': 'Undernutrition',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -358,11 +375,11 @@ var risk_details = [
 			{
 				'id': 'waterscarcity',
 				'name': 'Water scarcity',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -379,11 +396,11 @@ var risk_details = [
 			{
 				'id': 'disease',
 				'name': 'Disease',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -407,11 +424,11 @@ var risk_details = [
 			{
 				'id': 'productivity',
 				'name': 'Reduced crop productivity',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -428,11 +445,11 @@ var risk_details = [
 			{
 				'id': 'livestock',
 				'name': 'Adverse effects on livestock',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -449,11 +466,11 @@ var risk_details = [
 			{
 				'id': 'fisheries',
 				'name': 'Loss of fisheries',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -470,11 +487,11 @@ var risk_details = [
 			{
 				'id': 'undernutrition',
 				'name': 'Undernutrition',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -491,11 +508,11 @@ var risk_details = [
 			{
 				'id': 'waterscarcity',
 				'name': 'Water scarcity',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -512,11 +529,11 @@ var risk_details = [
 			{
 				'id': 'disease',
 				'name': 'Disease',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -540,11 +557,11 @@ var risk_details = [
 			{
 				'id': 'productivity',
 				'name': 'Reduced crop productivity',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -561,11 +578,11 @@ var risk_details = [
 			{
 				'id': 'livestock',
 				'name': 'Adverse effects on livestock',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -582,11 +599,11 @@ var risk_details = [
 			{
 				'id': 'fisheries',
 				'name': 'Loss of fisheries',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -603,11 +620,11 @@ var risk_details = [
 			{
 				'id': 'undernutrition',
 				'name': 'Undernutrition',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -624,11 +641,11 @@ var risk_details = [
 			{
 				'id': 'waterscarcity',
 				'name': 'Water scarcity',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -645,11 +662,11 @@ var risk_details = [
 			{
 				'id': 'disease',
 				'name': 'Disease',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -673,11 +690,11 @@ var risk_details = [
 			{
 				'id': 'productivity',
 				'name': 'Reduced crop productivity',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -694,11 +711,11 @@ var risk_details = [
 			{
 				'id': 'livestock',
 				'name': 'Adverse effects on livestock',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -715,11 +732,11 @@ var risk_details = [
 			{
 				'id': 'fisheries',
 				'name': 'Loss of fisheries',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -736,11 +753,11 @@ var risk_details = [
 			{
 				'id': 'undernutrition',
 				'name': 'Undernutrition',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -757,11 +774,11 @@ var risk_details = [
 			{
 				'id': 'waterscarcity',
 				'name': 'Water scarcity',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -778,11 +795,11 @@ var risk_details = [
 			{
 				'id': 'disease',
 				'name': 'Disease',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -806,11 +823,11 @@ var risk_details = [
 			{
 				'id': 'productivity',
 				'name': 'Reduced crop productivity',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -827,11 +844,11 @@ var risk_details = [
 			{
 				'id': 'livestock',
 				'name': 'Adverse effects on livestock',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -848,11 +865,11 @@ var risk_details = [
 			{
 				'id': 'fisheries',
 				'name': 'Loss of fisheries',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -869,11 +886,11 @@ var risk_details = [
 			{
 				'id': 'undernutrition',
 				'name': 'Undernutrition',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -890,11 +907,11 @@ var risk_details = [
 			{
 				'id': 'waterscarcity',
 				'name': 'Water scarcity',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -911,11 +928,11 @@ var risk_details = [
 			{
 				'id': 'disease',
 				'name': 'Disease',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -939,11 +956,11 @@ var risk_details = [
 			{
 				'id': 'productivity',
 				'name': 'Reduced crop productivity',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -960,11 +977,11 @@ var risk_details = [
 			{
 				'id': 'livestock',
 				'name': 'Adverse effects on livestock',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -981,11 +998,11 @@ var risk_details = [
 			{
 				'id': 'fisheries',
 				'name': 'Loss of fisheries',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -1002,11 +1019,11 @@ var risk_details = [
 			{
 				'id': 'undernutrition',
 				'name': 'Undernutrition',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -1023,11 +1040,11 @@ var risk_details = [
 			{
 				'id': 'waterscarcity',
 				'name': 'Water scarcity',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -1044,11 +1061,11 @@ var risk_details = [
 			{
 				'id': 'disease',
 				'name': 'Disease',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -1072,11 +1089,11 @@ var risk_details = [
 			{
 				'id': 'productivity',
 				'name': 'Reduced crop productivity',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -1093,11 +1110,11 @@ var risk_details = [
 			{
 				'id': 'livestock',
 				'name': 'Adverse effects on livestock',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -1114,11 +1131,11 @@ var risk_details = [
 			{
 				'id': 'fisheries',
 				'name': 'Loss of fisheries',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -1135,11 +1152,11 @@ var risk_details = [
 			{
 				'id': 'undernutrition',
 				'name': 'Undernutrition',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -1156,11 +1173,11 @@ var risk_details = [
 			{
 				'id': 'waterscarcity',
 				'name': 'Water scarcity',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{
@@ -1177,11 +1194,11 @@ var risk_details = [
 			{
 				'id': 'disease',
 				'name': 'Disease',
-				'level': [
+				'level': {
 					'present': 0,
 					'degree2': 0,
 					'degree4': 0
-				],
+				},
 				'icon': '',
 				'climatic_drivers': [
 					{

@@ -8,16 +8,20 @@
 <script src="//localhost:35729/livereload.js"></script>
 <!-- Remove this livereload line on production -->
 
-<!-- Input the base path here -->
-<base href="/carbon101x/carbon101x_impacts_map/" />
+<!-- Datamaps -->
 <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
 <script src="node_modules/datamaps/dist/datamaps.world.min.js"></script>
 <script src="node_modules/datamaps/dist/datamaps.all.min.js"></script>
 
+<!-- Input the base path here -->
+<base href="/carbon101x/carbon101x_impacts_map/" />
+
+<!-- Risks Data-->
+<script src="www/js/risk_details.js"></script>
+
 <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css"></link>
 <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css"></link>
-<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
 
 
 

@@ -3,8 +3,6 @@
 ?>
 <script type="text/javascript">
     var ltivars = <?php echo json_encode($ltivars); ?>;
-    //var activity = <?php echo json_encode($activity); ?>;
-    var studentInput = <?php echo json_encode($student_input); ?>;
 </script>
 
 </head>
@@ -22,27 +20,9 @@
 
     <div id="fordatamaps" style="position: relative; width: 500px; height: 300px;"></div>
 
-    <div id="key_impacts_risks">
+    <div id="key_impact_risks">
         <h4>Key Impact Risks</h4>
         <div class="risks">
-            <div class="radio">
-                <label><input type="radio" name="risk" id="risk-productivity" value="productivity">Reduced crop productivity</label>
-            </div>
-            <div class="radio">
-                <label><input type="radio" name="risk" id="risk-livestock" value="livestock">Adverse effects on livestock</label>
-            </div>
-            <div class="radio">
-                <label><input type="radio" name="risk" id="risk-fisheries" value="fisheries">Loss of fisheries</label>
-            </div>
-            <div class="radio">
-                <label><input type="radio" name="risk" id="risk-undernutrition" value="undernutrition">Undernutrition</label>
-            </div>
-            <div class="radio">
-                <label><input type="radio" name="risk" id="risk-waterscarcity" value="waterscarcity">Water scarcity</label>
-            </div>
-            <div class="radio">
-                <label><input type="radio" name="risk" id="risk-disease" value="disease">Disease</label>
-            </div>
         </div>
     </div>
 
@@ -78,46 +58,24 @@
 
     <div id="risk_details">
         <div class="details_title">
-            <img src="Assets/Africa/biodiversity-loss.png" id="title_img" class="img-responsive img-circle title_img ">
-            <h4 id="title_text" class="title_text">Title</h4>
+            <img src="" id="title_img" class="img-responsive img-circle title_img" alt="">
+            <h4 id="title_text" class="title_text"></h4>
         </div>
         <div class="details_drivers">
             <div class="drivers_title">
                 <h5>Climatic drivers:</h5>
             </div>
             <div class="driver_img_container">
-                <div class="driver_img_div">
-                    <img src="Assets/Climate drivers/cyclones.png" class="driver_img">
-                    <span class="driver_tooltip">Tooltip texttttt</span>
-                </div>
-                <div class="driver_img_div">
-                    <img src="Assets/Climate drivers/drying-trend.png" class="driver_img">
-                    <span class="driver_tooltip">Tooltip text</span>
-                </div>
-                <div class="driver_img_div">
-                    <img src="Assets/Climate drivers/precipitation.png" class="driver_img">
-                    <span class="driver_tooltip">Tooltip text</span>
-                </div>
             </div>
         </div>
         <div class="details_facts">
             <h5>Key facts:</h5>
             <ul>
-                <li>Cras justo odio</li>
-                <li>Dapibus ac facilisis in</li>
-                <li>Morbi leo risus</li>
-                <li>Porta ac consectetur ac</li>
-                <li>Vestibulum at eros</li>
             </ul>       
         </div>
         <div class="details_sources">
             <h5>Sources:</h5>
             <ol>
-                <li>Cras justo odio</li>
-                <li>Dapibus ac facilisis in</li>
-                <li>Morbi leo risus</li>
-                <li>Porta ac consectetur ac</li>
-                <li>Vestibulum at eros</li>
             </ol>
         </div>
     </div>

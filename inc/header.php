@@ -8,11 +8,12 @@
 <script src="//localhost:35729/livereload.js"></script>
 <!-- Remove this livereload line on production -->
 
-<!-- Datamaps -->
+<!-- Datamaps 
 <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
 <script src="node_modules/datamaps/dist/datamaps.world.min.js"></script>
 <script src="node_modules/datamaps/dist/datamaps.all.min.js"></script>
+-->
 
 <!-- Input the base path here -->
 <base href="/carbon101x/carbon101x_impacts_map/" />

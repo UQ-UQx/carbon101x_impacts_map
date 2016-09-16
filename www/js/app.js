@@ -2,7 +2,7 @@
 // Along with helpers such as mathJS and underscoreJS
 global.$ = global.jQuery = require("jquery");
 global.math = require('mathjs');
-//global.d3 = require("d3");
+global.d3 = require("d3");
 global._ = require("underscore");
 
 // Any special library you want to use can be installed through npm and imported into the specifc files.
@@ -10,9 +10,8 @@ global._ = require("underscore");
 require('bootstrap');
 require('twbs-pagination');
 require("blueimp-file-upload");
-//require("juqery-ui");
-//var mouse = require("jquery-ui/ui/widgets/mouse");
-//var slider = require("jquery-ui/ui/widgets/slider");
+var myp = require("d3-geo-projection");
+var topojson = require('topojson');
 
 // Files that you create can also be included in any JS file, 
 // however their path has to be specified as they are not part of NPM
@@ -23,7 +22,24 @@ $(document).ready(function(){
 	var region_name, impact_risks;
 	console.log('a', region_name, 'b', impact_risks);
 
-	
+	var path = d3.geoPath();
+	var projection = myp.geoAitoff();
+	path.area();
+
+
+	/*
+	d3.select("#fordatamaps").append("h1")
+    .text("Hello, world!")
+    .style("text-align", "center")
+    .style("line-height", "320px")
+    .style("font-size", "100px")
+    .style("transform", "rotate(-180deg) scale(0.001, 0.001)")
+ 	.transition()
+    .duration(1500)
+    .style("transform", null);
+	*/
+
+	/*
     var map = new Datamap({
     	element: document.getElementById('fordatamaps'),    	
     	//scope: 'aus'
@@ -31,7 +47,7 @@ $(document).ready(function(){
 	    	defaultFill: 'rgba(23,48,210,0.9)'
     	}
 	});
-	
+	*/
 	
     $('.risks').on("change", ".radio input[type='radio']", function() {
     	var risk_id = $(this).val();

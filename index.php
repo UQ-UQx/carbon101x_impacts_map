@@ -18,7 +18,7 @@
       <dt>LTI Call Data</dt><dd><pre><?php print_r($ltivars);?></pre></dd>
     </dl>
 
-    <div id="fordatamaps" style="position: relative; width: 500px; height: 300px;"></div>
+    <div id="fordatamaps" style="position: relative; width: 600px; height: 300px;"></div>
 
     <div id="key_impact_risks">
         <h4>Key Impact Risks</h4>

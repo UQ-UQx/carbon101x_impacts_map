@@ -8,28 +8,8 @@
 <script src="//localhost:35729/livereload.js"></script>
 <!-- Remove this livereload line on production -->
 
-<!-- Datamaps
-<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
-<script src="node_modules/datamaps/dist/datamaps.world.min.js"></script>
-<script src="node_modules/datamaps/dist/datamaps.all.min.js"></script>
--->
-
 <!-- Input the base path here -->
 <base href="/carbon101x/carbon101x_impacts_map/" />
-
-<!-- Temp Fix until Browserify Works -->
-<script src="node_modules/jquery/dist/jquery.min.js"></script>
-<!--
-Note: Loading from Node Modules is not importing a version of d3 that can detect events
-<script src="node_modules/d3/build/d3.min.js"></script>
-<script src="node_modules/d3-geo-projection/build/d3-geo-projection.min.js"></script>
-<script src="node_modules/topojson/build/topojson.min.js"></script>
--->
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script src="http://d3js.org/topojson.v1.min.js"></script>
-<script src="http://d3js.org/d3.geo.projection.v0.min.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
 <!-- Risks Data-->
 <script src="www/js/risk_details.js"></script>

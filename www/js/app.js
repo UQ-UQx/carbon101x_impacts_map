@@ -1,8 +1,8 @@
 // As JQuery will be used for majority of our JS code, you can attach it to the global scope
 // Along with helpers such as mathJS and underscoreJS
-//global.$ = global.jQuery = require("jquery");
+global.$ = global.jQuery = require("jquery");
 //global.math = require('mathjs');
-//global.d3 = require("d3");
+global.d3 = require("d3");
 //global._ = require("underscore");
 
 // Any special library you want to use can be installed through npm and imported into the specifc files.
@@ -10,55 +10,20 @@
 //require('bootstrap');
 //require('twbs-pagination');
 //require("blueimp-file-upload");
-//var d3_geoprojection = require("d3-geo-projection");
-//var topojson = require('topojson');
+var d3_geo = require("d3-geo");
+var d3_geoprojection = require("d3-geo-projection");
+var topojson = require('topojson');
 
 // Files that you create can also be included in any JS file,
 // however their path has to be specified as they are not part of NPM
 //var risks = require('./key_risks.js');
 
 $(document).ready(function(){
-console.log("Doc ready");
 	var region_name, impact_risks;
 	console.log('a', region_name, 'b', impact_risks);
 
-	var width = 600,
-	    height = 300;
-
-var svg = d3.select("#fordatamaps").append("svg")
-      .attr("width", width)
-      .attr("height", height);
-
-
-	console.log('svg', svg);
-
-
-    var rect = svg.append('rect').attr('x', 10).attr('y', 10).attr('width', 50).attr('height', 100).style("fill","transparent");
-
-    svg.on({'click':function(){
-    	console.log('click');
-    }});
-
-
-    /*
-    var svg1 = $('svg');
-    console.log('svg1', svg1);
-    svg1.on({
-    	"click": function() {
-    		console.log('abc');
-    	},
-    });
-
-
-    rect.on("click": function() {
-          	console.log('click');
-	});
-	*/
-
-	/*
-
-	*/
-
+	var map_div = $('#worldmap');
+	make_map(map_div);
 
 
 
@@ -173,3 +138,59 @@ var svg = d3.select("#fordatamaps").append("svg")
 		return null;
 	}
 });
+
+function make_map(map_div) {
+
+	var width = map_div.width();
+	var height = Math.round(width/960*611);
+
+	var svg = d3.select("#worldmap").append("svg")
+			.attr("width", width)
+			.attr("height", height);
+
+	var projection = d3_geoprojection.geoCylindricalStereographic().scale(100).translate([width/2, height/2]);
+	var path = d3_geo.geoPath().projection(projection);
+	var graticule = d3_geo.geoGraticule();
+
+	svg.append("path")
+		.datum(graticule)
+		.attr('id', 'graticule')
+		.attr('d', path);
+
+	var regions;
+	d3.json("Assets/region-geo.json", function(error, world) {
+		if(error) {
+			console.log(error);
+		}
+	  var countries = topojson.feature(world, world.objects.countries);
+
+	  //feature collections only have type, id, and name so i would not sitck properties in there but i dont think its invalid!
+	  //http://geojson.org/geojson-spec.html#introduction
+	  var asia = {type: "FeatureCollection", name: "Asia", color: "#ffbb78", id:1, features: countries.features.filter(function(d) { return d.properties.continent=="Asia"; })};
+	  var africa = {type: "FeatureCollection", name: "Africa", color: "#2ca02c", id:2, features: countries.features.filter(function(d) { return d.properties.continent=="Africa"; })};
+	  var europe = {type: "FeatureCollection", name: "Europe", color: "#ff7f0e", id:3, features: countries.features.filter(function(d) { return d.properties.continent=="Europe"; })};
+	  var na = {type: "FeatureCollection", name: "North America", color: "#1f77b4", id:4, features: countries.features.filter(function(d) { return d.properties.continent=="North America"; })};
+	  var sa = {type: "FeatureCollection", name: "South America", color: "#d62728", id:5, features: countries.features.filter(function(d) { return d.properties.continent=="South America"; })};
+	  var antarctica = {type: "FeatureCollection", name: "Antarctica", color: "#98df8a", id:6, features: countries.features.filter(function(d) { return d.properties.continent=="Antarctica"; })};
+	  var oceania = {type: "FeatureCollection", name: "Oceania", color: "#aec7e8", id:7, features: countries.features.filter(function(d) { return d.properties.continent=="Oceania"; })};
+	  var sevenseas = {type: "FeatureCollection", name: "Small Islands", color: "#fffff", id:8, features: countries.features.filter(function(d) { return d.properties.continent=="Seven seas (open ocean)"; })};
+
+	  regions = [asia,africa,europe,na,sa,antarctica,oceania,sevenseas];
+
+	  var regions = svg.selectAll(".regions").data(regions);
+
+	  regions.enter().insert("path")
+	      .attr("class", "regions")
+	      .attr("d", path)
+	      .attr("id", function(d,i) { return d.id; })
+	      .attr("title", function(d,i) { return d.name; })
+	      .style("fill", function(d,i) { return d.color; });
+	});
+
+	svg.on({
+          "mousemove": function() {
+            console.log('move');
+          },
+        });
+
+}

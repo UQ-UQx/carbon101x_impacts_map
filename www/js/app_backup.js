@@ -25,42 +25,81 @@ $(document).ready(function(){
 	var width = 600,
 	    height = 300;
 
-var svg = d3.select("#fordatamaps").append("svg")
-      .attr("width", width)
-      .attr("height", height);
+	var projection = d3_geoprojection.geoCylindricalStereographic().scale(80).translate([width/2, height/2]);
+
+	var path = d3.geoPath().projection(projection);
+
+	var graticule = d3.geoGraticule();
+
+	var svg = d3.select('#fordatamaps').append('svg')
+			.attr("width", width)
+			.attr("height", height);
+
+	svg.append('path')
+		.datum(graticule)
+		.attr('id', 'graticule')
+		.attr('d', path);
+
+	svg.on({
+          "mousemove": function() {
+          	console.log('move');
+            var mouse = d3.mouse(svg.node());
+            tooltip.classed("hidden", false).attr("style", "left:"+(mouse[0]+50)+"px;top:"+(mouse[1]+50)+"px").html("Sea");
+          },
+          "mouseout":  function() { tooltip.classed("hidden", true); },
+          "click":  function() { alert("Clicked! Sea"); },
+        });
 
 
-	console.log('svg', svg);
+	var tooltip = d3.select("fordatamaps").append("div").attr("class", "tooltip hidden");
 
+	var continents;
 
-    var rect = svg.append('rect').attr('x', 10).attr('y', 10).attr('width', 50).attr('height', 100).style("fill","transparent");
+	d3.json("Assets/continent-geo.json", function(error, world) {
+		if(error) return console.error(error);
 
-    svg.on({'click':function(){
-    	console.log('click');
-    }});
-	
+	  console.log('world', world);
+	  var countries = topojson.feature(world, world.objects.countries);
+	  console.log('countries', countries);
 
-    /*
-    var svg1 = $('svg');
-    console.log('svg1', svg1);
-    svg1.on({
-    	"click": function() {
-    		console.log('abc');
-    	},
-    });
+	  //feature collections only have type, id, and name so i would not sitck properties in there but i dont think its invalid!
+	  //http://geojson.org/geojson-spec.html#introduction
+	  var asia = {type: "FeatureCollection", name: "Asia", color: "#ffbb78", id:1, features: countries.features.filter(function(d) { return d.properties.continent=="Asia"; })};
+	  var africa = {type: "FeatureCollection", name: "Africa", color: "#2ca02c", id:2, features: countries.features.filter(function(d) { return d.properties.continent=="Africa"; })};
+	  var europe = {type: "FeatureCollection", name: "Europe", color: "#ff7f0e", id:3, features: countries.features.filter(function(d) { return d.properties.continent=="Europe"; })};
+	  var na = {type: "FeatureCollection", name: "North America", color: "#1f77b4", id:4, features: countries.features.filter(function(d) { return d.properties.continent=="North America"; })};
+	  var sa = {type: "FeatureCollection", name: "South America", color: "#d62728", id:5, features: countries.features.filter(function(d) { return d.properties.continent=="South America"; })};
+	  var antarctica = {type: "FeatureCollection", name: "Antarctica", color: "#98df8a", id:6, features: countries.features.filter(function(d) { return d.properties.continent=="Antarctica"; })};
+	  var oceania = {type: "FeatureCollection", name: "Oceania", color: "#aec7e8", id:7, features: countries.features.filter(function(d) { return d.properties.continent=="Oceania"; })};
+	  var sevenseas = {type: "FeatureCollection", name: "Small Islands", color: "#ffbb78", id:8, features: countries.features.filter(function(d) { return d.properties.continent=="Seven seas (open ocean)"; })};
 
-    
-    rect.on("click": function() {
-          	console.log('click'); 
+	  continents = [asia,africa,europe,na,sa,antarctica,oceania,sevenseas];
+
+	  //var continent = g.selectAll(".continent").data(continents);
+	  var continent = svg.selectAll(".continent").data(continents);
+
+	  continent.enter().insert("path")
+	      .attr("class", "continent")
+	      .attr("d", path)
+	      .attr("id", function(d,i) { return d.id; })
+	      .attr("title", function(d,i) { return d.name; })
+	      .style("fill", function(d,i) { return d.color; });
+
+	  continent
+	    .on("mousemove", function(d,i) {
+	      var mouse = d3.mouse(svg.node()).map( function(d) { return parseInt(d); } );
+	        tooltip
+	          .classed("hidden", false)
+	          .attr("style", "left:"+(mouse[0]+50)+"px;top:"+(mouse[1]+50)+"px")
+	          .html(d.name);
+	          d3.event.stopPropagation();
+	      })
+	      .on("mouseout",  function(d,i) {
+	        tooltip.classed("hidden", true);
+	        d3.event.stopPropagation();
+	      })
+	      .on('click', function(d,i){ alert('Clicked!: ' + d['name'] ); d3.event.stopPropagation(); });
 	});
-	*/
-
-	/*
-	
-	*/
-
-
-
 	
     $('.risks').on("change", ".radio input[type='radio']", function() {
     	var risk_id = $(this).val();

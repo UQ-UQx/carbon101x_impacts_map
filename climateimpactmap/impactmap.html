@@ -74,6 +74,7 @@ svg.append("path")
 
 svg.on({
           "mousemove": function() {
+            console.log('move');
             var mouse = d3.mouse(svg.node());
             tooltip.classed("hidden", false).attr("style", "left:"+(mouse[0]+50)+"px;top:"+(mouse[1]+50)+"px").html("Sea");
           },
@@ -98,7 +99,7 @@ d3.json("continent-geo.json", function(error, world) {
   var sa = {type: "FeatureCollection", name: "South America", color: "#d62728", id:5, features: countries.features.filter(function(d) { return d.properties.continent=="South America"; })};
   var antarctica = {type: "FeatureCollection", name: "Antarctica", color: "#98df8a", id:6, features: countries.features.filter(function(d) { return d.properties.continent=="Antarctica"; })};
   var oceania = {type: "FeatureCollection", name: "Oceania", color: "#aec7e8", id:7, features: countries.features.filter(function(d) { return d.properties.continent=="Oceania"; })};
-  var sevenseas = {type: "FeatureCollection", name: "Small Islands", color: "#ffbb78", id:8, features: countries.features.filter(function(d) { return d.properties.continent=="Seven seas (open ocean)"; })};
+  var sevenseas = {type: "FeatureCollection", name: "Small Islands", color: "#fffff", id:8, features: countries.features.filter(function(d) { return d.properties.continent=="Seven seas (open ocean)"; })};
 
   continents = [asia,africa,europe,na,sa,antarctica,oceania,sevenseas];
 

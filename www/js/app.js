@@ -22,8 +22,9 @@ $(document).ready(function(){
 	var region_name, impact_risks;
 	console.log('a', region_name, 'b', impact_risks);
 
-	var map_div = $('#worldmap');
-	make_map(map_div);
+	//var map_div = $('#worldmap');
+	make_map('#worldmap', 'large');
+	make_map('#smallmap', 'small');
 
 
 
@@ -139,16 +140,23 @@ $(document).ready(function(){
 	}
 });
 
-function make_map(map_div) {
+function make_map(map_div, option) {
 
-	var width = map_div.width();
+	var width = $(map_div).width();
 	var height = Math.round(width/960*611);
 
-	var svg = d3.select("#worldmap").append("svg")
+	var svg = d3.select(map_div).append("svg")
 			.attr("width", width)
 			.attr("height", height);
 
-	var projection = d3_geoprojection.geoCylindricalStereographic().scale(100).translate([width/2, height/2]);
+    var scale;
+	if(option =='large') {
+		scale = 180;
+	}
+	if(option == 'small') {
+		scale = 55;
+	}
+	var projection = d3_geoprojection.geoCylindricalStereographic().scale(scale).translate([width/2, height/2]);
 	var path = d3_geo.geoPath().projection(projection);
 	var graticule = d3_geo.geoGraticule();
 
@@ -157,7 +165,7 @@ function make_map(map_div) {
 		.attr('id', 'graticule')
 		.attr('d', path);
 
-	var regions;
+	var regions, region;
 	d3.json("Assets/region-geo.json", function(error, world) {
 		if(error) {
 			console.log(error);
@@ -177,20 +185,40 @@ function make_map(map_div) {
 
 	  regions = [asia,africa,europe,na,sa,antarctica,oceania,sevenseas];
 
-	  var regions = svg.selectAll(".regions").data(regions);
+	  region = svg.selectAll(".regions").data(regions);
 
-	  regions.enter().insert("path")
+	  region.enter().insert("path")
 	      .attr("class", "regions")
 	      .attr("d", path)
 	      .attr("id", function(d,i) { return d.id; })
 	      .attr("title", function(d,i) { return d.name; })
 	      .style("fill", function(d,i) { return d.color; });
+
+		if(option=='large') {
+			var tooltip = d3.select(map_div).append("div").attr("class", "tooltip hidden");
+			svg.on({
+		          "mousemove": function() {
+		            console.log('move');
+		            var mouse = d3.mouse(svg.node());
+		            tooltip.classed("hidden", false).attr("style", "left:"+(mouse[0]+50)+"px;top:"+(mouse[1]+50)+"px").html("Sea");
+		          },
+		          "mouseout":  function() { tooltip.classed("hidden", true); },
+		          "click":  function() { alert("Clicked! Sea"); },
+		        });
+			region.on("mousemove", function(d,i) {
+			      var mouse = d3.mouse(svg.node()).map( function(d) { return parseInt(d); } );
+			        tooltip
+			          .classed("hidden", false)
+			          .attr("style", "left:"+(mouse[0]+50)+"px;top:"+(mouse[1]+50)+"px")
+			          .html(d.name);
+			          d3.event.stopPropagation();
+			      })
+			      .on("mouseout",  function(d,i) {
+			        tooltip.classed("hidden", true);
+			        d3.event.stopPropagation();
+			      })
+			      .on('click', function(d,i){ alert('Clicked!: ' + d['name'] ); d3.event.stopPropagation(); });
+		}
 	});
-
-	svg.on({
-          "mousemove": function() {
-            console.log('move');
-          },
-        });
-
 }
+

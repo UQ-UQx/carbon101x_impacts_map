@@ -1,4 +1,4 @@
-<?php 
+<?php
     session_start();
 ?>
 <!DOCTYPE html>
@@ -8,7 +8,7 @@
 <script src="//localhost:35729/livereload.js"></script>
 <!-- Remove this livereload line on production -->
 
-<!-- Datamaps 
+<!-- Datamaps
 <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/topojson/1.6.9/topojson.min.js"></script>
 <script src="node_modules/datamaps/dist/datamaps.world.min.js"></script>
@@ -18,15 +18,26 @@
 <!-- Input the base path here -->
 <base href="/carbon101x/carbon101x_impacts_map/" />
 
+<!-- Temp Fix until Browserify Works -->
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<!--
+Note: Loading from Node Modules is not importing a version of d3 that can detect events
+<script src="node_modules/d3/build/d3.min.js"></script>
+<script src="node_modules/d3-geo-projection/build/d3-geo-projection.min.js"></script>
+<script src="node_modules/topojson/build/topojson.min.js"></script>
+-->
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="http://d3js.org/d3.geo.projection.v0.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
 <!-- Risks Data-->
 <script src="www/js/risk_details.js"></script>
 
-<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css"></link>
-<link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css"></link>
+<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
 
-
-
-<link rel="stylesheet" type="text/css" href="build/css/app.min.css"></link>
+<link rel="stylesheet" type="text/css" href="build/css/app.min.css">
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -65,23 +76,5 @@
 		catch (Exception $e) {
 			$warning_msg .= '<p>' . $e->getMessage() . '</p>';
 		}
-	}	
-?>
-	
-<?php
-	$dev_message = '<p class="uqx-danger text-center">Dev Version - 
-					  DO NOT USE IN COURSES - contact UQx Technical Team</p>';
-
-	$valid_message = '<p class="uqx-valid text-center">LTI Valid</p>';
-
-	$invalid_message = '<p class="uqx-invalid text-center">LTI Invalid 
-						- contact UQx Technical Team</p>';
-
-	echo $dev_message;
-	if($lti_valid) {
-		echo $valid_message;
-	} else {
-		echo $invalid_message;
-		//die();
 	}
 ?>

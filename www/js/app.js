@@ -1,24 +1,24 @@
 // As JQuery will be used for majority of our JS code, you can attach it to the global scope
 // Along with helpers such as mathJS and underscoreJS
-global.$ = global.jQuery = require("jquery");
-global.math = require('mathjs');
-global.d3 = require("d3");
-global._ = require("underscore");
+//global.$ = global.jQuery = require("jquery");
+//global.math = require('mathjs');
+//global.d3 = require("d3");
+//global._ = require("underscore");
 
 // Any special library you want to use can be installed through npm and imported into the specifc files.
 // Most of these may not need variables attached in order to use them, see their documentation.
-require('bootstrap');
-require('twbs-pagination');
-require("blueimp-file-upload");
-var d3_geoprojection = require("d3-geo-projection");
-var topojson = require('topojson');
+//require('bootstrap');
+//require('twbs-pagination');
+//require("blueimp-file-upload");
+//var d3_geoprojection = require("d3-geo-projection");
+//var topojson = require('topojson');
 
-// Files that you create can also be included in any JS file, 
+// Files that you create can also be included in any JS file,
 // however their path has to be specified as they are not part of NPM
 //var risks = require('./key_risks.js');
 
 $(document).ready(function(){
-
+console.log("Doc ready");
 	var region_name, impact_risks;
 	console.log('a', region_name, 'b', impact_risks);
 
@@ -38,7 +38,7 @@ var svg = d3.select("#fordatamaps").append("svg")
     svg.on({'click':function(){
     	console.log('click');
     }});
-	
+
 
     /*
     var svg1 = $('svg');
@@ -49,19 +49,19 @@ var svg = d3.select("#fordatamaps").append("svg")
     	},
     });
 
-    
+
     rect.on("click": function() {
-          	console.log('click'); 
+          	console.log('click');
 	});
 	*/
 
 	/*
-	
+
 	*/
 
 
 
-	
+
     $('.risks').on("change", ".radio input[type='radio']", function() {
     	var risk_id = $(this).val();
     	console.log('changed ', risk_id);
@@ -118,15 +118,15 @@ var svg = d3.select("#fordatamaps").append("svg")
 		//Init risk_level
 		//Present
 		var present_value = risk_info['level']['present'];
-		var present_width = (present_value * 10) + '%'; 
+		var present_width = (present_value * 10) + '%';
 		$('#present_level').attr('aria-valuenow', present_value).css('width', present_width);
 		//Degree 2
 		var degree2_value = risk_info['level']['degree2'];
-		var degree2_width = (degree2_value * 10) + '%'; 
+		var degree2_width = (degree2_value * 10) + '%';
 		$('#degree2_level').attr('aria-valuenow', degree2_value).css('width', degree2_width);
 		//Degree 4
 		var degree4_value = risk_info['level']['degree4'];
-		var degree4_width = (degree4_value * 10) + '%'; 
+		var degree4_width = (degree4_value * 10) + '%';
 		$('#degree4_level').attr('aria-valuenow', degree4_value).css('width', degree4_width);
 
 		//Init risk_details
@@ -154,7 +154,7 @@ var svg = d3.select("#fordatamaps").append("svg")
 		for(var i = 0; i < risk_info['key_facts'].length; i++) {
 			var fact_item = $('<li>' + risk_info['key_facts'][i] + '</li>');
 			$('.details_facts ul').append(fact_item);
-		} 
+		}
 		//Detail sources
 		$('.details_facts ol').empty();
 		for(var i = 0; i < risk_info['sources'].length; i++) {
@@ -167,10 +167,9 @@ var svg = d3.select("#fordatamaps").append("svg")
 	function get_risk_info(risk_id) {
 		for(var i = 0; i < impact_risks.length; i++) {
 			if(impact_risks[i]['id'] == risk_id) {
-				return impact_risks[i]; 
+				return impact_risks[i];
 			}
 		}
 		return null;
 	}
 });
-

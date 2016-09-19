@@ -418,7 +418,7 @@ var risk_details = [
 	//Australia
 	{
 		'code': '',
-		'name': 'Australia',
+		'name': 'Australasia',
 		'risks': [
 			//Risk: Reduced crop productivity
 			{

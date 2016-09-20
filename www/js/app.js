@@ -161,6 +161,29 @@ $(document).ready(function(){
 		return null;
 	}
 
+	//Calculate highlight color
+	function highlight_color(hex, lum) {
+		// validate hex string
+		hex = String(hex).replace(/[^0-9a-f]/gi, '');
+		if (hex.length < 6) {
+			hex = hex[0]+hex[0]+hex[1]+hex[1]+hex[2]+hex[2];
+		}
+		lum = lum || 0;
+
+		// convert to decimal and change luminosity
+		var rgb = "#", c, i;
+		for (i = 0; i < 3; i++) {
+			c = parseInt(hex.substr(i*2,2), 16);
+			c = Math.round(Math.min(Math.max(0, c + (c * lum)), 255)).toString(16);
+			rgb += ("00"+c).substr(c.length);
+		}
+
+		return rgb;
+
+	}
+
+
+	// Draw map
 	function make_map(map_div, option) {
 
 		var width = $(map_div).width();
@@ -201,27 +224,72 @@ $(document).ready(function(){
 		  var na = {type: "FeatureCollection", name: "North America", color: "#1f77b4", id:4, features: countries.features.filter(function(d) { return d.properties.continent=="North America"; })};
 		  var sa = {type: "FeatureCollection", name: "Central and South America", color: "#d62728", id:5, features: countries.features.filter(function(d) { return d.properties.continent=="South America"; })};
 		  var antarctica = {type: "FeatureCollection", name: "Polar Regions", color: "#98df8a", id:6, features: countries.features.filter(function(d) { return d.properties.continent=="Antarctica"; })};
-		  var oceania = {type: "FeatureCollection", name: "Australasia", color: "#aec7e8", id:7, features: countries.features.filter(function(d) { return d.properties.continent=="Oceania"; })};
-		  var sevenseas = {type: "FeatureCollection", name: "Small Islands", color: "#fffff", id:8, features: countries.features.filter(function(d) { return d.properties.continent=="Seven seas (open ocean)"; })};
+		  var greenland =  {type: "FeatureCollection", name: "Polar Regions", color: "#98df8a", id:7, features: countries.features.filter(function(d) { return d.properties.continent=="Polar Regions"; })};
+		  var australasia = {type: "FeatureCollection", name: "Australasia", color: "#D2B48C", id:8, features: countries.features.filter(function(d) { return d.properties.continent=="Oceania"; })};
+		  var ocean = {type: "FeatureCollection", name: "The Ocean", color: "#f0f8ff", id:9, features: countries.features.filter(function(d) { return d.properties.continent=="Seven seas (open ocean)"; })};
 
-		  regions = [asia,africa,europe,na,sa,antarctica,oceania,sevenseas];
+		  regions = [asia, africa, europe, na, sa, antarctica, greenland, australasia, ocean];
 
 		  region = svg.selectAll(".regions").data(regions);
 
-		  region.enter().insert("path")
+		  //Insert path
+		  var insertregion = region.enter().insert("path")
 		      .attr("class", "regions")
 		      .attr("d", path)
 		      .attr("id", function(d,i) { return d.id; })
 		      .attr("title", function(d,i) { return d.name; })
 		      .style("fill", function(d,i) { return d.color; });
 
+		   	
 			if(option=='large') {
+			  //Insert region name
+				svg.selectAll(".region-label").data(regions)
+					.enter()
+					.append("text")
+			  	.attr("class", 'region-label')
+			  	.attr("transform", function(d) {
+			  		var centroid = path.centroid(d);
+			  		console.log('Centroid at 0: ' + centroid[0] + ', ' + centroid[1]);
+			  		return "translate(" + centroid + ")"; })
+			  	.attr('dy', ".35em")
+			  	.text(function(d) {
+			  		console.log('name', d.name);
+			  		return d.name; });
+
+			  //Insert Textbox for small islands
+			   var smallIslands = [{name: "Small Islands"}];
+			   var small_island = svg.selectAll('g.smallislands')
+			   		.data(smallIslands)
+			   		.enter().append("g")
+			   		.attr("class", "smallislands")
+			   		.attr("transform", function() {
+			   			return "translate(" + width*0.05 + "," + height*0.7 + ")";
+			   		}); 		   	
+			   	small_island.append("rect")
+			   		.attr("class", "smallislands_box")
+			   		.attr("width", width * 0.15)
+			   		.attr("height", height * 0.12);
+			   	small_island.append("text")
+			   		.attr("class", 'region-label')
+			   		.attr("x", width * 0.15/2 )
+			   		.attr("y", height * 0.12/2)
+			   		.attr("dy", ".35em")
+			   		.text(function(d) {
+			   			return d.name; });
+
+
 				var tooltip = d3.select(map_div).append("div").attr("class", "tooltip hidden");
 				svg.on({
+					/*	
 			          "mousemove": function() {
 			            console.log('move');
 			            var mouse = d3.mouse(svg.node());
 			            tooltip.classed("hidden", false).attr("style", "left:"+(mouse[0]+50)+"px;top:"+(mouse[1]+50)+"px").html("Sea");
+			          },
+			        */
+			          "mouseover": function() {
+			          	console.log('mouseover sea' );
+			          	//svg.classed("active", true);
 			          },
 			          "mouseout":  function() { tooltip.classed("hidden", true); },
 			          "click":  function() { 
@@ -229,6 +297,14 @@ $(document).ready(function(){
 			          	large_map_clicked('The Ocean'); 
 			          },
 			        });
+				region.on({
+					"mouseover": function(d, i) {
+						console.log('mouseover' + d.name);
+						d3.event.stopPropagation();
+					},
+
+				});
+				/*
 				region.on("mousemove", function(d,i) {
 				      var mouse = d3.mouse(svg.node()).map( function(d) { return parseInt(d); } );
 				        tooltip
@@ -245,9 +321,12 @@ $(document).ready(function(){
 				      	large_map_clicked(d['name']);
 				       	d3.event.stopPropagation(); 
 				   });
+				*/
+				small_island.on();
 			}
 		});
 	}
+
 
 });
 

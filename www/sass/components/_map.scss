@@ -5,27 +5,8 @@
   stroke-opacity: .5;
 }
 
-svg {
-	background: #F0F8FF;
-}
-
-svg.active {
-  background: SteelBlue;
-}
-
 .hidden {
   display: none;
-}
-
-div.tooltip {
-  color: #222;
-  background: #fff;
-  padding: .5em;
-  text-shadow: #f5f5f5 0 1px 0;
-  border-radius: 2px;
-  box-shadow: 0px 0px 2px 0px #a6a6a6;
-  opacity: 0.9;
-  position: absolute;
 }
 
 .region-label {
@@ -37,6 +18,74 @@ div.tooltip {
 }
 
 .smallislands_box {
-  fill:   #aec7e8;
+  fill: #aec7e8;
   fill-opacity: .7;
+  &:hover{
+    fill: #87CEFA;
+  }
 }
+
+.asia {
+  fill: #ffbb78;
+  &:hover{
+    fill: rgb(255, 240, 154);
+  }
+}
+
+.africa {
+  fill: #2ca02c;
+  &:hover{
+    fill: rgb(56,205,56);
+  }
+}
+
+.europe {
+  fill: #ff7f0e;
+  &:hover{
+    fill: rgb(255,163,38);
+  }
+}
+
+.na {
+  fill: #1f77b4;
+  &:hover{
+    fill: rgb(39, 152, 231);
+  }
+}
+
+.sa {
+  fill: #d62728;
+  &:hover{
+    fill: rgb(255,50,51);
+  }
+}
+
+.polar {
+  fill: #98df8a;
+  &:hover{
+    fill: rgb(195,255,177);
+  }
+}
+
+.australasia {
+  fill: #DDA0DD;
+  &:hover{
+    fill: rgb(255,205,255);
+  }
+}
+
+.svgrect {
+  fill: #F0F8FF;
+  &:hover{
+    fill: #E0FFFF;
+  }
+}
+
+/*
+.africa {
+  fill: ;
+  &:hover{
+    fill: rgb(,,);
+  }
+}
+*/

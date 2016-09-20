@@ -16,10 +16,16 @@
 }
 
 #key_impact_risks {
-	background: Azure;
+	background: rgb(245, 245, 245);
 }
+
 
 div.active {
 	background: SteelBlue;
 	color: white;
+}
+
+
+#risk_details {
+	border-style: solid;
 }

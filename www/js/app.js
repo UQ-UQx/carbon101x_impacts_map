@@ -20,13 +20,10 @@ var topojson = require('topojson');
 
 $(document).ready(function(){
 	var region_name, impact_risks;
-	console.log('a', region_name, 'b', impact_risks);
 
 	//var map_div = $('#worldmap');
 	make_map('#worldmap', 'large');
 	make_map('#smallmap', 'small');
-
-
 
 
     $('.risks').on("change", ".radio input[type='radio']", function() {
@@ -47,12 +44,11 @@ $(document).ready(function(){
     	$('#worldmap').removeClass('hidden');
     });
 
-
-    //region_name = 'Africa';
-
-	function large_map_clicked(region) {
-		console.log('large_map_clicked', region);
+	function large_map_clicked(region, color) {
+		console.log('large_map_clicked', region, color);
 		region_name = region;
+
+		$('#risk_details').css('border-color', color);
 
 		$('#worldmap').addClass('hidden');
 		$('#smallmap').removeClass('hidden');
@@ -67,7 +63,6 @@ $(document).ready(function(){
 		}
 	}
 
-
 	function get_impact_risks(region_name) {
 		var impact_risks = null;
 
@@ -81,8 +76,6 @@ $(document).ready(function(){
 	}
 
 	function init_risks(impact_risks) {
-		console.log('init_risks', impact_risks);
-
 		var risks_div = $('div.risks');
 
 		//Empty risks_div
@@ -101,7 +94,6 @@ $(document).ready(function(){
 
 	function init_risk_info(risk_id) {
 		var risk_info = get_risk_info(risk_id);
-		console.log('risk info', risk_info);
 
 		//Init risk_level
 		//Present
@@ -118,7 +110,6 @@ $(document).ready(function(){
 		$('#degree4_level').attr('aria-valuenow', degree4_value).css('width', degree4_width);
 
 		//Init risk_details
-		//var basepath = 'Assets/' + region_name + '/';
 		//Detail title
 		var title_img = 'Assets/' + region_name + '/' + risk_info['icon'];
 		$('#title_img').attr('src', title_img);
@@ -146,7 +137,6 @@ $(document).ready(function(){
 		//Detail sources
 		$('.details_facts ol').empty();
 		for(var i = 0; i < risk_info['sources'].length; i++) {
-			//console.log(risk_info['sources'][i]);
 			var source_item = $('<li>' + risk_info['sources'][i] + '</li>');
 			$('.details_sources ol').append(source_item);
 		}
@@ -161,28 +151,6 @@ $(document).ready(function(){
 		return null;
 	}
 
-	//Calculate highlight color
-	function highlight_color(hex, lum) {
-		// validate hex string
-		hex = String(hex).replace(/[^0-9a-f]/gi, '');
-		if (hex.length < 6) {
-			hex = hex[0]+hex[0]+hex[1]+hex[1]+hex[2]+hex[2];
-		}
-		lum = lum || 0;
-
-		// convert to decimal and change luminosity
-		var rgb = "#", c, i;
-		for (i = 0; i < 3; i++) {
-			c = parseInt(hex.substr(i*2,2), 16);
-			c = Math.round(Math.min(Math.max(0, c + (c * lum)), 255)).toString(16);
-			rgb += ("00"+c).substr(c.length);
-		}
-
-		return rgb;
-
-	}
-
-
 	// Draw map
 	function make_map(map_div, option) {
 
@@ -192,6 +160,11 @@ $(document).ready(function(){
 		var svg = d3.select(map_div).append("svg")
 				.attr("width", width)
 				.attr("height", height);
+
+		var svgrect = svg.append("rect")
+				.attr("class", "svgrect")
+				.attr("width", "100%")
+				.attr("height", "100%");
 
 	    var scale;
 		if(option =='large') {
@@ -214,32 +187,37 @@ $(document).ready(function(){
 			if(error) {
 				console.log(error);
 			}
-		  var countries = topojson.feature(world, world.objects.countries);
+		var countries = topojson.feature(world, world.objects.countries);
 
-		  //feature collections only have type, id, and name so i would not sitck properties in there but i dont think its invalid!
-		  //http://geojson.org/geojson-spec.html#introduction
-		  var asia = {type: "FeatureCollection", name: "Asia", color: "#ffbb78", id:1, features: countries.features.filter(function(d) { return d.properties.continent=="Asia"; })};
-		  var africa = {type: "FeatureCollection", name: "Africa", color: "#2ca02c", id:2, features: countries.features.filter(function(d) { return d.properties.continent=="Africa"; })};
-		  var europe = {type: "FeatureCollection", name: "Europe", color: "#ff7f0e", id:3, features: countries.features.filter(function(d) { return d.properties.continent=="Europe"; })};
-		  var na = {type: "FeatureCollection", name: "North America", color: "#1f77b4", id:4, features: countries.features.filter(function(d) { return d.properties.continent=="North America"; })};
-		  var sa = {type: "FeatureCollection", name: "Central and South America", color: "#d62728", id:5, features: countries.features.filter(function(d) { return d.properties.continent=="South America"; })};
-		  var antarctica = {type: "FeatureCollection", name: "Polar Regions", color: "#98df8a", id:6, features: countries.features.filter(function(d) { return d.properties.continent=="Antarctica"; })};
-		  var greenland =  {type: "FeatureCollection", name: "Polar Regions", color: "#98df8a", id:7, features: countries.features.filter(function(d) { return d.properties.continent=="Polar Regions"; })};
-		  var australasia = {type: "FeatureCollection", name: "Australasia", color: "#D2B48C", id:8, features: countries.features.filter(function(d) { return d.properties.continent=="Oceania"; })};
-		  var ocean = {type: "FeatureCollection", name: "The Ocean", color: "#f0f8ff", id:9, features: countries.features.filter(function(d) { return d.properties.continent=="Seven seas (open ocean)"; })};
+		var asia = {type: "FeatureCollection", name: "Asia", id:1, clsname: "asia",
+		  			features: countries.features.filter(function(d) { return d.properties.continent=="Asia"; })};
+		var africa = {type: "FeatureCollection", name: "Africa", id:2, clsname: "africa",
+					features: countries.features.filter(function(d) { return d.properties.continent=="Africa"; })};
+		var europe = {type: "FeatureCollection", name: "Europe", id:3, clsname: "europe",
+					features: countries.features.filter(function(d) { return d.properties.continent=="Europe"; })};
+		var na = {type: "FeatureCollection", name: "North America", id:4, clsname: "na",
+					features: countries.features.filter(function(d) { return d.properties.continent=="North America"; })};
+		var sa = {type: "FeatureCollection", name: "Central and South America", id:5, clsname: "sa", 
+					features: countries.features.filter(function(d) { return d.properties.continent=="South America"; })};
+		var antarctica = {type: "FeatureCollection", name: "Polar Regions", id:6, clsname: "polar",
+					features: countries.features.filter(function(d) { return d.properties.continent=="Antarctica"; })};
+		var greenland =  {type: "FeatureCollection", name: "Polar Regions", id:7, clsname: "polar",
+					features: countries.features.filter(function(d) { return d.properties.continent=="Polar Regions"; })};
+		var australasia = {type: "FeatureCollection", name: "Australasia", id:8, clsname: "australasia",
+					features: countries.features.filter(function(d) { return d.properties.continent=="Oceania"; })};
+		var ocean = {type: "FeatureCollection", name: "The Ocean", id:9, clsname: "svgrect",
+					features: countries.features.filter(function(d) { return d.properties.continent=="Seven seas (open ocean)"; })};
 
-		  regions = [asia, africa, europe, na, sa, antarctica, greenland, australasia, ocean];
+		regions = [asia, africa, europe, na, sa, antarctica, greenland, australasia, ocean];	
 
-		  region = svg.selectAll(".regions").data(regions);
+		region = svg.selectAll(".regions").data(regions);
 
-		  //Insert path
-		  var insertregion = region.enter().insert("path")
-		      .attr("class", "regions")
-		      .attr("d", path)
-		      .attr("id", function(d,i) { return d.id; })
-		      .attr("title", function(d,i) { return d.name; })
-		      .style("fill", function(d,i) { return d.color; });
-
+		//Insert path
+		var insertregion = region.enter().insert("path")
+			.attr("class", function(d,i) { return "regions " + d.clsname; })
+			.attr("d", path)
+			.attr("id", function(d,i) { return d.id; })
+			.attr("title", function(d,i) { return d.name; });
 		   	
 			if(option=='large') {
 			  //Insert region name
@@ -249,11 +227,9 @@ $(document).ready(function(){
 			  	.attr("class", 'region-label')
 			  	.attr("transform", function(d) {
 			  		var centroid = path.centroid(d);
-			  		console.log('Centroid at 0: ' + centroid[0] + ', ' + centroid[1]);
 			  		return "translate(" + centroid + ")"; })
 			  	.attr('dy', ".35em")
 			  	.text(function(d) {
-			  		console.log('name', d.name);
 			  		return d.name; });
 
 			  //Insert Textbox for small islands
@@ -265,68 +241,44 @@ $(document).ready(function(){
 			   		.attr("transform", function() {
 			   			return "translate(" + width*0.05 + "," + height*0.7 + ")";
 			   		}); 		   	
-			   	small_island.append("rect")
+			   	var small_island_box = small_island.append("rect")
 			   		.attr("class", "smallislands_box")
 			   		.attr("width", width * 0.15)
 			   		.attr("height", height * 0.12);
-			   	small_island.append("text")
+			   	var small_island_text = small_island.append("text")
 			   		.attr("class", 'region-label')
 			   		.attr("x", width * 0.15/2 )
 			   		.attr("y", height * 0.12/2)
 			   		.attr("dy", ".35em")
-			   		.text(function(d) {
-			   			return d.name; });
+			   		.text(function(d) { return d.name; });
 
-
-				var tooltip = d3.select(map_div).append("div").attr("class", "tooltip hidden");
 				svg.on({
-					/*	
-			          "mousemove": function() {
-			            console.log('move');
-			            var mouse = d3.mouse(svg.node());
-			            tooltip.classed("hidden", false).attr("style", "left:"+(mouse[0]+50)+"px;top:"+(mouse[1]+50)+"px").html("Sea");
-			          },
-			        */
-			          "mouseover": function() {
-			          	console.log('mouseover sea' );
-			          	//svg.classed("active", true);
-			          },
-			          "mouseout":  function() { tooltip.classed("hidden", true); },
-			          "click":  function() { 
-			          	//alert("Clicked! Sea");
-			          	large_map_clicked('The Ocean'); 
+			          "click":  function() {
+			          	var color = d3.select(svgrect[0][0]).style('fill');
+			          	//var lighter_color = d3.rgb(color).brighter().toString();
+			          	large_map_clicked('The Ocean', color); 
 			          },
 			        });
 				region.on({
-					"mouseover": function(d, i) {
-						console.log('mouseover' + d.name);
-						d3.event.stopPropagation();
-					},
-
+					  "click": function(d, i) {
+					  	var color = d3.select(region[0][i]).style('fill');
+			          	//var lighter_color = d3.rgb(color).brighter(2).toString();
+					  	large_map_clicked(d['name'], color);
+					  	d3.event.stopPropagation();
+					  }, 
 				});
-				/*
-				region.on("mousemove", function(d,i) {
-				      var mouse = d3.mouse(svg.node()).map( function(d) { return parseInt(d); } );
-				        tooltip
-				          .classed("hidden", false)
-				          .attr("style", "left:"+(mouse[0]+50)+"px;top:"+(mouse[1]+50)+"px")
-				          .html(d.name);
-				          d3.event.stopPropagation();
-				      })
-				      .on("mouseout",  function(d,i) {
-				        tooltip.classed("hidden", true);
-				        d3.event.stopPropagation();
-				      })
-				      .on('click', function(d,i){
-				      	large_map_clicked(d['name']);
-				       	d3.event.stopPropagation(); 
-				   });
-				*/
-				small_island.on();
+				small_island_box.on({
+					  "click": function(d, i) {
+					  	console.log(d);
+					  	var color = d3.select(small_island_box[0][i]).style("fill");
+			          	//var lighter_color = d3.rgb(color).brighter().toString();
+					  	large_map_clicked(d.name, color);
+					  	d3.event.stopPropagation();
+					  }, 
+				});
 			}
 		});
 	}
-
 
 });
 

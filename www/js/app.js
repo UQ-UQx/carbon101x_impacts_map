@@ -22,8 +22,8 @@ $(document).ready(function(){
 	var region_name, impact_risks;
 
 	//var map_div = $('#worldmap');
-	make_map('#worldmap', 'large');
-	make_map('#smallmap', 'small');
+	make_large_map('#worldmap', 'large');
+	//make_map('#smallmap', 'small');
 
 
     $('.risks').on("change", ".radio input[type='radio']", function() {
@@ -52,6 +52,7 @@ $(document).ready(function(){
 
 		$('#worldmap').addClass('hidden');
 		$('#smallmap').removeClass('hidden');
+		make_small_map('#smallmap', region, color);
 		$('#key_impact_risks').removeClass('hidden');
 	
 		impact_risks = get_impact_risks(region_name);
@@ -151,8 +152,8 @@ $(document).ready(function(){
 		return null;
 	}
 
-	// Draw map
-	function make_map(map_div, option) {
+	// Draw large map
+	function make_large_map(map_div) {
 
 		var width = $(map_div).width();
 		var height = Math.round(width/960*611);
@@ -166,13 +167,7 @@ $(document).ready(function(){
 				.attr("width", "100%")
 				.attr("height", "100%");
 
-	    var scale;
-		if(option =='large') {
-			scale = 180;
-		}
-		if(option == 'small') {
-			scale = 55;
-		}
+	    var scale = 180;
 		var projection = d3_geoprojection.geoCylindricalStereographic().scale(scale).translate([width/2, height/2]);
 		var path = d3_geo.geoPath().projection(projection);
 		var graticule = d3_geo.geoGraticule();
@@ -187,97 +182,199 @@ $(document).ready(function(){
 			if(error) {
 				console.log(error);
 			}
-		var countries = topojson.feature(world, world.objects.countries);
+			var countries = topojson.feature(world, world.objects.countries);
 
-		var asia = {type: "FeatureCollection", name: "Asia", id:1, clsname: "asia",
-		  			features: countries.features.filter(function(d) { return d.properties.continent=="Asia"; })};
-		var africa = {type: "FeatureCollection", name: "Africa", id:2, clsname: "africa",
-					features: countries.features.filter(function(d) { return d.properties.continent=="Africa"; })};
-		var europe = {type: "FeatureCollection", name: "Europe", id:3, clsname: "europe",
-					features: countries.features.filter(function(d) { return d.properties.continent=="Europe"; })};
-		var na = {type: "FeatureCollection", name: "North America", id:4, clsname: "na",
-					features: countries.features.filter(function(d) { return d.properties.continent=="North America"; })};
-		var sa = {type: "FeatureCollection", name: "Central and South America", id:5, clsname: "sa", 
-					features: countries.features.filter(function(d) { return d.properties.continent=="South America"; })};
-		var antarctica = {type: "FeatureCollection", name: "Polar Regions", id:6, clsname: "polar",
-					features: countries.features.filter(function(d) { return d.properties.continent=="Antarctica"; })};
-		var greenland =  {type: "FeatureCollection", name: "Polar Regions", id:7, clsname: "polar",
-					features: countries.features.filter(function(d) { return d.properties.continent=="Polar Regions"; })};
-		var australasia = {type: "FeatureCollection", name: "Australasia", id:8, clsname: "australasia",
-					features: countries.features.filter(function(d) { return d.properties.continent=="Oceania"; })};
-		var ocean = {type: "FeatureCollection", name: "The Ocean", id:9, clsname: "svgrect",
-					features: countries.features.filter(function(d) { return d.properties.continent=="Seven seas (open ocean)"; })};
+			var asia = {type: "FeatureCollection", name: "Asia", id:1, clsname: "asia",
+			  			features: countries.features.filter(function(d) { return d.properties.continent=="Asia"; })};
+			var africa = {type: "FeatureCollection", name: "Africa", id:2, clsname: "africa",
+						features: countries.features.filter(function(d) { return d.properties.continent=="Africa"; })};
+			var europe = {type: "FeatureCollection", name: "Europe", id:3, clsname: "europe",
+						features: countries.features.filter(function(d) { return d.properties.continent=="Europe"; })};
+			var na = {type: "FeatureCollection", name: "North America", id:4, clsname: "na",
+						features: countries.features.filter(function(d) { return d.properties.continent=="North America"; })};
+			var sa = {type: "FeatureCollection", name: "Central and South America", id:5, clsname: "sa", 
+						features: countries.features.filter(function(d) { return d.properties.continent=="South America"; })};
+			var antarctica = {type: "FeatureCollection", name: "Polar Regions", id:6, clsname: "polar",
+						features: countries.features.filter(function(d) { return d.properties.continent=="Antarctica"; })};
+			var greenland =  {type: "FeatureCollection", name: "Polar Regions", id:7, clsname: "polar",
+						features: countries.features.filter(function(d) { return d.properties.continent=="Polar Regions"; })};
+			var australasia = {type: "FeatureCollection", name: "Australasia", id:8, clsname: "australasia",
+						features: countries.features.filter(function(d) { return d.properties.continent=="Oceania"; })};
+			var ocean = {type: "FeatureCollection", name: "The Ocean", id:9, clsname: "svgrect",
+						features: countries.features.filter(function(d) { return d.properties.continent=="Seven seas (open ocean)"; })};
 
-		regions = [asia, africa, europe, na, sa, antarctica, greenland, australasia, ocean];	
+			regions = [asia, africa, europe, na, sa, antarctica, greenland, australasia, ocean];	
 
-		region = svg.selectAll(".regions").data(regions);
+			region = svg.selectAll(".regions").data(regions);
 
-		//Insert path
-		var insertregion = region.enter().insert("path")
-			.attr("class", function(d,i) { return "regions " + d.clsname; })
-			.attr("d", path)
-			.attr("id", function(d,i) { return d.id; })
-			.attr("title", function(d,i) { return d.name; });
-		   	
-			if(option=='large') {
-			  //Insert region name
-				svg.selectAll(".region-label").data(regions)
-					.enter()
-					.append("text")
-			  	.attr("class", 'region-label')
-			  	.attr("transform", function(d) {
-			  		var centroid = path.centroid(d);
-			  		return "translate(" + centroid + ")"; })
-			  	.attr('dy', ".35em")
-			  	.text(function(d) {
-			  		return d.name; });
+			//Insert path
+			var insertregion = region.enter().insert("path")
+				.attr("class", function(d,i) { return "regions " + d.clsname; })
+				.attr("d", path)
+				.attr("id", function(d,i) { return d.id; })
+				.attr("title", function(d,i) { return d.name; });
+			   	
 
-			  //Insert Textbox for small islands
-			   var smallIslands = [{name: "Small Islands"}];
-			   var small_island = svg.selectAll('g.smallislands')
-			   		.data(smallIslands)
-			   		.enter().append("g")
-			   		.attr("class", "smallislands")
-			   		.attr("transform", function() {
-			   			return "translate(" + width*0.05 + "," + height*0.7 + ")";
-			   		}); 		   	
-			   	var small_island_box = small_island.append("rect")
-			   		.attr("class", "smallislands_box")
-			   		.attr("width", width * 0.15)
-			   		.attr("height", height * 0.12);
-			   	var small_island_text = small_island.append("text")
-			   		.attr("class", 'region-label')
-			   		.attr("x", width * 0.15/2 )
-			   		.attr("y", height * 0.12/2)
-			   		.attr("dy", ".35em")
-			   		.text(function(d) { return d.name; });
+			//Insert region name
+			svg.selectAll(".region-label").data(regions)
+				.enter()
+				.append("text")
+				.attr("class", 'region-label')
+				.attr("transform", function(d) {
+					var centroid = path.centroid(d);
+					return "translate(" + centroid + ")"; })
+				.attr('dy', ".35em")
+				.text(function(d) {
+					return d.name; });
 
-				svg.on({
-			          "click":  function() {
-			          	var color = d3.select(svgrect[0][0]).style('fill');
-			          	//var lighter_color = d3.rgb(color).brighter().toString();
-			          	large_map_clicked('The Ocean', color); 
-			          },
-			        });
-				region.on({
-					  "click": function(d, i) {
-					  	var color = d3.select(region[0][i]).style('fill');
-			          	//var lighter_color = d3.rgb(color).brighter(2).toString();
-					  	large_map_clicked(d['name'], color);
-					  	d3.event.stopPropagation();
-					  }, 
-				});
-				small_island_box.on({
-					  "click": function(d, i) {
-					  	console.log(d);
-					  	var color = d3.select(small_island_box[0][i]).style("fill");
-			          	//var lighter_color = d3.rgb(color).brighter().toString();
-					  	large_map_clicked(d.name, color);
-					  	d3.event.stopPropagation();
-					  }, 
-				});
+			//Insert Textbox for small islands
+			var smallIslands = [{name: "Small Islands"}];
+			var small_island = svg.selectAll('g.smallislands')
+					.data(smallIslands)
+					.enter().append("g")
+					.attr("class", "smallislands")
+					.attr("transform", function() {
+						return "translate(" + width*0.05 + "," + height*0.7 + ")";
+					}); 		   	
+			var small_island_box = small_island.append("rect")
+				.attr("class", "smallislands_box")
+				.attr("width", width * 0.15)
+				.attr("height", height * 0.12);
+			var small_island_text = small_island.append("text")
+				.attr("class", 'region-label')
+				.attr("x", width * 0.15/2 )
+				.attr("y", height * 0.12/2)
+				.attr("dy", ".35em")
+				.text(function(d) { return d.name; });
+
+			svg.on({
+				"click":  function() {
+					var color = d3.select(svgrect[0][0]).style('fill');
+					//var lighter_color = d3.rgb(color).brighter().toString();
+					large_map_clicked('The Ocean', color); 
+			      },
+			    });
+			region.on({
+				"click": function(d, i) {
+					var color = d3.select(region[0][i]).style('fill');
+					//var lighter_color = d3.rgb(color).brighter(2).toString();
+					large_map_clicked(d['name'], color);
+					d3.event.stopPropagation();
+				}, 
+			});
+			small_island_box.on({
+				"click": function(d, i) {
+					console.log(d);
+					var color = d3.select(small_island_box[0][i]).style("fill");
+					//var lighter_color = d3.rgb(color).brighter().toString();
+					large_map_clicked(d.name, color);
+					d3.event.stopPropagation();
+				}, 
+			});			
+		});
+	}
+
+	// Draw small map
+	function make_small_map(map_div, regionname, color) {
+		$(map_div).empty();
+
+
+		var width = $(map_div).width();
+		var height = Math.round(width/960*611);
+
+		var svg = d3.select(map_div).append("svg")
+				.attr("width", width)
+				.attr("height", height);
+
+		var svgrect = svg.append("rect")
+				.attr("class", "svgrect_small")
+				.attr("width", "100%")
+				.attr("height", "100%");
+
+		var scale = 55;
+		var projection = d3_geoprojection.geoCylindricalStereographic().scale(scale).translate([width/2, height/2]);
+		var path = d3_geo.geoPath().projection(projection);
+		var graticule = d3_geo.geoGraticule();
+
+		svg.append("path")
+			.datum(graticule)
+			.attr('id', 'graticule')
+			.attr('d', path);
+
+		var regions, region;
+		d3.json("Assets/region-geo.json", function(error, world) {
+			if(error) {
+				console.log(error);
+			}
+			var countries = topojson.feature(world, world.objects.countries);
+
+			var asia = {type: "FeatureCollection", name: "Asia", id:1, clsname: "asia_small", selected: false,
+			  			features: countries.features.filter(function(d) { return d.properties.continent=="Asia"; })};
+			var africa = {type: "FeatureCollection", name: "Africa", id:2, clsname: "africa_small", selected: false,
+						features: countries.features.filter(function(d) { return d.properties.continent=="Africa"; })};
+			var europe = {type: "FeatureCollection", name: "Europe", id:3, clsname: "europe_small", selected: false,
+						features: countries.features.filter(function(d) { return d.properties.continent=="Europe"; })};
+			var na = {type: "FeatureCollection", name: "North America", id:4, clsname: "na_small", selected: false,
+						features: countries.features.filter(function(d) { return d.properties.continent=="North America"; })};
+			var sa = {type: "FeatureCollection", name: "Central and South America", id:5, clsname: "sa_small", selected: false, 
+						features: countries.features.filter(function(d) { return d.properties.continent=="South America"; })};
+			var antarctica = {type: "FeatureCollection", name: "Polar Regions", id:6, clsname: "polar_small", selected: false,
+						features: countries.features.filter(function(d) { return d.properties.continent=="Antarctica"; })};
+			var greenland =  {type: "FeatureCollection", name: "Polar Regions", id:7, clsname: "polar_small", selected: false,
+						features: countries.features.filter(function(d) { return d.properties.continent=="Polar Regions"; })};
+			var australasia = {type: "FeatureCollection", name: "Australasia", id:8, clsname: "australasia_small", selected: false,
+						features: countries.features.filter(function(d) { return d.properties.continent=="Oceania"; })};
+			var ocean = {type: "FeatureCollection", name: "The Ocean", id:9, clsname: "svgrect_small", selected: false,
+						features: countries.features.filter(function(d) { return d.properties.continent=="Seven seas (open ocean)"; })};
+
+			regions = [asia, africa, europe, na, sa, antarctica, greenland, australasia, ocean];	
+
+			region = svg.selectAll(".regions").data(regions);
+
+			//Insert path
+			var insertregion = region.enter().insert("path")
+				.attr("class", function(d,i) { return "regions " + d.clsname; })
+				.attr("d", path)
+				.attr("id", function(d,i) { return d.id; })
+				.attr("title", function(d,i) { return d.name; })
+				.style("fill", function(d,i) { 
+					if(d.name == regionname) {
+						return color;
+					}
+					else {
+						return 'lightgrey';
+					}
+				});;
+
+			if(regionname == "The Ocean") {
+				console.log(d3.select(svgrect[0][0]));
+				d3.select(svgrect[0][0]).style("fill", color);
+			}
+
+			if(regionname == "Small Islands") {
+				var smallIslands = [{name: "Small Islands"}];
+				var small_island = svg.selectAll('g.smallislands')
+						.data(smallIslands)
+						.enter().append("g")
+						.attr("class", "smallislands")
+						.attr("transform", function() {
+							return "translate(" + width*0.05 + "," + height*0.7 + ")";
+						}); 		   	
+				var small_island_box = small_island.append("rect")
+					//.attr("class", "smallislands_box")
+					.attr("width", width * 0.15)
+					.attr("height", height * 0.12)
+					.style("fill", color);
+				var small_island_text = small_island.append("text")
+					.attr("class", 'region-label-small')
+					.attr("x", width * 0.15/2)
+					.attr("y", height * 0.12/2)
+					.attr("dy", ".35em")
+					.text(function(d) { return d.name; });
+			 
 			}
 		});
+		
 	}
 
 });

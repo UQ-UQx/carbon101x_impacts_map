@@ -17,12 +17,27 @@
   text-anchor: middle;
 }
 
+.region-label-small {
+  fill: black;
+  font-size: 8px;
+  font-weight: 300;
+  text-anchor: middle;
+}
+
 .smallislands_box {
   fill: #aec7e8;
   fill-opacity: .7;
   &:hover{
     fill: #87CEFA;
   }
+}
+
+.asia_small, .africa_small, .europe_small, .na_small, .sa_small, .polar_small, .australasia_small {
+  fill: lightgrey;
+}
+
+.svgrect_small {
+  fill: white;
 }
 
 .asia {
@@ -81,11 +96,3 @@
   }
 }
 
-/*
-.africa {
-  fill: ;
-  &:hover{
-    fill: rgb(,,);
-  }
-}
-*/

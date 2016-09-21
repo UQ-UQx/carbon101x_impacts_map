@@ -22,7 +22,7 @@ $(document).ready(function(){
 	var region_name, impact_risks;
 
 	//var map_div = $('#worldmap');
-	make_large_map('#worldmap', 'large');
+	make_large_map('#worldmap');
 	//make_map('#smallmap', 'small');
 
 
@@ -43,6 +43,61 @@ $(document).ready(function(){
     	$('#smallmap').addClass('hidden');
     	$('#worldmap').removeClass('hidden');
     });
+
+    d3.select(window).on("resize", resize);
+
+    function resize() {
+    	console.log('resizeing');
+    	if(!$("#worldmap").hasClass('hidden')) {
+    		console.log('worldmap');
+
+			var margin = {top: 10, left: 10, bottom: 10, right: 10};		
+			var width = $("#worldmap").width() - margin.left - margin.right;
+			var heightRatio = 611/960;
+			var scaleRatio = 153/960;
+			var height = Math.round(width * heightRatio);
+			var scale = Math.floor(width * scaleRatio);
+
+			//Change svg size
+    		var svg = d3.select("#worldmap svg")
+    			.attr("width", width)
+    			.attr("height", height);
+
+    		console.log('svg', svg);
+
+    		//Change scale and projection
+    		var projection = d3_geoprojection.geoCylindricalStereographic().scale(scale).translate([width/2, height/2]);
+
+    		var path = d3_geo.geoPath().projection(projection);
+    		console.log('path_new', path);
+
+    		svg.select('#graticule').attr('d', path);
+    		svg.selectAll('.regions').attr('d', path);
+    		svg.selectAll('.region-label')
+    			.attr("transform", function(d) {
+					var centroid = path.centroid(d);
+					return "translate(" + centroid + ")"; });
+
+    		svg.selectAll('g.smallislands')
+				.attr("transform", function() {
+					return "translate(" + width*0.05 + "," + height*0.7 + ")";
+				}); 
+
+			svg.select('.smallislands_box')		   	
+				.attr("width", width * 0.15)
+				.attr("height", height * 0.12);
+
+			svg.select('.small-island-label')
+				.attr("x", width * 0.15/2 )
+				.attr("y", height * 0.12/2);
+
+    	}
+
+    	if(!$("#smallmap").hasClass('hidden')) {
+    		console.log('smallmap');
+    	}
+
+    }
 
 	function large_map_clicked(region, color) {
 		console.log('large_map_clicked', region, color);
@@ -155,8 +210,13 @@ $(document).ready(function(){
 	// Draw large map
 	function make_large_map(map_div) {
 
-		var width = $(map_div).width();
-		var height = Math.round(width/960*611);
+		var margin = {top: 10, left: 10, bottom: 10, right: 10};		
+		var width = $(map_div).width() - margin.left - margin.right;
+		var heightRatio = 611/960;
+		var scaleRatio = 153/960;
+		var height = Math.round(width * heightRatio);
+		var scale = Math.floor(width * scaleRatio);
+//		console.log(heightRatio, scaleRatio, height, scale);
 
 		var svg = d3.select(map_div).append("svg")
 				.attr("width", width)
@@ -167,9 +227,9 @@ $(document).ready(function(){
 				.attr("width", "100%")
 				.attr("height", "100%");
 
-	    var scale = 180;
 		var projection = d3_geoprojection.geoCylindricalStereographic().scale(scale).translate([width/2, height/2]);
 		var path = d3_geo.geoPath().projection(projection);
+		console.log('path_origin', path);
 		var graticule = d3_geo.geoGraticule();
 
 		svg.append("path")
@@ -241,7 +301,7 @@ $(document).ready(function(){
 				.attr("width", width * 0.15)
 				.attr("height", height * 0.12);
 			var small_island_text = small_island.append("text")
-				.attr("class", 'region-label')
+				.attr("class", 'small-island-label')
 				.attr("x", width * 0.15/2 )
 				.attr("y", height * 0.12/2)
 				.attr("dy", ".35em")
@@ -278,9 +338,12 @@ $(document).ready(function(){
 	function make_small_map(map_div, regionname, color) {
 		$(map_div).empty();
 
-
-		var width = $(map_div).width();
-		var height = Math.round(width/960*611);
+		var margin = {top: 2, left: 2, bottom: 2, right: 2};		
+		var width = $(map_div).width() - margin.left - margin.right;
+		var heightRatio = 611/960;
+		var scaleRatio = 153/960;
+		var height = Math.round(width * heightRatio);
+		var scale = Math.floor(width * scaleRatio);
 
 		var svg = d3.select(map_div).append("svg")
 				.attr("width", width)
@@ -291,7 +354,6 @@ $(document).ready(function(){
 				.attr("width", "100%")
 				.attr("height", "100%");
 
-		var scale = 55;
 		var projection = d3_geoprojection.geoCylindricalStereographic().scale(scale).translate([width/2, height/2]);
 		var path = d3_geo.geoPath().projection(projection);
 		var graticule = d3_geo.geoGraticule();

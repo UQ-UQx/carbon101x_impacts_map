@@ -48,13 +48,15 @@ $(document).ready(function(){
 
     function resize() {
     	console.log('resizeing');
+
+		var heightRatio = 611/960;
+		var scaleRatio = 153/960;
+
     	if(!$("#worldmap").hasClass('hidden')) {
     		console.log('worldmap');
 
 			var margin = {top: 10, left: 10, bottom: 10, right: 10};		
 			var width = $("#worldmap").width() - margin.left - margin.right;
-			var heightRatio = 611/960;
-			var scaleRatio = 153/960;
 			var height = Math.round(width * heightRatio);
 			var scale = Math.floor(width * scaleRatio);
 
@@ -87,14 +89,50 @@ $(document).ready(function(){
 				.attr("width", width * 0.15)
 				.attr("height", height * 0.12);
 
-			svg.select('.small-island-label')
+			svg.select('.smallisland-label')
 				.attr("x", width * 0.15/2 )
 				.attr("y", height * 0.12/2);
+
+			svg.select('rect.svgrect')
+				.attr("width", "100%")
+				.attr("height", "100%");
 
     	}
 
     	if(!$("#smallmap").hasClass('hidden')) {
     		console.log('smallmap');
+			var margin = {top: 2, left: 0, bottom: 2, right: 0};		
+			var width = $("#smallmap").width() - margin.left - margin.right;
+			var height = Math.round(width * heightRatio);
+			var scale = Math.floor(width * scaleRatio);
+
+			//Change svg size
+    		var svg = d3.select("#smallmap svg")
+    			.attr("width", width)
+    			.attr("height", height);
+
+    		//Change scale and projection
+    		var projection = d3_geoprojection.geoCylindricalStereographic().scale(scale).translate([width/2, height/2]);
+
+    		var path = d3_geo.geoPath().projection(projection);
+
+    		svg.select('#graticule').attr('d', path);
+    		svg.selectAll('.regions').attr('d', path);
+
+    		svg.selectAll('g.smallislands')
+    			.attr("transform", function() {
+						return "translate(" + width*0.05 + "," + height*0.7 + ")";
+				}); 
+			svg.select('.smallislands_box_small')		   	
+				.attr("width", width * 0.15)
+				.attr("height", height * 0.12);
+			svg.select('.smallislands-label-small')
+				.attr("x", width * 0.15/2)
+				.attr("y", height * 0.12/2);
+ 
+			svg.select('rect.svgrect_small')
+				.attr("width", "100%")
+				.attr("height", "100%");
     	}
 
     }
@@ -301,7 +339,7 @@ $(document).ready(function(){
 				.attr("width", width * 0.15)
 				.attr("height", height * 0.12);
 			var small_island_text = small_island.append("text")
-				.attr("class", 'small-island-label')
+				.attr("class", 'smallisland-label')
 				.attr("x", width * 0.15/2 )
 				.attr("y", height * 0.12/2)
 				.attr("dy", ".35em")
@@ -338,7 +376,7 @@ $(document).ready(function(){
 	function make_small_map(map_div, regionname, color) {
 		$(map_div).empty();
 
-		var margin = {top: 2, left: 2, bottom: 2, right: 2};		
+		var margin = {top: 2, left: 0, bottom: 2, right: 0};		
 		var width = $(map_div).width() - margin.left - margin.right;
 		var heightRatio = 611/960;
 		var scaleRatio = 153/960;
@@ -413,28 +451,37 @@ $(document).ready(function(){
 				d3.select(svgrect[0][0]).style("fill", color);
 			}
 
-			if(regionname == "Small Islands") {
-				var smallIslands = [{name: "Small Islands"}];
-				var small_island = svg.selectAll('g.smallislands')
-						.data(smallIslands)
-						.enter().append("g")
-						.attr("class", "smallislands")
-						.attr("transform", function() {
-							return "translate(" + width*0.05 + "," + height*0.7 + ")";
-						}); 		   	
-				var small_island_box = small_island.append("rect")
-					//.attr("class", "smallislands_box")
-					.attr("width", width * 0.15)
-					.attr("height", height * 0.12)
-					.style("fill", color);
-				var small_island_text = small_island.append("text")
-					.attr("class", 'region-label-small')
-					.attr("x", width * 0.15/2)
-					.attr("y", height * 0.12/2)
-					.attr("dy", ".35em")
-					.text(function(d) { return d.name; });
+			var smallIslands = [{name: "Small Islands"}];
+			var small_island = svg.selectAll('g.smallislands')
+					.data(smallIslands)
+					.enter().append("g")
+					.attr("class", "smallislands")
+					.attr("transform", function() {
+						return "translate(" + width*0.05 + "," + height*0.7 + ")";
+					}); 		   	
+			var small_island_box = small_island.append("rect")
+				.attr("class", "smallislands_box_small")
+				.attr("width", width * 0.15)
+				.attr("height", height * 0.12)
+				.style("fill", function(d, i) {
+					if(d.name == regionname) { return color; }
+					else { return 'lightgrey'; }
+				})
+				.style("fill-opacity", function(d,i) {
+					if(d.name == regionname) { return 0.7; }
+					else { return 0; }
+				});	
+			var small_island_text = small_island.append("text")
+				.attr("class", 'smallislands-label-small')
+				.attr("x", width * 0.15/2)
+				.attr("y", height * 0.12/2)
+				.attr("dy", ".35em")
+				.text(function(d) { return d.name; })
+				.style("fill-opacity", function(d,i) {
+					if(d.name == regionname) { return 0.7; }
+					else { return 0; }
+				});	
 			 
-			}
 		});
 		
 	}

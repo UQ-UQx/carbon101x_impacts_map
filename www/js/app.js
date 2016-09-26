@@ -229,7 +229,7 @@ $(document).ready(function(){
 			$('.details_facts ul').append(fact_item);
 		}
 		//Detail sources
-		$('.details_facts ol').empty();
+		$('.details_sources ol').empty();
 		for(var i = 0; i < risk_info['sources'].length; i++) {
 			var source_item = $('<li>' + risk_info['sources'][i] + '</li>');
 			$('.details_sources ol').append(source_item);
@@ -276,7 +276,7 @@ $(document).ready(function(){
 			.attr('d', path);
 
 		var regions, region;
-		d3.json("Assets/region-geo.json", function(error, world) {
+		d3.json("www/js/region-geo.json", function(error, world) {
 			if(error) {
 				console.log(error);
 			}
@@ -402,7 +402,7 @@ $(document).ready(function(){
 			.attr('d', path);
 
 		var regions, region;
-		d3.json("Assets/region-geo.json", function(error, world) {
+		d3.json("www/js/region-geo.json", function(error, world) {
 			if(error) {
 				console.log(error);
 			}

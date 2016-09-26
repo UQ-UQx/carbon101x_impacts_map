@@ -1,0 +1,47 @@
+					{
+						'title': 'Warming trend',
+						'img_file': 'warming-trend.png', 
+					},
+
+					{
+						'title': 'Sea level rise',
+						'img_file': 'seal-level-rise.png', 
+					},
+
+					{
+						'title': 'Precipitation',
+						'img_file': 'precipitation.png', 
+					},
+
+					{
+						'title': 'Sea surface temperature',
+						'img_file': 'sea-surface-temperature.png', 
+					},
+
+
+					{
+						'title': 'Extreme temperature (drought)',
+						'img_file': 'extreme-temperature.png', 
+					},
+
+					{
+						'title': 'Extreme precipitation',
+						'img_file': 'extreme-precipitation.png', 
+					},
+
+					{
+						'title': 'Ocean acidification',
+						'img_file': 'ocean-acidification.png', 
+					},
+
+					{
+						'title': 'Sea level rise',
+						'img_file': 'seal-level-rise.png', 
+					},
+					
+					{
+						'title': 'Damaging cyclones',
+						'img_file': 'cyclones.png', 
+					},
+
+

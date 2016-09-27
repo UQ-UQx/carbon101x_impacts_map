@@ -205,144 +205,283 @@ var risk_details = [
 			},
 		]
 	},
-	
+
 	//Europe
 	{
 		'code': '',
 		'name': 'Europe',
 		'risks': [
-			//Risk: Reduced crop productivity
+			//Risk: Coastal and river basin floods
 			{
-				'id': 'productivity',
-				'name': 'Reduced crop productivity',
+				'id': 'floods',
+				'name': 'Coastal and river basin floods',
 				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
+					'present': 5,
+					'degree2': 6,
+					'degree4': 8
 				},
-				'icon': '',
+				'icon': 'coastal-and-river-basin-floods.png',
 				'climatic_drivers': [
 					{
-						'title': '',
-						'img_file': '', 
-					}
+						'title': 'Extreme precipitation',
+						'img_file': 'extreme-precipitation.png', 
+					},
+					{
+						'title': 'Sea level rise',
+						'img_file': 'seal-level-rise.png', 
+					},
 				],
 				'key_facts':[
+					'Climate change will increase the economic losses and number of people affected by flooding in river basins and coasts, driven by increasing urbanization, increasing sea levels, coastal erosion, and peak river discharges.',
+					'River floods are currently the most common natural disaster in Europe, resulting in large economic losses through direct damage to infrastructure, property and agricultural land. Global warming is expected to increase the magnitude and frequency of extreme precipitation events, which may lead to more intense and frequent floods. Under a warming scenario of 2.5°C (without adaptation), the increase in direct economic damage from river floods is projected to be approximately 7.7 billion euros<sup>1</sup>.',
+					' The number of people in Europe annually affected by coastal floods in the reference year (1995) is estimated to be 36,000. Under a warming scenario of 2.5°C (without adaptation), the number of people affected annually by flooding is projected to increase to 775,000 people. The British Isles, Central Europe North, and Southern Europe are the areas potentially most affected by coastal floods<sup>1</sup>.',
 				],
 				'sources': [
+					'Ciscar, JC, A Iglesias, L Feyen, L Szabo, D Van Regemorter, B Amelung, R Nicholls, P Watkiss, OB Christensen, R Dankers, L Garrote, CM Goodess, A Hunt, A Moreno, J Richards & A Soria, 2011. ‘Physical and economic consequences of climate change in Europe’. <i>Proceedings of the National Academy of Sciences of the United States of America, 108, pp.2678-2683</i>.',
+					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/">https://www.ipcc.ch/report/ar5/wg2/</a>',
 				] 
 			},
-			//Risk: Adverse effects on livestock
-			{
-				'id': 'livestock',
-				'name': 'Adverse effects on livestock',
-				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				},
-				'icon': '',
-				'climatic_drivers': [
-					{
-						'title': '',
-						'img_file': '', 
-					}
-				],
-				'key_facts':[
-				],
-				'sources': [
-				] 
-			},			
-			//Risk: Loss of fisheries		
-			{
-				'id': 'fisheries',
-				'name': 'Loss of fisheries',
-				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				},
-				'icon': '',
-				'climatic_drivers': [
-					{
-						'title': '',
-						'img_file': '', 
-					}
-				],
-				'key_facts':[
-				],
-				'sources': [
-				] 
-			},			
-			//Risk: Undernutrition		
-			{
-				'id': 'undernutrition',
-				'name': 'Undernutrition',
-				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				},
-				'icon': '',
-				'climatic_drivers': [
-					{
-						'title': '',
-						'img_file': '', 
-					}
-				],
-				'key_facts':[
-				],
-				'sources': [
-				] 
-			},			
+
 			//Risk: Water scarcity	
 			{
 				'id': 'waterscarcity',
 				'name': 'Water scarcity',
 				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
+					'present': 5,
+					'degree2': 7,
+					'degree4': 9
 				},
-				'icon': '',
+				'icon': 'water-scarcity.png',
 				'climatic_drivers': [
 					{
-						'title': '',
-						'img_file': '', 
-					}
+						'title': 'Warming trend',
+						'img_file': 'warming-trend.png', 
+					},
+					{
+						'title': 'Extreme temperature',
+						'img_file': 'extreme-temperature.png', 
+					},
+					{
+						'title': 'Drying trend',
+						'img_file': 'drying-trend.png', 
+					},
 				],
 				'key_facts':[
+					'Water availability will be significantly reduced in Europe as a result of the warming and drying trends, and extreme heat events that climate change will bring to Europe. Combined with increased water demand (e.g. for irrigation, energy and industry, domestic use) and with reduced water drainage and runoff as a result of increased evaporative demand, water scarcity will become a defining resource challenge.',
+					'Water availability and crop yields in southern Europe are expected to decline by 20% with a 2°C increase in global temperatures<sup>1</sup>.',
+					'In Southern Europe, serious droughts could occur once every 10 years under a 3°C warming scenario<sup>1</sup>.',
 				],
 				'sources': [
+					'Stern, NH, 2007. <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au">https://goo.gl/PxI2Au</a>',
+					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/">https://www.ipcc.ch/report/ar5/wg2/</a>',
 				] 
-			},			
-			//Risk: Disease
+			},		
+
+			//Risk: Extreme heat events
 			{
-				'id': 'disease',
-				'name': 'Disease',
+				'id': 'extreme_heat',
+				'name': 'Extreme heat events',
 				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
+					'present': 5,
+					'degree2': 7,
+					'degree4': 9
 				},
-				'icon': '',
+				'icon': 'extreme-heat-events.png',
 				'climatic_drivers': [
 					{
-						'title': '',
-						'img_file': '', 
-					}
+						'title': 'Extreme temperature',
+						'img_file': 'extreme-temperature.png', 
+					},				
 				],
 				'key_facts':[
+					'As the global atmospheric temperature increases, so too will the frequency and magnitude of extreme heat events in Europe.',
+					'Extreme heat events cause economic losses; impact on health and well-being, labour productivity, crop production, and air quality; and increase the risk of wildfires in southern Europe and in the Russian boreal region.',
+					'Under a warming scenario of 2.5°C, the annual increase in human mortality (caused by heat and without acclimatization) is estimated at 60,000<sup>1</sup>.',
 				],
 				'sources': [
+					'Ciscar, JC, A Iglesias, L Feyen, L Szabo, D Van Regemorter, B Amelung, R Nicholls, P Watkiss, OB Christensen, R Dankers, L Garrote, CM Goodess, A Hunt, A Moreno, J Richards & A Soria, 2011. ‘Physical and economic consequences of climate change in Europe’. <i>Proceedings of the National Academy of Sciences of the United States of America, 108, pp.2678-2683</i>.',
+					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/">https://www.ipcc.ch/report/ar5/wg2/</a>',				
 				] 
 			}
 		]
 	},
+
 	//Asia
 	{
 		'code': '',
 		'name': 'Asia',
+		'risks': [
+			//Risk: Heat-related human mortality
+			{
+				'id': 'human_mortality',
+				'name': 'Heat-related human mortality',
+				'level': {
+					'present': 5,
+					'degree2': 9,
+					'degree4': 10
+				},
+				'icon': 'heat-related-human-mortality.png',
+				'climatic_drivers': [
+					{
+						'title': 'Warming trend',
+						'img_file': 'warming-trend.png', 
+					},
+					{
+						'title': 'Extreme temperature',
+						'img_file': 'extreme-temperature.png', 
+					},					
+				],
+				'key_facts':[
+					'Warmer atmospheric temperatures, as well as an increase in extreme temperature events, will increase the risk of heat-related mortality.',
+					'In addition to mortality, extreme heat events cause economic losses; impact on health and well-being, labour productivity, crop production, and air quality; and increase the risk of wildfires.',
+					'Under a ~2.8°C warming scenario, climate change is expected to contribute to an additional 143,000 heat-related deaths in people aged 65+ by 2050, in Asia alone<sup>1</sup>.',
+				],
+				'sources': [
+					'World Health Organisation, 2014. <i>Quantitative risk assessment of the effects of climate change on selected causes of death, 2030s and 2050s</i>. <a href="https://goo.gl/ZBnDoH">https://goo.gl/ZBnDoH</a>',
+					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/">https://www.ipcc.ch/report/ar5/wg2/</a>',
+				] 
+			},
+
+			//Risk: Water and food scarcity
+			{
+				'id': 'waterscarcity',
+				'name': 'Water and food scarcity',
+				'level': {
+					'present': 3,
+					'degree2': 5,
+					'degree4': 7
+				},
+				'icon': 'water-and-food-scarcity.png',
+				'climatic_drivers': [
+					{
+						'title': 'Warming trend',
+						'img_file': 'warming-trend.png', 
+					},
+					{
+						'title': 'Extreme temperature',
+						'img_file': 'extreme-temperature.png', 
+					},		
+					{
+						'title': 'Drying trend',
+						'img_file': 'drying-trend.png', 
+					},
+				],
+				'key_facts':[
+					'Increased average temperature and extreme heat events—combined with a drying trend—will increase the risk of water shortages, crop failure and lower crop production in Asia<sup>1</sup>. This has implications for food security.',
+					'Global warming between ~2°C and 4°C will reduce agricultural yield over a large area of Asia. In Southeast Asia, land productivity is expected to decline by 18 – 32%<sup>2</sup>.',
+					'Under a global warming scenario of 2°C, some parts of the Lower Mekong Basin (a major ‘food bowl’ covering regions of Vietnam, Thailand, Cambodia and Laos) could see local annual average temperature increases of 4 - 6°C. This will see major shifts in the distribution of suitable growing areas, with a net loss in yields of some staple crops such as maize<sup>3</sup>.',
+				],
+				'sources': [
+					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/">https://www.ipcc.ch/report/ar5/wg2/</a>',
+					'Iglesias, A, S Quiroga & A Diz, 2011. ‘Looking into the future of agriculture in a changing climate’, <i>European Review of Agricultural Economics</i>, 38(3), pp.427-447.3.ICEM, 2013. <i>USAID Mekong ARCC Climate Change Impact and Adaptation Study for the Lower Mekong Basin: Main Report</i>. <a href="http://www.mekongarcc.net/resource">www.mekongarcc.net/resource</a>.'
+				] 
+			},			
+			//Risk: Exacerbated poverty and inequalities	
+			{
+				'id': 'poverty_inequalities',
+				'name': 'Exacerbated poverty and inequalities',
+				'level': {
+					'present': 7,
+					'degree2': 7,
+					'degree4': 9
+				},
+				'icon': 'Exacerbated-poverty-and-inequalities.png',
+				'climatic_drivers': [
+					{
+						'title': 'Warming trend',
+						'img_file': 'warming-trend.png', 
+					},
+					{
+						'title': 'Extreme temperature',
+						'img_file': 'extreme-temperature.png', 
+					},
+					{
+						'title': 'Drying trend',
+						'img_file': 'drying-trend.png', 
+					},
+					{
+						'title': 'Extreme precipitation',
+						'img_file': 'extreme-precipitation.png', 
+					},
+				],
+				'key_facts':[
+					'Disruption of basic services such as water supply, sanitation, energy provision, and transportation systems will have implications for local economies and “strip populations of their assets and livelihoods”. Such impacts are not expected to be evenly spread among regions and cities, sectors of the economy, or socioeconomic groups; they tend to reinforce existing inequalities<sup>1</sup>.',
+					'Asia is predominantly agrarian, with 58% of its population living in rural areas, of which 81% are dependent on agriculture for their livelihoods. This dependence on natural resources makes rural livelihoods particularly vulnerable to climate variability (e.g. temperature, heat waves, precipitation)<sup>1</sup>.',
+					'In a low crop productivity scenario, producers in food exporting countries (such as Indonesia, the Philippines, and Thailand) would benefit from global food price rises and reduced poverty, while countries such as Bangladesh would experience a net increase in poverty of approximately 15% by 2030<sup>2</sup>.',
+				],
+				'sources': [
+					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/">https://www.ipcc.ch/report/ar5/wg2/</a>',
+					'Hertel, TW, MB Burke & DB Lobell, 2010. ‘The poverty implications of climate-induced crop yield changes by 2030’, <i>Global Environmental Change</i>, 20(4), pp. 577-585.'
+				] 
+			},			
+			//Risk: Coral reef decline		
+			{
+				'id': 'reef_decline',
+				'name': 'Coral reef decline',
+				'level': {
+					'present': 5,
+					'degree2': 9,
+					'degree4': 9
+				},
+				'icon': 'coral-reef-decline.png',
+				'climatic_drivers': [
+					{
+						'title': 'Extreme temperature',
+						'img_file': 'extreme-temperature.png', 
+					},
+					{
+						'title': 'Ocean acidification',
+						'img_file': 'ocean-acidification.png', 
+					},
+				],
+				'key_facts':[
+					'Asia supports around 40% of the world’s coral reefs, mostly in the “coral triangle” in Southeast Asia. Independent of climate change, human pressures such as coastal deforestation, aquaculture and agriculture, water pollution, and over-exploitation of marine life have severely degraded these reef ecosystems – 40% of coral reefs and mangroves have been lost in Southeast Asia over the past 40 years<sup>1</sup>. These pressures make coral reefs less resilient to climate-related impacts such as acidification and bleaching events.',
+					'Global warming of more than 2°C will eliminate most coral dominated reef systems<sup>1</sup>.',
+					'Oceans absorb CO<sub>2</sub> from the atmosphere, reducing the greenhouse effect and potential global warming experienced by the Earth. However, this increase in CO<sub>2</sub> is altering the ocean chemistry, making it more acidic. This makes it harder for marine calcifying organisms (such as corals, molluscs and crustaceans) to form their skeletons and shells, and results in slower coral reef growth (or net loss) and weakening of reef ecosystems<sup>1</sup>. As atmospheric CO<sub>2</sub> concentration continues to increase, the impacts of ocean acidification will worsen.'
+				],
+				'sources': [
+					'Hoegh-Guldberg, O, H Hoegh-Guldberg, J Veron, A Green, ED Gomez, JEN Lough, M King, Ambariyanto, L Hansen, J Cinner, G Dews, G Russ, HZ Schuttenberg, EL Peñaflor, CM Eakin, TRL Christensen, M Abbey, F Areki, RAKosaka, A Tewfik & J Oliver, 2009. <i>The Coral Triangle and Climate Change: Ecosystems, People and Societies at Risk</i>: <a href="https://goo.gl/kRCnyl">https://goo.gl/kRCnyl</a>',
+					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/">https://www.ipcc.ch/report/ar5/wg2/</a>',
+				] 
+			},			
+			//Risk: Species extinctions
+			{
+				'id': 'species_extinctions',
+				'name': 'Species extinctions',
+				'level': {
+					'present': 3,
+					'degree2': 5,
+					'degree4': 7
+				},
+				'icon': 'extinction-of-mountaintop-species.png',
+				'climatic_drivers': [
+					{
+						'title': 'Warming trend',
+						'img_file': 'warming-trend.png', 
+					},
+					{
+						'title': 'Drying trend',
+						'img_file': 'drying-trend.png', 
+					},
+				],
+				'key_facts':[
+					'Up to 50% of Asia’s total biodiversity is at risk due to climate change<sup>1</sup>.',
+					'As climate change causes changes in habitats (through warming, drying and changes in precipitation), the abundance, distribution and composition of some species will inevitably also change. For example, the boreal forests of North Asia will move further north (to cooler latitudes) as global temperatures increase<sup>1</sup>.',
+					'A doubling of present atmospheric CO<sub>2</sub> concentrations (which represents a further ~3°C warming) is expected to result in extinctions of 133–2,835 plants species and 10–213 vertebrates in Indo-Burma, and 105–1,522 plants and 5–77 vertebrates in China<sup>2</sup>.',
+				],
+				'sources': [
+					'IPCC, 2007. <i>Climate Change 2007: Impacts, Adaptation and Vulnerability. Contribution of Working Group II to the Fourth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://goo.gl/Mk5lM8">https://goo.gl/Mk5lM8</a>',
+					'Malcolm, JR, C Liu, RP Neilson, L Hansen & L Hannah, 2006. ‘Global warming and extinctions of endemic species from biodiversity hotspots’, <i>Conservation Biology</i>, 20(2), pp.538–548.',
+					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/">https://www.ipcc.ch/report/ar5/wg2/</a>',
+				] 
+			},			
+		]
+	},
+
+	//Polar Regions
+	{
+		'code': '',
+		'name': 'Polar Regions',
 		'risks': [
 			//Risk: Reduced crop productivity
 			{
@@ -472,6 +611,8 @@ var risk_details = [
 			}
 		]
 	},
+
+
 	//Australia
 	{
 		'code': '',
@@ -871,139 +1012,7 @@ var risk_details = [
 			}
 		]
 	},
-	//Polar Regions
-	{
-		'code': '',
-		'name': 'Polar Regions',
-		'risks': [
-			//Risk: Reduced crop productivity
-			{
-				'id': 'productivity',
-				'name': 'Reduced crop productivity',
-				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				},
-				'icon': '',
-				'climatic_drivers': [
-					{
-						'title': '',
-						'img_file': '', 
-					}
-				],
-				'key_facts':[
-				],
-				'sources': [
-				] 
-			},
-			//Risk: Adverse effects on livestock
-			{
-				'id': 'livestock',
-				'name': 'Adverse effects on livestock',
-				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				},
-				'icon': '',
-				'climatic_drivers': [
-					{
-						'title': '',
-						'img_file': '', 
-					}
-				],
-				'key_facts':[
-				],
-				'sources': [
-				] 
-			},			
-			//Risk: Loss of fisheries		
-			{
-				'id': 'fisheries',
-				'name': 'Loss of fisheries',
-				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				},
-				'icon': '',
-				'climatic_drivers': [
-					{
-						'title': '',
-						'img_file': '', 
-					}
-				],
-				'key_facts':[
-				],
-				'sources': [
-				] 
-			},			
-			//Risk: Undernutrition		
-			{
-				'id': 'undernutrition',
-				'name': 'Undernutrition',
-				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				},
-				'icon': '',
-				'climatic_drivers': [
-					{
-						'title': '',
-						'img_file': '', 
-					}
-				],
-				'key_facts':[
-				],
-				'sources': [
-				] 
-			},			
-			//Risk: Water scarcity	
-			{
-				'id': 'waterscarcity',
-				'name': 'Water scarcity',
-				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				},
-				'icon': '',
-				'climatic_drivers': [
-					{
-						'title': '',
-						'img_file': '', 
-					}
-				],
-				'key_facts':[
-				],
-				'sources': [
-				] 
-			},			
-			//Risk: Disease
-			{
-				'id': 'disease',
-				'name': 'Disease',
-				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				},
-				'icon': '',
-				'climatic_drivers': [
-					{
-						'title': '',
-						'img_file': '', 
-					}
-				],
-				'key_facts':[
-				],
-				'sources': [
-				] 
-			}
-		]
-	},
+
 	//Small Islands
 	{
 		'code': '',

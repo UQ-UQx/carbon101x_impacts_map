@@ -20,7 +20,7 @@
 
 
 					{
-						'title': 'Extreme temperature (drought)',
+						'title': 'Extreme temperature',
 						'img_file': 'extreme-temperature.png', 
 					},
 
@@ -38,10 +38,20 @@
 						'title': 'Sea level rise',
 						'img_file': 'seal-level-rise.png', 
 					},
-					
+
 					{
 						'title': 'Damaging cyclones',
 						'img_file': 'cyclones.png', 
 					},
 
+					{
+						'title': 'Drying trend',
+						'img_file': 'drying-trend.png', 
+					},
 
+
+
+'Stern, NH, 2007. <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au">https://goo.gl/PxI2Au</a>'
+
+
+'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/">https://www.ipcc.ch/report/ar5/wg2/</a>',

@@ -26,9 +26,13 @@ div.active {
 }
 
 div#smallmap, div#key_impact_risks{
-	padding: 0px;
+	padding: 0px 2px 0px 2px;
 }
 
 #risk_details {
 	border-style: solid;
+}
+
+.right_div {
+	//border-left: 2px;
 }

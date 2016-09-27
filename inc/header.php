@@ -31,20 +31,19 @@
 	//unset($_SESSION['ltivars']);
 
 	// Initial $ltivars
-	if(empty($_SESSION['ltivars'])) {
-		$lti = new Lti($config, true);
-		$lti_valid = $lti->is_valid();
-
-		if($lti_valid) {
-			$_SESSION['ltivars'] = $lti->calldata();
-		}
-		else {
-			$warning_msg .= '<p>LTI Invalid.</p>';
-		}
-	}
+    if(isset($_POST['oauth_consumer_key'])) {
+        $lti = new Lti($config, true);
+        $lti_valid = $lti->is_valid();
+        if($lti_valid) {
+                $_SESSION['ltivars'] = $lti->calldata();
+        }
+        else {
+                $warning_msg .= '<p>LTI Invalid.</p>';
+        }
+    }
 	else {
-		$lti_valid = true;
-	}
+          	$lti_valid = true;
+    }
 	$ltivars = $_SESSION['ltivars'];
 
 	// Initial $db

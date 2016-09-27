@@ -483,132 +483,169 @@ var risk_details = [
 		'code': '',
 		'name': 'Polar Regions',
 		'risks': [
-			//Risk: Reduced crop productivity
+			//Risk: Threats to freshwater, marine and terrestrial ecosystems
 			{
-				'id': 'productivity',
-				'name': 'Reduced crop productivity',
+				'id': 'threat_ecosystems',
+				'name': 'Threats to freshwater, marine and terrestrial ecosystems',
 				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
+					'present': 5,
+					'degree2': 7,
+					'degree4': 9
 				},
-				'icon': '',
+				'icon': 'threats-to-freshwater-marine-terrestrial-ecosystems.png',
 				'climatic_drivers': [
 					{
-						'title': '',
-						'img_file': '', 
-					}
+						'title': 'Warming trend',
+						'img_file': 'warming-trend.png', 
+					},
+					{
+						'title': 'Snow cover',
+						'img_file': 'snow-cover.png', 
+					},
+					{
+						'title': 'Ocean acidification',
+						'img_file': 'ocean-acidification.png', 
+					},
 				],
 				'key_facts':[
+					'Global warming is most pronounced in the Arctic, altering the extent, thickness and duration of sea ice. This endangers the habitat and existence of polar bears by giving them less time to hunt during the winter. A 2.8°C warming has been projected to cause up to a 68% reduction in polar bear habitat by 2100<sup>1</sup>.',
+					'Under a 4-degree scenario, around half of Arctic tundra will be lost<sup>2</sup>. A decline in natural habitats is likely to reduce the populations of reindeers, lemmings and caribous, as deciduous shrubs replace mosses and lichens in the Arctic<sup>3</sup>.',
+					'Increased frequency of thawing-freezing events during winter can create denser snow layers, restricting access to vegetation for Arctic herbivores. This negatively impacts herbivore populations, which in turn will negatively impact on carnivore populations that prey upon these herbivores<sup>4</sup>.',
+					'Vulnerable marine species will have a reduced spatial extent as they move closer to the Poles. This is expected to alter the marine species composition of zooplankton, which can impact some fish and shellfish populations<sup>3</sup>.',
 				],
 				'sources': [
+					'Durner, G, D Douglas, R Nielson, S Amstrup, T McDonald, I Stirling, M Mauritzen, EW Born, Ø Wiig, E DeWeaver, MC Serreze, SE Belikov, MM Holland, J Maslanik, J Aars & A Derocher, 2009. ‘Predicting 21st‐century polar bear habitat distribution from global climate models’, <i>Ecological Monographs</i>, 79(1), pp.25-58.',
+					'Stern, NH, 2007. <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au">https://goo.gl/PxI2Au</a>',
+					'Callaghan, TV, LO Björn, Y Chernov, T Chapin, TR Christensen, B Huntley, RA Ims, M Johansson, D Jolly, S Jonasson, N Matveyeva, N Panikov, W Oechel, G Shaver, J Elster, H Henttonen, K Laine, K Taulavuori, E Taulavuori & C Zöckler, 2004. ‘Biodiversity, Distributions and Adaptations of Arctic Species in the Context of Environmental Change’, <i>Ambio</i>, 33(7), pp.404-17.',
+					'Storeheier, PV, BEH Van Oort, MA Sundset & SD Mathiesen, 2003. ‘Food intake of reindeer in winter’, <i>The Journal of Agricultural Science</i>, 141(1), pp.93-101.',
 				] 
 			},
-			//Risk: Adverse effects on livestock
+
+			//Risk: Reduced health and wellbeing of Arctic residents
 			{
-				'id': 'livestock',
-				'name': 'Adverse effects on livestock',
+				'id': 'arctic_residents',
+				'name': 'Reduced health and wellbeing of Arctic residents',
 				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
+					'present': 5,
+					'degree2': 9,
+					'degree4': 10
 				},
-				'icon': '',
+				'icon': 'reduced-health-and-wellbeing-of-arctic-residents.png',
 				'climatic_drivers': [
 					{
-						'title': '',
-						'img_file': '', 
-					}
+						'title': 'Warming trend',
+						'img_file': 'warming-trend.png', 
+					},
+					{
+						'title': 'Snow cover',
+						'img_file': 'snow-cover.png', 
+					},					
 				],
 				'key_facts':[
+					'Extreme weather events, such as storms, blizzards and inundation, are expected to become more frequent in a warmer climate. This can cause severe threats to human life and loss of access to critical supplies and services for rural or isolated communities.',
+					'Changes in animal and plant populations in the Arctic can negatively impact remote and indigenous populations who depend on natural resources for livelihoods and food security<sup>1,2</sup>.',
+					'Harmful algal blooms (HABs), whose biotoxins can be a serious health hazard to humans or animals (resulting in paralysis or death), are increasing globally and expected to increase in the Arctic. HABs are influenced directly by climate change-related factors such as temperature, winds, currents, nutrients, and runoff<sup>3</sup>.',
+					'Changes in the physical environment has resulted in a reduced livelihood and food security, and indigenous Arctic communities have been forced to re-locate as a consequence of reduced soil stability from thawing of permafrost. This has lead to an increasingly high number of suicides in the Arctic, especially amongst indigenous youth<sup>1,4</sup>.',
 				],
 				'sources': [
+					'Durkalec, A, C Furgal, M Skinner & T Sheldon, 2015, ‘Climate change influences on environment as a determinant of Indigenous health: Relationships to place, sea ice, and health in an Inuit community’, <i>Social Science & Medicine</i>, 136-137, pp. 17-26.',
+					'Tyler, NJC, JM Turi, MA Sundset, K Strøm Bull, MN Sara, E Reinert, N Oskal, C Nellemann, JJ McCarthy, SD Mathiesen, ML Martello, OH Magga, GK Hovelsrud, I Hanssen-Bauer, IMG Eira, NI Eira & RW Corell, 2007, ‘Saami reindeer pastoralism under climate change: Applying a generalized framework for vulnerability studies to a sub-arctic social–ecological system’, <i>Global Environmental Change</i>, 17(2), pp.191-206.',
+					'Epstein, P & D Ferber, 2011. <i>Changing Planet, Changing Health: How the Climate Crisis Threatens Our Health and What We Can Do About It</i>, University of California Press.',
+					'Rynor, B, 2012, ‘Climate change poses health threats in Arctic’, <i>Canadian Medical Association Journal</i>, 184(1), pp.333-34.',
 				] 
 			},			
-			//Risk: Loss of fisheries		
+		]
+	},
+
+	//Small Islands
+	{
+		'code': '',
+		'name': 'Small Islands',
+		'risks': [
+			//Risk: Loss of livelihoods, coastal settlements, and economic stability
 			{
-				'id': 'fisheries',
-				'name': 'Loss of fisheries',
+				'id': 'loss',
+				'name': 'Loss of livelihoods, coastal settlements, and economic stability',
 				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
+					'present': 3,
+					'degree2': 7,
+					'degree4': 9
 				},
-				'icon': '',
+				'icon': 'loss-of-livelihoods-coastal-settlements-economic-stability.png',
 				'climatic_drivers': [
 					{
-						'title': '',
-						'img_file': '', 
-					}
+						'title': 'Drying trend',
+						'img_file': 'drying-trend.png', 
+					},
+					{
+						'title': 'Cyclones',
+						'img_file': 'cyclones.png', 
+					},
+					{
+						'title': 'Ocean acidification',
+						'img_file': 'ocean-acidification.png', 
+					},
+					{
+						'title': 'Sea level rise',
+						'img_file': 'seal-level-rise.png', 
+					},
+					{
+						'title': 'Extreme precipitation',
+						'img_file': 'extreme-precipitation.png', 
+					},
 				],
 				'key_facts':[
+					'Small island economies are more vulnerable to sea level rise compared to other geographical areas, as most of the population and infrastructure is located in coastal zones. For example, in the Maldives, 50% to 80% of the land area is less than 1 metre above sea level.',
+					'A 1m rise in sea level “would render some island countries uninhabitable”<sup>1</sup>. It is projected that the Earth is already locked in to reach 1m sea level rise by 2100.',
+					'Sea level rise, in combination with more frequent extreme weather events, will cause immediate threat to human lives and loss of settlements and livelihood opportunities. Adaptation to these events are estimated to be extremely costly, where the cost of protection in relation to GDP are the highest in the world for some small island nations<sup>2,3</sup>.',
+					'In the Caribbean, it’s estimated that a 1m rise in sea level will place 49% to 60% of tourist resort properties at risk of beach erosion damage. This would potentially transform the competitive position and sustainability of coastal tourism destinations in the region<sup>4</sup>.',
 				],
 				'sources': [
+					'IPCC, 1990. <i>Climate Change: The IPCC Impacts Assessment. Contribution of Working Group II to the First Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://goo.gl/k25fCz">https://goo.gl/k25fCz</a>',
+					'Betzold, C, 2015, ‘Adapting to climate change in small island developing states’, <i>Climatic Change</i>, 133(3), pp.481-489.',
+					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/">https://www.ipcc.ch/report/ar5/wg2/</a>',
+					'Scott, D, MC Simpson & R Sim, 2012. ‘The vulnerability of Caribbean coastal tourism to scenarios of climate change related sea level rise’, <i>Journal of Sustainable Tourism</i>, 20(6), pp.883-898.',
+				] 
+			},
+			//Risk: Decline of coral reef ecosystems
+			{
+				'id': 'decline_coral',
+				'name': 'Decline of coral reef ecosystems',
+				'level': {
+					'present': 5,
+					'degree2': 7,
+					'degree4': 9
+				},
+				'icon': 'decline-of-coral-reef-ecosystems.png',
+				'climatic_drivers': [
+					{
+						'title': 'Warming trend',
+						'img_file': 'warming-trend.png', 
+					},
+					{
+						'title': 'Cyclones',
+						'img_file': 'cyclones.png', 
+					},
+					{
+						'title': 'Ocean acidification',
+						'img_file': 'ocean-acidification.png', 
+					},
+					{
+						'title': 'Sea surface temperature',
+						'img_file': 'sea-surface-temperature.png', 
+					},
+				],
+				'key_facts':[
+					'Atolls and coral reefs are highly threatened by increased sea surface temperatures. Thermal stress results in coral bleaching and reduced reef calcification rates, which reduce reef functionality and viability of living reef systems. Reef bleaching events have already become more severe and frequent, and are expected to increase in the future<sup>1</sup>.',
+					'More frequent severe weather events are expected in the future. Strong winds and storm surges can cause severe damage on coral reefs and cause long term implications on coral reef productivity.',
+					'A 2.8°C warming is likely to increase average sea surface temperatures by 1.8-2.3°C by 2100<sup>2</sup>, and will pose a risk to 99% of all current coral reefs by 2100<sup>3</sup>. This being said, increased sea surface temperatures may also result in suitable conditions for coral reefs in new areas<sup>1</sup>.',
+				],
+				'sources': [
+					'Descombes, P, MS Wisz, F Leprieur, V Parravicini, C Heine, SM Olsen, D Swingedouw, M Kulbicki, D Mouillot & L Pellissier, 2015, ‘Forecasted coral reef decline in marine biodiversity hotspots under climate change’, <i>Global Change Biology</i>, 21(7), pp.2479–2487.',
+					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/">https://www.ipcc.ch/report/ar5/wg2/</a>',
+					'Schleussner, CF, TK Lissner, EM Fischer, J Wohland, M Perrette, A Golly, J Rogelj, KChilders, J Schewe, K Frieler, M Mengel, W Hare & M Schaeffer, 2016. ‘Differential climate impacts for policy-relevant limits to global warming: the case of 1.5 °C and 2 °C’, <i>Earth System Dynamics</i>, 7(2), pp.327-351.',
 				] 
 			},			
-			//Risk: Undernutrition		
-			{
-				'id': 'undernutrition',
-				'name': 'Undernutrition',
-				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				},
-				'icon': '',
-				'climatic_drivers': [
-					{
-						'title': '',
-						'img_file': '', 
-					}
-				],
-				'key_facts':[
-				],
-				'sources': [
-				] 
-			},			
-			//Risk: Water scarcity	
-			{
-				'id': 'waterscarcity',
-				'name': 'Water scarcity',
-				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				},
-				'icon': '',
-				'climatic_drivers': [
-					{
-						'title': '',
-						'img_file': '', 
-					}
-				],
-				'key_facts':[
-				],
-				'sources': [
-				] 
-			},			
-			//Risk: Disease
-			{
-				'id': 'disease',
-				'name': 'Disease',
-				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				},
-				'icon': '',
-				'climatic_drivers': [
-					{
-						'title': '',
-						'img_file': '', 
-					}
-				],
-				'key_facts':[
-				],
-				'sources': [
-				] 
-			}
 		]
 	},
 
@@ -1013,139 +1050,7 @@ var risk_details = [
 		]
 	},
 
-	//Small Islands
-	{
-		'code': '',
-		'name': 'Small Islands',
-		'risks': [
-			//Risk: Reduced crop productivity
-			{
-				'id': 'productivity',
-				'name': 'Reduced crop productivity',
-				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				},
-				'icon': '',
-				'climatic_drivers': [
-					{
-						'title': '',
-						'img_file': '', 
-					}
-				],
-				'key_facts':[
-				],
-				'sources': [
-				] 
-			},
-			//Risk: Adverse effects on livestock
-			{
-				'id': 'livestock',
-				'name': 'Adverse effects on livestock',
-				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				},
-				'icon': '',
-				'climatic_drivers': [
-					{
-						'title': '',
-						'img_file': '', 
-					}
-				],
-				'key_facts':[
-				],
-				'sources': [
-				] 
-			},			
-			//Risk: Loss of fisheries		
-			{
-				'id': 'fisheries',
-				'name': 'Loss of fisheries',
-				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				},
-				'icon': '',
-				'climatic_drivers': [
-					{
-						'title': '',
-						'img_file': '', 
-					}
-				],
-				'key_facts':[
-				],
-				'sources': [
-				] 
-			},			
-			//Risk: Undernutrition		
-			{
-				'id': 'undernutrition',
-				'name': 'Undernutrition',
-				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				},
-				'icon': '',
-				'climatic_drivers': [
-					{
-						'title': '',
-						'img_file': '', 
-					}
-				],
-				'key_facts':[
-				],
-				'sources': [
-				] 
-			},			
-			//Risk: Water scarcity	
-			{
-				'id': 'waterscarcity',
-				'name': 'Water scarcity',
-				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				},
-				'icon': '',
-				'climatic_drivers': [
-					{
-						'title': '',
-						'img_file': '', 
-					}
-				],
-				'key_facts':[
-				],
-				'sources': [
-				] 
-			},			
-			//Risk: Disease
-			{
-				'id': 'disease',
-				'name': 'Disease',
-				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				},
-				'icon': '',
-				'climatic_drivers': [
-					{
-						'title': '',
-						'img_file': '', 
-					}
-				],
-				'key_facts':[
-				],
-				'sources': [
-				] 
-			}
-		]
-	},
+
 	//The Ocean
 	{
 		'code': '',

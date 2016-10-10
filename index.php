@@ -42,28 +42,22 @@
         <div id="risk_level" class="col-xs-12 col-sm-4 col-md-4 hidden">
             <h4>Risk level:</h4>
             <div class="list-group">
-                <div class="list-group-item row">
-                    <div class="col-xs-2 level-label">Present</div>
-                    <div class="col-xs-10 ">
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" id="present_level" aria-valuemin="0" aria-valuemax="10"></div>
-                        </div>
+                <div class="list-group-item">
+	                <h6>Present</h6>
+	                <div class="progress">
+                        <div class="progress-bar" role="progressbar" id="present_level" aria-valuemin="0" aria-valuemax="10"></div>
                     </div>
                 </div>
-                <div class="list-group-item row">
-                    <div class="col-xs-2 level-label">2 &#8451; Warming</div>
-                    <div class="col-xs-10">
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" id="degree2_level" aria-valuemin="0" aria-valuemax="10"></div>
-                        </div>
+                <div class="list-group-item">
+	                <h6>2°C Warming</h6>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" id="degree2_level" aria-valuemin="0" aria-valuemax="10"></div>
                     </div>
                 </div>
-                <div class="list-group-item row">
-                    <div class="col-xs-2 level-label">4 &#8451; Warming</div>
-                    <div class="col-xs-10">
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" id="degree4_level" aria-valuemin="0" aria-valuemax="10"></div>
-                        </div>
+                <div class="list-group-item">
+	                <h6>4°C Warming</h6>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" id="degree4_level" aria-valuemin="0" aria-valuemax="10"></div>
                     </div>
                 </div>
             </div>

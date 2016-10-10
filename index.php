@@ -31,7 +31,15 @@
 
     <div class="row">
         <div id="smallmap" class="col-xs-12 col-sm-4 col-md-4 hidden"></div>
-        <div id="risk_level" class="col-xs-12 col-sm-8 col-md-8 right_div hidden">
+        <div id="key_impact_risks" class="col-xs-12 col-sm-8 col-md-8 hidden">
+            <h4>Key Impact Risks</h4>
+            <div class="risks">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div id="risk_level" class="col-xs-12 col-sm-4 col-md-4 hidden">
             <h4>Risk level:</h4>
             <div class="list-group">
                 <div class="list-group-item row">
@@ -60,15 +68,7 @@
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="row">
-        <div id="key_impact_risks" class="col-xs-12 col-sm-4 col-md-4 hidden">
-            <h4>Key Impact Risks</h4>
-            <div class="risks">
-            </div>
-        </div>
-        <div id="risk_details" class="col-xs-12 col-sm-8 col-md-8 right_div hidden">
+        <div id="risk_details" class="col-xs-12 col-sm-8 col-md-8 hidden">
             <div class="details_title">
                 <img src="" id="title_img" class="img-responsive img-circle title_img" alt="">
                 <h4 id="title_text" class="title_text"></h4>

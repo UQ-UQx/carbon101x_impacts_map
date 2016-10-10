@@ -417,7 +417,7 @@ $(document).ready(function(){
 			var na = {type: "FeatureCollection", name: "North America", id:4, clsname: "na_small", selected: false,
 						features: countries.features.filter(function(d) { return d.properties.continent=="North America"; })};
 			var sa = {type: "FeatureCollection", name: "Central and South America", id:5, clsname: "sa_small", selected: false, 
-						features: countries.features.filter(function(d) { return d.properties.continent=="South America"; })};
+						features: countries.features.filter(function(d) { return d.properties.continent=="South America" || d.properties.continent=="Central America"; })};
 			var antarctica = {type: "FeatureCollection", name: "Polar Regions", id:6, clsname: "polar_small", selected: false,
 						features: countries.features.filter(function(d) { return d.properties.continent=="Antarctica"; })};
 			var greenland =  {type: "FeatureCollection", name: "Polar Regions", id:7, clsname: "polar_small", selected: false,

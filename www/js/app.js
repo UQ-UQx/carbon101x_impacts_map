@@ -194,14 +194,106 @@ $(document).ready(function(){
 		var present_value = risk_info['level']['present'];
 		var present_width = (present_value * 10) + '%';
 		$('#present_level').attr('aria-valuenow', present_value).css('width', present_width);
+		var present_color = '';
+		var present_text = '';
+		switch(present_value) {
+			case 1:
+			case 2:
+				present_color = 'SpringGreen';
+				present_text = 'Very low';
+				break;
+			case 3:
+			case 4:
+				present_color = '#DDDD00';
+				present_text = 'Low';
+				break;
+			case 5:
+			case 6:
+				present_color = 'Orange';
+				present_text = 'Medium';
+				break;
+			case 7:
+			case 8:
+				present_color = 'Red';
+				present_text = 'High';
+				break;
+			case 9:
+			case 10:
+				present_color = 'DarkRed';
+				present_text = 'Very high';
+				break;
+		}
+		$('#present_level').css('background', present_color).text(present_text);
+
 		//Degree 2
 		var degree2_value = risk_info['level']['degree2'];
 		var degree2_width = (degree2_value * 10) + '%';
 		$('#degree2_level').attr('aria-valuenow', degree2_value).css('width', degree2_width);
+		var degree2_color = '';
+		var degree2_text = '';
+		switch(degree2_value) {
+			case 1:
+			case 2:
+				degree2_color = 'SpringGreen';
+				degree2_text = 'Very low';
+				break;
+			case 3:
+			case 4:
+				degree2_color = '#DDDD00';
+				degree2_text = 'Low';
+				break;
+			case 5:
+			case 6:
+				degree2_color = 'Orange';
+				degree2_text = 'Medium';
+				break;
+			case 7:
+			case 8:
+				degree2_color = 'Red';
+				degree2_text = 'High';
+				break;
+			case 9:
+			case 10:
+				degree2_color = 'DarkRed';
+				degree2_text = 'Very high';
+				break;
+		}
+		$('#degree2_level').css('background', degree2_color).text(degree2_text);
+
 		//Degree 4
 		var degree4_value = risk_info['level']['degree4'];
 		var degree4_width = (degree4_value * 10) + '%';
 		$('#degree4_level').attr('aria-valuenow', degree4_value).css('width', degree4_width);
+		var degree4_color = '';
+		var degree4_text = '';
+		switch(degree4_value) {
+			case 1:
+			case 2:
+				degree4_color = 'SpringGreen';
+				degree4_text = 'Very low';
+				break;
+			case 3:
+			case 4:
+				degree4_color = '#DDDD00';
+				degree4_text = 'Low';
+				break;
+			case 5:
+			case 6:
+				degree4_color = 'Orange';
+				degree4_text = 'Medium';
+				break;
+			case 7:
+			case 8:
+				degree4_color = 'Red';
+				degree4_text = 'High';
+				break;
+			case 9:
+			case 10:
+				degree4_color = 'DarkRed';
+				degree4_text = 'Very high';
+				break;
+		}
+		$('#degree4_level').css('background', degree4_color).text(degree4_text);
 
 		//Init risk_details
 		//Detail title

@@ -25,10 +25,14 @@ div.active {
 	color: white;
 }
 
-div#smallmap, div#key_impact_risks{
+div#smallmap, div#risk_level{
 	padding: 0px 2px 0px 2px;
 }
 
 #risk_details {
 	border-style: solid;
+}
+
+div.risks {
+	margin-left: 10px;
 }

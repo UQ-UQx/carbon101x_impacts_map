@@ -40,9 +40,9 @@ var risk_details = [
 				],
 				'sources': [
 					'UNEP, 2008. <i>Africa Atlas of our Changing Environment</i>, Nairobi, Kenya.',
-					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar5/wg2/">https://www.ipcc.ch/report/ar5/wg2/</a>',
+					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">https://www.ipcc.ch/report/ar5/wg2/</a>',
 					'Raxworthy, CJ, RG Pearson, N Rabibisoa, AM Rakotondrazafy, JB Ramanamanjato, AP Raselimanana, S Wu, RA Nussbaum & DA Stone, 2008. <i>Extinction vulnerability of tropical montane endemism from warming and upslope displacement: a preliminary appraisal for the highest massif in Madagascar</i>, Global Change Biology, 14(8), pp. 1703-1720.',
-					'Stern, NH, 2007. <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au">https://goo.gl/PxI2Au</a>'
+					'Stern, NH, 2007. <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">https://goo.gl/PxI2Au</a>'
 				] 
 			},
 
@@ -80,8 +80,8 @@ var risk_details = [
 					'Agricultural yields could decline by 15 – 35% under a 4°C warming scenario<sup>1</sup>',
 				],
 				'sources': [
-					'Stern, NH, 2007. <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au">https://goo.gl/PxI2Au</a>',
-					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change:</i> <a href="https://www.ipcc.ch/report/ar5/wg2/">https://www.ipcc.ch/report/ar5/wg2/</a>',
+					'Stern, NH, 2007. <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">https://goo.gl/PxI2Au</a>',
+					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change:</i> <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">https://www.ipcc.ch/report/ar5/wg2/</a>',
 				] 
 			},
 
@@ -121,8 +121,8 @@ var risk_details = [
 				],
 				'sources': [
 					'Frieler, K, M Meinshausen, A Golly, M Megel, K Lebek, D Donner & O Hoegh-Guldberg, 2013. ‘Limiting global warming to 2°C is unlikely to save most coral reefs’, <i>Nature Climate Change</i>, 3, pp.165-170.',
-					'Hoegh-Guldberg, O, H Hoegh-Guldberg, J Veron, A Green, ED Gomez, JEN Lough, M King, Ambariyanto, L Hansen, J Cinner, G Dews, G Russ, HZ Schuttenberg, EL Peñaflor, CM Eakin, TRL Christensen, M Abbey, F Areki, RAKosaka, A Tewfik & J Oliver, 2009. <i>The Coral Triangle and Climate Change: Ecosystems, People and Societies at Risk</i>: <a href="https://goo.gl/kRCnyl">https://goo.gl/kRCnyl</a>',
-					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/">https://www.ipcc.ch/report/ar5/wg2/</a>',
+					'Hoegh-Guldberg, O, H Hoegh-Guldberg, J Veron, A Green, ED Gomez, JEN Lough, M King, Ambariyanto, L Hansen, J Cinner, G Dews, G Russ, HZ Schuttenberg, EL Peñaflor, CM Eakin, TRL Christensen, M Abbey, F Areki, RAKosaka, A Tewfik & J Oliver, 2009. <i>The Coral Triangle and Climate Change: Ecosystems, People and Societies at Risk</i>: <a href="https://goo.gl/kRCnyl" target="_blank">https://goo.gl/kRCnyl</a>',
+					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">https://www.ipcc.ch/report/ar5/wg2/</a>',
 				] 
 			},
 
@@ -156,8 +156,8 @@ var risk_details = [
 					'  Up to 80 million more people could be exposed to malaria in Africa under a 4°C warming scenario<sup>1</sup>.',
 				],
 				'sources': [
-					'Stern, NH, 2007. <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au">https://goo.gl/PxI2Au</a>',
-					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/">https://www.ipcc.ch/report/ar5/wg2/</a>',
+					'Stern, NH, 2007. <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">https://goo.gl/PxI2Au</a>',
+					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">https://www.ipcc.ch/report/ar5/wg2/</a>',
 				] 
 			},
 
@@ -199,8 +199,8 @@ var risk_details = [
 					'Potentially a 30 – 50% decrease in water availability in Southern Africa under a 4°C warming scenario<sup>1</sup>.',
 				],
 				'sources': [
-					'Stern, NH, 2007. <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au">https://goo.gl/PxI2Au</a>',
-					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/">https://www.ipcc.ch/report/ar5/wg2/</a>',
+					'Stern, NH, 2007. <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">https://goo.gl/PxI2Au</a>',
+					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">https://www.ipcc.ch/report/ar5/wg2/</a>',
 				] 
 			},
 		]
@@ -238,7 +238,7 @@ var risk_details = [
 				],
 				'sources': [
 					'Ciscar, JC, A Iglesias, L Feyen, L Szabo, D Van Regemorter, B Amelung, R Nicholls, P Watkiss, OB Christensen, R Dankers, L Garrote, CM Goodess, A Hunt, A Moreno, J Richards & A Soria, 2011. ‘Physical and economic consequences of climate change in Europe’. <i>Proceedings of the National Academy of Sciences of the United States of America, 108, pp.2678-2683</i>.',
-					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/">https://www.ipcc.ch/report/ar5/wg2/</a>',
+					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">https://www.ipcc.ch/report/ar5/wg2/</a>',
 				] 
 			},
 
@@ -272,8 +272,8 @@ var risk_details = [
 					'In Southern Europe, serious droughts could occur once every 10 years under a 3°C warming scenario<sup>1</sup>.',
 				],
 				'sources': [
-					'Stern, NH, 2007. <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au">https://goo.gl/PxI2Au</a>',
-					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/">https://www.ipcc.ch/report/ar5/wg2/</a>',
+					'Stern, NH, 2007. <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">https://goo.gl/PxI2Au</a>',
+					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">https://www.ipcc.ch/report/ar5/wg2/</a>',
 				] 
 			},		
 
@@ -300,7 +300,7 @@ var risk_details = [
 				],
 				'sources': [
 					'Ciscar, JC, A Iglesias, L Feyen, L Szabo, D Van Regemorter, B Amelung, R Nicholls, P Watkiss, OB Christensen, R Dankers, L Garrote, CM Goodess, A Hunt, A Moreno, J Richards & A Soria, 2011. ‘Physical and economic consequences of climate change in Europe’. <i>Proceedings of the National Academy of Sciences of the United States of America, 108, pp.2678-2683</i>.',
-					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/">https://www.ipcc.ch/report/ar5/wg2/</a>',				
+					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">https://www.ipcc.ch/report/ar5/wg2/</a>',				
 				] 
 			}
 		]
@@ -337,8 +337,8 @@ var risk_details = [
 					'Under a ~2.8°C warming scenario, climate change is expected to contribute to an additional 143,000 heat-related deaths in people aged 65+ by 2050, in Asia alone<sup>1</sup>.',
 				],
 				'sources': [
-					'World Health Organisation, 2014. <i>Quantitative risk assessment of the effects of climate change on selected causes of death, 2030s and 2050s</i>. <a href="https://goo.gl/ZBnDoH">https://goo.gl/ZBnDoH</a>',
-					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/">https://www.ipcc.ch/report/ar5/wg2/</a>',
+					'World Health Organisation, 2014. <i>Quantitative risk assessment of the effects of climate change on selected causes of death, 2030s and 2050s</i>. <a href="https://goo.gl/ZBnDoH" target="_blank">https://goo.gl/ZBnDoH</a>',
+					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">https://www.ipcc.ch/report/ar5/wg2/</a>',
 				] 
 			},
 
@@ -372,8 +372,8 @@ var risk_details = [
 					'Under a global warming scenario of 2°C, some parts of the Lower Mekong Basin (a major ‘food bowl’ covering regions of Vietnam, Thailand, Cambodia and Laos) could see local annual average temperature increases of 4 - 6°C. This will see major shifts in the distribution of suitable growing areas, with a net loss in yields of some staple crops such as maize<sup>3</sup>.',
 				],
 				'sources': [
-					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/">https://www.ipcc.ch/report/ar5/wg2/</a>',
-					'Iglesias, A, S Quiroga & A Diz, 2011. ‘Looking into the future of agriculture in a changing climate’, <i>European Review of Agricultural Economics</i>, 38(3), pp.427-447.3.ICEM, 2013. <i>USAID Mekong ARCC Climate Change Impact and Adaptation Study for the Lower Mekong Basin: Main Report</i>. <a href="http://www.mekongarcc.net/resource">www.mekongarcc.net/resource</a>.'
+					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">https://www.ipcc.ch/report/ar5/wg2/</a>',
+					'Iglesias, A, S Quiroga & A Diz, 2011. ‘Looking into the future of agriculture in a changing climate’, <i>European Review of Agricultural Economics</i>, 38(3), pp.427-447.3.ICEM, 2013. <i>USAID Mekong ARCC Climate Change Impact and Adaptation Study for the Lower Mekong Basin: Main Report</i>. <a href="http://www.mekongarcc.net/resource" target="_blank">www.mekongarcc.net/resource</a>.'
 				] 
 			},			
 			//Risk: Exacerbated poverty and inequalities	
@@ -410,7 +410,7 @@ var risk_details = [
 					'In a low crop productivity scenario, producers in food exporting countries (such as Indonesia, the Philippines, and Thailand) would benefit from global food price rises and reduced poverty, while countries such as Bangladesh would experience a net increase in poverty of approximately 15% by 2030<sup>2</sup>.',
 				],
 				'sources': [
-					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/">https://www.ipcc.ch/report/ar5/wg2/</a>',
+					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">https://www.ipcc.ch/report/ar5/wg2/</a>',
 					'Hertel, TW, MB Burke & DB Lobell, 2010. ‘The poverty implications of climate-induced crop yield changes by 2030’, <i>Global Environmental Change</i>, 20(4), pp. 577-585.'
 				] 
 			},			
@@ -440,8 +440,8 @@ var risk_details = [
 					'Oceans absorb CO<sub>2</sub> from the atmosphere, reducing the greenhouse effect and potential global warming experienced by the Earth. However, this increase in CO<sub>2</sub> is altering the ocean chemistry, making it more acidic. This makes it harder for marine calcifying organisms (such as corals, molluscs and crustaceans) to form their skeletons and shells, and results in slower coral reef growth (or net loss) and weakening of reef ecosystems<sup>1</sup>. As atmospheric CO<sub>2</sub> concentration continues to increase, the impacts of ocean acidification will worsen.'
 				],
 				'sources': [
-					'Hoegh-Guldberg, O, H Hoegh-Guldberg, J Veron, A Green, ED Gomez, JEN Lough, M King, Ambariyanto, L Hansen, J Cinner, G Dews, G Russ, HZ Schuttenberg, EL Peñaflor, CM Eakin, TRL Christensen, M Abbey, F Areki, RAKosaka, A Tewfik & J Oliver, 2009. <i>The Coral Triangle and Climate Change: Ecosystems, People and Societies at Risk</i>: <a href="https://goo.gl/kRCnyl">https://goo.gl/kRCnyl</a>',
-					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/">https://www.ipcc.ch/report/ar5/wg2/</a>',
+					'Hoegh-Guldberg, O, H Hoegh-Guldberg, J Veron, A Green, ED Gomez, JEN Lough, M King, Ambariyanto, L Hansen, J Cinner, G Dews, G Russ, HZ Schuttenberg, EL Peñaflor, CM Eakin, TRL Christensen, M Abbey, F Areki, RAKosaka, A Tewfik & J Oliver, 2009. <i>The Coral Triangle and Climate Change: Ecosystems, People and Societies at Risk</i>: <a href="https://goo.gl/kRCnyl" target="_blank">https://goo.gl/kRCnyl</a>',
+					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">https://www.ipcc.ch/report/ar5/wg2/</a>',
 				] 
 			},			
 			//Risk: Species extinctions
@@ -470,9 +470,9 @@ var risk_details = [
 					'A doubling of present atmospheric CO<sub>2</sub> concentrations (which represents a further ~3°C warming) is expected to result in extinctions of 133–2,835 plants species and 10–213 vertebrates in Indo-Burma, and 105–1,522 plants and 5–77 vertebrates in China<sup>2</sup>.',
 				],
 				'sources': [
-					'IPCC, 2007. <i>Climate Change 2007: Impacts, Adaptation and Vulnerability. Contribution of Working Group II to the Fourth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://goo.gl/Mk5lM8">https://goo.gl/Mk5lM8</a>',
+					'IPCC, 2007. <i>Climate Change 2007: Impacts, Adaptation and Vulnerability. Contribution of Working Group II to the Fourth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://goo.gl/Mk5lM8" target="_blank">https://goo.gl/Mk5lM8</a>',
 					'Malcolm, JR, C Liu, RP Neilson, L Hansen & L Hannah, 2006. ‘Global warming and extinctions of endemic species from biodiversity hotspots’, <i>Conservation Biology</i>, 20(2), pp.538–548.',
-					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/">https://www.ipcc.ch/report/ar5/wg2/</a>',
+					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">https://www.ipcc.ch/report/ar5/wg2/</a>',
 				] 
 			},			
 		]
@@ -515,7 +515,7 @@ var risk_details = [
 				],
 				'sources': [
 					'Durner, G, D Douglas, R Nielson, S Amstrup, T McDonald, I Stirling, M Mauritzen, EW Born, Ø Wiig, E DeWeaver, MC Serreze, SE Belikov, MM Holland, J Maslanik, J Aars & A Derocher, 2009. ‘Predicting 21st‐century polar bear habitat distribution from global climate models’, <i>Ecological Monographs</i>, 79(1), pp.25-58.',
-					'Stern, NH, 2007. <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au">https://goo.gl/PxI2Au</a>',
+					'Stern, NH, 2007. <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">https://goo.gl/PxI2Au</a>',
 					'Callaghan, TV, LO Björn, Y Chernov, T Chapin, TR Christensen, B Huntley, RA Ims, M Johansson, D Jolly, S Jonasson, N Matveyeva, N Panikov, W Oechel, G Shaver, J Elster, H Henttonen, K Laine, K Taulavuori, E Taulavuori & C Zöckler, 2004. ‘Biodiversity, Distributions and Adaptations of Arctic Species in the Context of Environmental Change’, <i>Ambio</i>, 33(7), pp.404-17.',
 					'Storeheier, PV, BEH Van Oort, MA Sundset & SD Mathiesen, 2003. ‘Food intake of reindeer in winter’, <i>The Journal of Agricultural Science</i>, 141(1), pp.93-101.',
 				] 
@@ -601,9 +601,9 @@ var risk_details = [
 					'In the Caribbean, it’s estimated that a 1m rise in sea level will place 49% to 60% of tourist resort properties at risk of beach erosion damage. This would potentially transform the competitive position and sustainability of coastal tourism destinations in the region<sup>4</sup>.',
 				],
 				'sources': [
-					'IPCC, 1990. <i>Climate Change: The IPCC Impacts Assessment. Contribution of Working Group II to the First Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://goo.gl/k25fCz">https://goo.gl/k25fCz</a>',
+					'IPCC, 1990. <i>Climate Change: The IPCC Impacts Assessment. Contribution of Working Group II to the First Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://goo.gl/k25fCz" target="_blank">https://goo.gl/k25fCz</a>',
 					'Betzold, C, 2015, ‘Adapting to climate change in small island developing states’, <i>Climatic Change</i>, 133(3), pp.481-489.',
-					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/">https://www.ipcc.ch/report/ar5/wg2/</a>',
+					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">https://www.ipcc.ch/report/ar5/wg2/</a>',
 					'Scott, D, MC Simpson & R Sim, 2012. ‘The vulnerability of Caribbean coastal tourism to scenarios of climate change related sea level rise’, <i>Journal of Sustainable Tourism</i>, 20(6), pp.883-898.',
 				] 
 			},
@@ -642,7 +642,7 @@ var risk_details = [
 				],
 				'sources': [
 					'Descombes, P, MS Wisz, F Leprieur, V Parravicini, C Heine, SM Olsen, D Swingedouw, M Kulbicki, D Mouillot & L Pellissier, 2015, ‘Forecasted coral reef decline in marine biodiversity hotspots under climate change’, <i>Global Change Biology</i>, 21(7), pp.2479–2487.',
-					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/">https://www.ipcc.ch/report/ar5/wg2/</a>',
+					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">https://www.ipcc.ch/report/ar5/wg2/</a>',
 					'Schleussner, CF, TK Lissner, EM Fischer, J Wohland, M Perrette, A Golly, J Rogelj, KChilders, J Schewe, K Frieler, M Mengel, W Hare & M Schaeffer, 2016. ‘Differential climate impacts for policy-relevant limits to global warming: the case of 1.5 °C and 2 °C’, <i>Earth System Dynamics</i>, 7(2), pp.327-351.',
 				] 
 			},			

@@ -291,7 +291,7 @@ $(document).ready(function(){
 			var na = {type: "FeatureCollection", name: "North America", id:4, clsname: "na",
 						features: countries.features.filter(function(d) { return d.properties.continent=="North America"; })};
 			var sa = {type: "FeatureCollection", name: "Central and South America", id:5, clsname: "sa", 
-						features: countries.features.filter(function(d) { return d.properties.continent=="South America"; })};
+						features: countries.features.filter(function(d) { return d.properties.continent=="South America" || d.properties.continent=="Central America"; })};
 			var antarctica = {type: "FeatureCollection", name: "Polar Regions", id:6, clsname: "polar",
 						features: countries.features.filter(function(d) { return d.properties.continent=="Antarctica"; })};
 			var greenland =  {type: "FeatureCollection", name: "Polar Regions", id:7, clsname: "polar",

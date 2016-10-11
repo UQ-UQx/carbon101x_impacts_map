@@ -31,7 +31,7 @@
 	//unset($_SESSION['ltivars']);
 
 	// Initial $ltivars
-    if(isset($_POST['oauth_consumer_key'])) {
+    if(isset($_POST['oauth_consumer_key']) || empty($_SESSION['ltivars'])) {
         $lti = new Lti($config, true);
         $lti_valid = $lti->is_valid();
         if($lti_valid) {

@@ -7,7 +7,7 @@ global.d3 = require("d3");
 
 // Any special library you want to use can be installed through npm and imported into the specifc files.
 // Most of these may not need variables attached in order to use them, see their documentation.
-//require('bootstrap');
+require('bootstrap');
 //require('twbs-pagination');
 //require("blueimp-file-upload");
 var d3_geo = require("d3-geo");

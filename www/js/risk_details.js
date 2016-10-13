@@ -39,10 +39,10 @@ var risk_details = [
 					'Under a 3°C warming scenario, 20 – 50% of species in South Africa face extinction, including 25 – 60% mammals, 30 – 40% birds and 15 – 70% butterflies<sup>4</sup>.',
 				],
 				'sources': [
-					'UNEP, 2008. <i>Africa Atlas of our Changing Environment</i>, Nairobi, Kenya.',
-					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">https://www.ipcc.ch/report/ar5/wg2/</a>',
-					'Raxworthy, CJ, RG Pearson, N Rabibisoa, AM Rakotondrazafy, JB Ramanamanjato, AP Raselimanana, S Wu, RA Nussbaum & DA Stone, 2008. <i>Extinction vulnerability of tropical montane endemism from warming and upslope displacement: a preliminary appraisal for the highest massif in Madagascar</i>, Global Change Biology, 14(8), pp. 1703-1720.',
-					'Stern, NH, 2007. <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">https://goo.gl/PxI2Au</a>'
+					'UNEP (2008). <i>Africa Atlas of our Changing Environment</i>, Nairobi, Kenya.',
+					'IPCC (2014). <i>Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">Link</a>',
+					'Raxworthy, CJ, RG Pearson, N Rabibisoa, AM Rakotondrazafy, JB Ramanamanjato, AP Raselimanana, S Wu, RA Nussbaum & DA Stone (2008). <i>Extinction vulnerability of tropical montane endemism from warming and upslope displacement: a preliminary appraisal for the highest massif in Madagascar</i>, Global Change Biology, 14(8), pp. 1703-1720.',
+					'Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">https://goo.gl/PxI2Au</a>'
 				] 
 			},
 
@@ -80,8 +80,7 @@ var risk_details = [
 					'Agricultural yields could decline by 15 – 35% under a 4°C warming scenario<sup>1</sup>',
 				],
 				'sources': [
-					'Stern, NH, 2007. <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">https://goo.gl/PxI2Au</a>',
-					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change:</i> <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">https://www.ipcc.ch/report/ar5/wg2/</a>',
+					' Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">https://goo.gl/PxI2Au</a>',
 				] 
 			},
 
@@ -117,19 +116,19 @@ var risk_details = [
 					'Increased sea surface temperature and ocean acidification make coral reefs significantly more vulnerable to bleaching and mortality events.',
 					'A global warming increase of more than 2°C will eliminate two thirds of the Earth’s coral-dominated reef ecosystems<sup>1</sup>.',
 					'Coral reefs currently account for 20 – 25% of fish harvested in Africa. However, degradation of coral reefs will result in loss of fishery stocks – under a warming scenario of ~3°C, the ability of reef systems to provide food for coastal populations decreases by 80% by 2100<sup>2</sup>.',
-					'Coastal countries of West Africa will experience a significant negative impact from climate change. Lam et al. (2012) projected that, under a warming scenario of ~3°C by 2050, the annual landed value of fish for that region is estimated to decline by 21%, resulting in a nearly 50% decline in fisheries-related employment and a total annual loss of US$311 million to the region’s economy<sup>3</sup>.',
+					'Coastal countries of West Africa will experience a significant negative impact from climate change. Under a warming scenario of ~3°C by 2050, the annual landed value of fish for that region is estimated to decline by 21%, resulting in a nearly 50% decline in fisheries-related employment and a total annual loss of US$311 million to the region’s economy<sup>3</sup>.',
 				],
 				'sources': [
-					'Frieler, K, M Meinshausen, A Golly, M Megel, K Lebek, D Donner & O Hoegh-Guldberg, 2013. ‘Limiting global warming to 2°C is unlikely to save most coral reefs’, <i>Nature Climate Change</i>, 3, pp.165-170.',
-					'Hoegh-Guldberg, O, H Hoegh-Guldberg, J Veron, A Green, ED Gomez, JEN Lough, M King, Ambariyanto, L Hansen, J Cinner, G Dews, G Russ, HZ Schuttenberg, EL Peñaflor, CM Eakin, TRL Christensen, M Abbey, F Areki, RAKosaka, A Tewfik & J Oliver, 2009. <i>The Coral Triangle and Climate Change: Ecosystems, People and Societies at Risk</i>: <a href="https://goo.gl/kRCnyl" target="_blank">https://goo.gl/kRCnyl</a>',
-					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">https://www.ipcc.ch/report/ar5/wg2/</a>',
+					'Frieler, K, M Meinshausen, A Golly, M Megel, K Lebek, D Donner & O Hoegh-Guldberg (2013). ‘Limiting global warming to 2°C is unlikely to save most coral reefs’, <i>Nature Climate Change</i>, 3, pp.165-170.',
+					'Hoegh-Guldberg, O, H Hoegh-Guldberg, J Veron, A Green, ED Gomez, JEN Lough, M King, Ambariyanto, L Hansen, J Cinner, G Dews, G Russ, HZ Schuttenberg, EL Peñaflor, CM Eakin, TRL Christensen, M Abbey, F Areki, RAKosaka, A Tewfik & J Oliver (2009). <i>The Coral Triangle and Climate Change: Ecosystems, People and Societies at Risk</i>: <a href="https://goo.gl/kRCnyl" target="_blank">https://goo.gl/kRCnyl</a>',
+					'Lam, V, W Cheung, W Swartz & RU Sumaila (2012). ‘Climate change impacts on fisheries in West Africa: Implications for economic, food and nutritional security’, <i>African Journal of Marine Science</i>, 34(1), pp.103-117.',
 				] 
 			},
 
 			//Risk: Vector- and waterborne diseases	
 			{
 				'id': 'disease',
-				'name': 'Vector- and waterborne diseases',
+				'name': 'Vector- and water-borne diseases',
 				'level': {
 					'present': 7,
 					'degree2': 9,
@@ -156,8 +155,7 @@ var risk_details = [
 					'  Up to 80 million more people could be exposed to malaria in Africa under a 4°C warming scenario<sup>1</sup>.',
 				],
 				'sources': [
-					'Stern, NH, 2007. <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">https://goo.gl/PxI2Au</a>',
-					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">https://www.ipcc.ch/report/ar5/wg2/</a>',
+					'Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">https://goo.gl/PxI2Au</a>',
 				] 
 			},
 
@@ -199,8 +197,7 @@ var risk_details = [
 					'Potentially a 30 – 50% decrease in water availability in Southern Africa under a 4°C warming scenario<sup>1</sup>.',
 				],
 				'sources': [
-					'Stern, NH, 2007. <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">https://goo.gl/PxI2Au</a>',
-					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">https://www.ipcc.ch/report/ar5/wg2/</a>',
+					'Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">https://goo.gl/PxI2Au</a>',
 				] 
 			},
 		]
@@ -237,8 +234,7 @@ var risk_details = [
 					' The number of people in Europe annually affected by coastal floods in the reference year (1995) is estimated to be 36,000. Under a warming scenario of 2.5°C (without adaptation), the number of people affected annually by flooding is projected to increase to 775,000 people. The British Isles, Central Europe North, and Southern Europe are the areas potentially most affected by coastal floods<sup>1</sup>.',
 				],
 				'sources': [
-					'Ciscar, JC, A Iglesias, L Feyen, L Szabo, D Van Regemorter, B Amelung, R Nicholls, P Watkiss, OB Christensen, R Dankers, L Garrote, CM Goodess, A Hunt, A Moreno, J Richards & A Soria, 2011. ‘Physical and economic consequences of climate change in Europe’. <i>Proceedings of the National Academy of Sciences of the United States of America, 108, pp.2678-2683</i>.',
-					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">https://www.ipcc.ch/report/ar5/wg2/</a>',
+					'Ciscar, JC, A Iglesias, L Feyen, L Szabo, D Van Regemorter, B Amelung, R Nicholls, P Watkiss, OB Christensen, R Dankers, L Garrote, CM Goodess, A Hunt, A Moreno, J Richards & A Soria (2011). ‘Physical and economic consequences of climate change in Europe’. <i>Proceedings of the National Academy of Sciences of the United States of America, 108, pp.2678-2683</i>.',
 				] 
 			},
 
@@ -272,8 +268,7 @@ var risk_details = [
 					'In Southern Europe, serious droughts could occur once every 10 years under a 3°C warming scenario<sup>1</sup>.',
 				],
 				'sources': [
-					'Stern, NH, 2007. <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">https://goo.gl/PxI2Au</a>',
-					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">https://www.ipcc.ch/report/ar5/wg2/</a>',
+					' Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">https://goo.gl/PxI2Au</a>',
 				] 
 			},		
 
@@ -299,8 +294,7 @@ var risk_details = [
 					'Under a warming scenario of 2.5°C, the annual increase in human mortality (caused by heat and without acclimatization) is estimated at 60,000<sup>1</sup>.',
 				],
 				'sources': [
-					'Ciscar, JC, A Iglesias, L Feyen, L Szabo, D Van Regemorter, B Amelung, R Nicholls, P Watkiss, OB Christensen, R Dankers, L Garrote, CM Goodess, A Hunt, A Moreno, J Richards & A Soria, 2011. ‘Physical and economic consequences of climate change in Europe’. <i>Proceedings of the National Academy of Sciences of the United States of America, 108, pp.2678-2683</i>.',
-					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">https://www.ipcc.ch/report/ar5/wg2/</a>',				
+					' Ciscar, JC, A Iglesias, L Feyen, L Szabo, D Van Regemorter, B Amelung, R Nicholls, P Watkiss, OB Christensen, R Dankers, L Garrote, CM Goodess, A Hunt, A Moreno, J Richards & A Soria (2011). ‘Physical and economic consequences of climate change in Europe’. <i>Proceedings of the National Academy of Sciences of the United States of America, 108, pp.2678-2683</i>.',
 				] 
 			}
 		]
@@ -337,8 +331,7 @@ var risk_details = [
 					'Under a ~2.8°C warming scenario, climate change is expected to contribute to an additional 143,000 heat-related deaths in people aged 65+ by 2050, in Asia alone<sup>1</sup>.',
 				],
 				'sources': [
-					'World Health Organisation, 2014. <i>Quantitative risk assessment of the effects of climate change on selected causes of death, 2030s and 2050s</i>. <a href="https://goo.gl/ZBnDoH" target="_blank">https://goo.gl/ZBnDoH</a>',
-					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">https://www.ipcc.ch/report/ar5/wg2/</a>',
+					'World Health Organisation (2014). <i>Quantitative risk assessment of the effects of climate change on selected causes of death, 2030s and 2050s</i>. <a href="https://goo.gl/ZBnDoH" target="_blank">https://goo.gl/ZBnDoH</a>',
 				] 
 			},
 
@@ -372,8 +365,9 @@ var risk_details = [
 					'Under a global warming scenario of 2°C, some parts of the Lower Mekong Basin (a major ‘food bowl’ covering regions of Vietnam, Thailand, Cambodia and Laos) could see local annual average temperature increases of 4 - 6°C. This will see major shifts in the distribution of suitable growing areas, with a net loss in yields of some staple crops such as maize<sup>3</sup>.',
 				],
 				'sources': [
-					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">https://www.ipcc.ch/report/ar5/wg2/</a>',
-					'Iglesias, A, S Quiroga & A Diz, 2011. ‘Looking into the future of agriculture in a changing climate’, <i>European Review of Agricultural Economics</i>, 38(3), pp.427-447.3.ICEM, 2013. <i>USAID Mekong ARCC Climate Change Impact and Adaptation Study for the Lower Mekong Basin: Main Report</i>. <a href="http://www.mekongarcc.net/resource" target="_blank">www.mekongarcc.net/resource</a>.'
+					'IPCC (2014). <i>Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">Link</a>',
+					'Iglesias, A, S Quiroga & A Diz (2011). ‘Looking into the future of agriculture in a changing climate’, <i>European Review of Agricultural Economics</i>, 38(3), pp.427-447.3.ICEM, 2013. <i>USAID Mekong ARCC Climate Change Impact and Adaptation Study for the Lower Mekong Basin: Main Report</i>. <a href="http://www.mekongarcc.net/resource" target="_blank">www.mekongarcc.net/resource</a>.',
+					'ICEM (2013). <i>USAID Mekong ARCC Climate Change Impact and Adaptation Study for the Lower Mekong Basin: Main Report</i>. <a href=" http://www.mekongarcc.net/resource">Link</a>.',
 				] 
 			},			
 			//Risk: Exacerbated poverty and inequalities	
@@ -410,8 +404,8 @@ var risk_details = [
 					'In a low crop productivity scenario, producers in food exporting countries (such as Indonesia, the Philippines, and Thailand) would benefit from global food price rises and reduced poverty, while countries such as Bangladesh would experience a net increase in poverty of approximately 15% by 2030<sup>2</sup>.',
 				],
 				'sources': [
-					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">https://www.ipcc.ch/report/ar5/wg2/</a>',
-					'Hertel, TW, MB Burke & DB Lobell, 2010. ‘The poverty implications of climate-induced crop yield changes by 2030’, <i>Global Environmental Change</i>, 20(4), pp. 577-585.'
+					'IPCC (2014). <i>Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">Link</a>',
+					'Hertel, TW, MB Burke & DB Lobell (2010). ‘The poverty implications of climate-induced crop yield changes by 2030’, <i>Global Environmental Change</i>, 20(4), pp. 577-585.'
 				] 
 			},			
 			//Risk: Coral reef decline		
@@ -440,8 +434,7 @@ var risk_details = [
 					'Oceans absorb CO<sub>2</sub> from the atmosphere, reducing the greenhouse effect and potential global warming experienced by the Earth. However, this increase in CO<sub>2</sub> is altering the ocean chemistry, making it more acidic. This makes it harder for marine calcifying organisms (such as corals, molluscs and crustaceans) to form their skeletons and shells, and results in slower coral reef growth (or net loss) and weakening of reef ecosystems<sup>1</sup>. As atmospheric CO<sub>2</sub> concentration continues to increase, the impacts of ocean acidification will worsen.'
 				],
 				'sources': [
-					'Hoegh-Guldberg, O, H Hoegh-Guldberg, J Veron, A Green, ED Gomez, JEN Lough, M King, Ambariyanto, L Hansen, J Cinner, G Dews, G Russ, HZ Schuttenberg, EL Peñaflor, CM Eakin, TRL Christensen, M Abbey, F Areki, RAKosaka, A Tewfik & J Oliver, 2009. <i>The Coral Triangle and Climate Change: Ecosystems, People and Societies at Risk</i>: <a href="https://goo.gl/kRCnyl" target="_blank">https://goo.gl/kRCnyl</a>',
-					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">https://www.ipcc.ch/report/ar5/wg2/</a>',
+					' Hoegh-Guldberg, O, H Hoegh-Guldberg, J Veron, A Green, ED Gomez, JEN Lough, M King, Ambariyanto, L Hansen, J Cinner, G Dews, G Russ, HZ Schuttenberg, EL Peñaflor, CM Eakin, TRL Christensen, M Abbey, F Areki, RAKosaka, A Tewfik & J Oliver (2009). <i>The Coral Triangle and Climate Change: Ecosystems, People and Societies at Risk</i>: <a href="https://goo.gl/kRCnyl" target="_blank">https://goo.gl/kRCnyl</a>',
 				] 
 			},			
 			//Risk: Species extinctions
@@ -470,9 +463,8 @@ var risk_details = [
 					'A doubling of present atmospheric CO<sub>2</sub> concentrations (which represents a further ~3°C warming) is expected to result in extinctions of 133–2,835 plants species and 10–213 vertebrates in Indo-Burma, and 105–1,522 plants and 5–77 vertebrates in China<sup>2</sup>.',
 				],
 				'sources': [
-					'IPCC, 2007. <i>Climate Change 2007: Impacts, Adaptation and Vulnerability. Contribution of Working Group II to the Fourth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://goo.gl/Mk5lM8" target="_blank">https://goo.gl/Mk5lM8</a>',
-					'Malcolm, JR, C Liu, RP Neilson, L Hansen & L Hannah, 2006. ‘Global warming and extinctions of endemic species from biodiversity hotspots’, <i>Conservation Biology</i>, 20(2), pp.538–548.',
-					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">https://www.ipcc.ch/report/ar5/wg2/</a>',
+					'IPCC (2007). <i>Climate Change 2007: Impacts, Adaptation and Vulnerability. Contribution of Working Group II to the Fourth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://goo.gl/Mk5lM8" target="_blank">https://goo.gl/Mk5lM8</a>',
+					'Malcolm, JR, C Liu, RP Neilson, L Hansen & L Hannah (2006). ‘Global warming and extinctions of endemic species from biodiversity hotspots’, <i>Conservation Biology</i>, 20(2), pp.538–548.',
 				] 
 			},			
 		]
@@ -650,152 +642,126 @@ var risk_details = [
 	},
 
 
-	//Australia
+	//Australasia
 	{
 		'code': '',
 		'name': 'Australasia',
 		'risks': [
-			//Risk: Reduced crop productivity
+			//Risk: Coral reef decline
 			{
-				'id': 'productivity',
-				'name': 'Reduced crop productivity',
+				'id': 'coral_reef_decline',
+				'name': 'Coral reef decline',
 				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
+					'present': 4,
+					'degree2': 8,
+					'degree4': 10
 				},
-				'icon': '',
+				'icon': 'coral-reef-decline.png',
 				'climatic_drivers': [
 					{
-						'title': '',
-						'img_file': '', 
-					}
+						'title': 'Warming trend',
+						'img_file': 'warming-trend.png', 
+					},
+					{
+						'title': 'Damaging cyclones',
+						'img_file': 'cyclones.png', 
+					},
+					{
+						'title': 'Ocean acidification',
+						'img_file': 'ocean-acidification.png', 
+					},
 				],
 				'key_facts':[
+					'Assuming a “business-as-usual” scenario (which represent warming of ~2.8°C by 2100), more than 95 percent of Australian reefs will be rated as threatened by 2050, including most of the Great Barrier Reef<sup>1</sup>.',
+					'When corals are exposed to higher than normal seawater temperatures during the warm season, their algal symbiosis is disrupted, leading to a phenomenon known as bleaching. This physiological symptom of stress is followed by large-scale mortality if temperatures are high enough or exposure long enough.',
+					'Under a warming scenario of 2°C by 2100, annual bleaching is projected to occur. Given that the recovery time from a severe bleaching-induced mortality event is at least 10 years, these models suggest that reefs are likely to be dominated by non-coral organisms such as macroalgae by 2050<sup>2</sup>.',
+					'Ocean acidification threatens coral reef survival by reducing corals’ ability to build their skeletons. This impedes their ability to withstand physical disturbances from storms, and means they have less energy to respond to stress and disease.',
+					'Predictions suggest an increase in the frequency of severe weather events, which could lead to more serious physical damage, with less time between events to recover. The most immediate impact is coral breakage, dislocation and degradation from wind and waves. Heavy rainfall events also lead to flood plumes, exposing inshore coral reefs to freshwater inundations and nutrient overload.',
 				],
 				'sources': [
+					'Burke, L, K Reytar, M Spalding & A Perry (2011). <i>Reefs at Risk Revisited</i>. <a href="http://pdf.wri.org/reefs_at_risk_revisited.pdf" target="_blank">Link</a>',
+					'IPCC (2007). <i>Climate Change 2007: Impacts, Adaptation and Vulnerability. Contribution of Working Group II to the Fourth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://goo.gl/Mk5lM8" target="_blank">Link</a>',
 				] 
 			},
-			//Risk: Adverse effects on livestock
+			//Risk: Biodiversity loss
 			{
-				'id': 'livestock',
-				'name': 'Adverse effects on livestock',
+				'id': 'biodiversity_loss',
+				'name': 'Biodiversity loss',
 				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
+					'present': 3,
+					'degree2': 7,
+					'degree4': 9
 				},
-				'icon': '',
+				'icon': 'biodiversity-loss.png',
 				'climatic_drivers': [
 					{
-						'title': '',
-						'img_file': '', 
-					}
+						'title': 'Warming trend',
+						'img_file': 'warming-trend.png', 
+					},
+					{
+						'title': 'Drying trend',
+						'img_file': 'drying-trend.png', 
+					},
+					{
+						'title': 'Snow cover',
+						'img_file': 'snow-cover.png', 
+					},
 				],
 				'key_facts':[
+					'Changes in the physical environment affect physiological processes and behaviours in plants and animals, such as photosynthesis, water use efficiency, migration and reproduction.',
+					'Species that have a narrow ‘ecological niche’ (the specific place an organism has in an ecosystem, including its habitat requirements) are most vulnerable to changes in climatic conditions. For example, modelling shows that 100% of the bioclimates of Acacia species will disappear in Australia with a 2°C warming<sup>1</sup>.',
+					'One of the most vulnerable Australian ecosystems is the alpine zone because of loss of snow cover, invasions by exotic species, and changed species interactions<sup>2</sup>. This is also true of New Zealand – it has been estimated that 3°C of warming would result in the loss of 80% of discrete alpine areas in New Zealand, and extinction of 200-300 species of native vascular plants<sup>3</sup>.',
 				],
 				'sources': [
+					' Pouliquen-Young, O & P Newman (2000). <i>The implications of Climate Change for Land-Based Nature Conservation Strategies 1996-1999: Final Report to Environment Australia.</i>',
+					'IPCC (2014). <i>Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">Link</a>',
+					' Hallow, SRP & AF Mark (2003). ‘Climate-change effects on alpine plant biodiversity: a New Zealand perspective on quantifying the threat’, <i>Arctic Antarctic and Alpine Research</i>, 35(2), pp.248-254.',
 				] 
 			},			
-			//Risk: Loss of fisheries		
+			//Risk: Heat-related human morbidity and mortality		
 			{
-				'id': 'fisheries',
-				'name': 'Loss of fisheries',
+				'id': 'human_morbidity_mortality',
+				'name': 'Heat-related human morbidity and mortality',
 				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
+					'present': 4,
+					'degree2': 7,
+					'degree4': 9
 				},
-				'icon': '',
+				'icon': 'heat-related-human-mortality.png',
 				'climatic_drivers': [
 					{
-						'title': '',
-						'img_file': '', 
-					}
+						'title': 'Extreme temperature',
+						'img_file': 'extreme-temperature.png', 
+					},
 				],
 				'key_facts':[
+					'As the global atmospheric temperature increases, so too will the frequency, duration and magnitude of extreme heat events in Australia.',
+					'In addition to mortality, extreme heat events cause economic losses; impact on health and well-being, labour productivity, crop production, and air quality; and increase the risk of wildfires.',
+					'Climate change has already had an impact on extreme heat events in Australia. For example, research shows that climate change tripled the odds of heatwaves occurring during the 2012/13 summer<sup>1</sup>. The average intensity of heat waves increased by at least 1°C in most Australian capital cities between the periods of 1950-1980 and 1981-2011<sup>1</sup>.',
+					'Morbidity and mortality is expected to increase as the global warming trend continues. For example, a threefold increase in heat-related deaths is projected for Sydney by 2100 under a ~3.4°C, assuming no adaptation<sup>2</sup>.',
 				],
 				'sources': [
+					'Hughes, L, E Hanna & J Fenwick (2016). <i>The Silent Killer: Climate Change and the Health Impacts of Extreme Heat</i>. <a href="https://goo.gl/PYAaDA" target="_blank">Link</a>',
+					'Gosling, SN, GR McGregor & JA Lowe (2009). ‘Climate change and heat-related mortality in six cities. Part 2: climate model evaluation and projected impacts from changes in the mean and variability of temperature with climate change’, <i>International Journal of Biometeorology</i>, 53(1), pp.31-51.',
 				] 
 			},			
-			//Risk: Undernutrition		
-			{
-				'id': 'undernutrition',
-				'name': 'Undernutrition',
-				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				},
-				'icon': '',
-				'climatic_drivers': [
-					{
-						'title': '',
-						'img_file': '', 
-					}
-				],
-				'key_facts':[
-				],
-				'sources': [
-				] 
-			},			
-			//Risk: Water scarcity	
-			{
-				'id': 'waterscarcity',
-				'name': 'Water scarcity',
-				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				},
-				'icon': '',
-				'climatic_drivers': [
-					{
-						'title': '',
-						'img_file': '', 
-					}
-				],
-				'key_facts':[
-				],
-				'sources': [
-				] 
-			},			
-			//Risk: Disease
-			{
-				'id': 'disease',
-				'name': 'Disease',
-				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				},
-				'icon': '',
-				'climatic_drivers': [
-					{
-						'title': '',
-						'img_file': '', 
-					}
-				],
-				'key_facts':[
-				],
-				'sources': [
-				] 
-			}
 		]
 	},
+	
+	
 	//North America
 	{
 		'code': '',
 		'name': 'North America',
 		'risks': [
-			//Risk: Reduced crop productivity
+			//Risk: Wildfire damage
 			{
-				'id': 'productivity',
-				'name': 'Reduced crop productivity',
+				'id': 'wildfire_damage',
+				'name': 'Wildfire damage',
 				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
+					'present': 7,
+					'degree2': 9,
+					'degree4': 10
 				},
 				'icon': '',
 				'climatic_drivers': [

@@ -763,125 +763,97 @@ var risk_details = [
 					'degree2': 9,
 					'degree4': 10
 				},
-				'icon': '',
+				'icon': 'wildfire-damage.png',
 				'climatic_drivers': [
 					{
-						'title': '',
-						'img_file': '', 
-					}
+						'title': 'Warming trend',
+						'img_file': 'warming-trend.png', 
+					},
+					{
+						'title': 'Drying trend',
+						'img_file': 'drying-trend.png', 
+					},
 				],
 				'key_facts':[
+					'Wildfire risk depends on a number of factors, including temperature, soil moisture, and the presence of trees, shrubs and other potential fuel. Warmer temperatures and drier conditions increase the chances of a fire starting, or help a burning fire spread.',
+					'Wildfires in the western United States have been increasing in frequency and duration since the mid-1980s (comparisons are between 1970-1986 and 1986-2003), occurring nearly four times more often, burning more than six times the land area, and lasting almost five times as long. These changes are strongly associated with increased spring and summer temperatures and an earlier spring melt<sup>1</sup>.',
+					'For every 1°C of temperature increase, a 200-400% increase in wildfire area burned is expected in western North American regions<sup>2</sup>. The IPCC estimates that North America will warm by 2-4°C by 2100 (relative to 1986-2005 baseline period)<sup>3</sup>.',
 				],
 				'sources': [
+					' Westerling, AL, HG Hidalgo, DR Cayan, TW Swetnam (2006). ‘Warming and earlier spring increase Western US forest wildfire activity’, <i>Science</i>, 313(5789), pp.940-943.',
+					'National Research Council (2011). <i>Climate Stabilization Targets: Emissions, Concentrations, and Impacts over Decades to Millennia</i>. <a href="https://goo.gl/i0hV1X" target="_blank">Link</a>',
+					'IPCC (2014). <i>Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">Link</a>',
 				] 
 			},
-			//Risk: Adverse effects on livestock
+			//Risk: Heat-related human mortality
 			{
-				'id': 'livestock',
-				'name': 'Adverse effects on livestock',
+				'id': 'human_mortality',
+				'name': 'Heat-related human mortality',
 				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
+					'present': 5,
+					'degree2': 7,
+					'degree4': 9
 				},
-				'icon': '',
+				'icon': 'heat-related-human-mortality.png',
 				'climatic_drivers': [
 					{
-						'title': '',
-						'img_file': '', 
-					}
+						'title': 'Extreme temperature',
+						'img_file': 'extreme-temperature.png', 
+					},
 				],
 				'key_facts':[
+					'As the global atmospheric temperature increases, so too will the frequency, duration and magnitude of extreme heat events.',
+					'Extreme heat presently kills more people in the United States than any other weather-related event<sup>1</sup>.',
+					'A warming scenario of ~3.4°C is projected to increase exposure to extreme heat by 260% in the United States (modelling based on SRES A2 scenario, assuming constant population)<sup>2</sup>.',
+					'A study of Chicago shows that severe heat waves akin to the 1995 event (which was responsible for ~700 deaths and unprecedented in the city’s 123-year-old weather records) could occur every second year by the end of the century under a warming scenario of ~1.8°C<sup>3</sup>.',
+					'In addition to mortality, extreme heat events cause economic losses; impact on health and well-being, labour productivity, crop production, and air quality; and increase the risk of wildfires.',
 				],
 				'sources': [
+					'Centers for Disease Control & Prevention (2012). <i>Climate Change and Extreme Heat Events</i>. <a href="https://goo.gl/8IqA5o"target="_blank">Link</a>',
+					'Jones, B, BC O’Neill, L McDaniel, S McGinnis, LO Mearns, C Tebaldi (2015). ‘Future population exposure to US heat extreme’, <i>Nature Climate Change</i>, 5(7), pp.652-655.',
+					'Hayhoe, K, S Sheridan, L Kalstein & S Greene (2010). ‘Climate change, heat waves, and mortality projections for Chicago’, <i>Journal of Great Lakes Research</i>, 36, pp.65-73.',
 				] 
 			},			
-			//Risk: Loss of fisheries		
+			//Risk: Urban floods	
 			{
-				'id': 'fisheries',
-				'name': 'Loss of fisheries',
+				'id': 'urban_floods',
+				'name': 'Urban floods',
 				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
+					'present': 5,
+					'degree2': 7,
+					'degree4': 9
 				},
-				'icon': '',
+				'icon': 'urban-floods.png',
 				'climatic_drivers': [
 					{
-						'title': '',
-						'img_file': '', 
-					}
+						'title': 'Extreme precipitation',
+						'img_file': 'extreme-precipitation.png', 
+					},
+					{
+						'title': 'Damaging cyclones',
+						'img_file': 'cyclones.png', 
+					},
+					{
+						'title': 'Sea level rise',
+						'img_file': 'seal-level-rise.png', 
+					},
 				],
 				'key_facts':[
+					'Climate change is expected to increase the frequency and intensity of cyclones (such as Hurricane Katrina in 2005) and extreme precipitation events in North America, increasing the risk of flooding in urban areas.',
+					'In the United States, the annual average cost of flooding is presently US$2.7 billion<sup>1</sup>. It has been estimated that these damage losses will increase to US$7 (under ~1.8°C warming scenario) to US$19 billion (under ~3.4°C warming scenario) annually by 2100 depending on emission scenario and economic growth rate<sup>2</sup>.',
+					'In Canada, floods are presently the costliest natural disaster in terms of property damage<sup>3</sup>.',
+					'A study of the Fraser Basin (Vancouver, Canada) shows that if sea level rise were to reach 1 metre by 2100 (a likely outcome under 4°C of warming), the number of buildings damaged or destroyed by river floods would more than double<sup>4</sup>.',
 				],
 				'sources': [
+					'Changnon, SA (2008). ‘Assessment of flood losses in the United States’, <i>Journal of Contemporary Water Research & Education</i>, 138(1), pp.38–44.',
+					'Ntelekos, AA, M Oppenheimer, JA Smith & AJ Miller (2008). ‘Urbanization, climate change and flood policy in the United States’, <i>Climatic Change</i>, 103(3), pp.597-616.',
+					'Public Safety Canada (2015). <i>Floods</i>. <a href="https://www.publicsafety.gc.ca/cnt/mrgnc-mngmnt/ntrl-hzrds/fld-eng.aspx" target="_blank">Link</a>',
+					'Fraser Basin Council (2016). <i>Lower Mainland Flood Management Strategy: Phase 1 Summary Report</i>. <a href="https://goo.gl/Cn0hOL" target="_blank">Link</a>',
 				] 
 			},			
-			//Risk: Undernutrition		
-			{
-				'id': 'undernutrition',
-				'name': 'Undernutrition',
-				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				},
-				'icon': '',
-				'climatic_drivers': [
-					{
-						'title': '',
-						'img_file': '', 
-					}
-				],
-				'key_facts':[
-				],
-				'sources': [
-				] 
-			},			
-			//Risk: Water scarcity	
-			{
-				'id': 'waterscarcity',
-				'name': 'Water scarcity',
-				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				},
-				'icon': '',
-				'climatic_drivers': [
-					{
-						'title': '',
-						'img_file': '', 
-					}
-				],
-				'key_facts':[
-				],
-				'sources': [
-				] 
-			},			
-			//Risk: Disease
-			{
-				'id': 'disease',
-				'name': 'Disease',
-				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				},
-				'icon': '',
-				'climatic_drivers': [
-					{
-						'title': '',
-						'img_file': '', 
-					}
-				],
-				'key_facts':[
-				],
-				'sources': [
-				] 
-			}
 		]
 	},
+
 	//Central and South America
 	{
 		'code': '',

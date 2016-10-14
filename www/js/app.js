@@ -36,7 +36,7 @@ $(document).ready(function(){
     	$('#risk_details').removeClass('hidden');
     });
 
-    $('#smallmap').dblclick(function() {
+    $('#smallmap').click(function() {
     	$('#risk_level').addClass('hidden');
     	$('#risk_details').addClass('hidden');
     	$('#key_impact_risks').addClass('hidden');

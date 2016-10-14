@@ -120,7 +120,7 @@ var risk_details = [
 				],
 				'sources': [
 					'Frieler, K, M Meinshausen, A Golly, M Megel, K Lebek, D Donner & O Hoegh-Guldberg (2013). ‘Limiting global warming to 2°C is unlikely to save most coral reefs’, <i>Nature Climate Change</i>, 3, pp.165-170.',
-					'Hoegh-Guldberg, O, H Hoegh-Guldberg, J Veron, A Green, ED Gomez, JEN Lough, M King, Ambariyanto, L Hansen, J Cinner, G Dews, G Russ, HZ Schuttenberg, EL Peñaflor, CM Eakin, TRL Christensen, M Abbey, F Areki, RAKosaka, A Tewfik & J Oliver (2009). <i>The Coral Triangle and Climate Change: Ecosystems, People and Societies at Risk</i>: <a href="https://goo.gl/kRCnyl" target="_blank">https://goo.gl/kRCnyl</a>',
+					'Hoegh-Guldberg, O, H Hoegh-Guldberg, J Veron, A Green, ED Gomez, JEN Lough, M King, Ambariyanto, L Hansen, J Cinner, G Dews, G Russ, HZ Schuttenberg, EL Peñaflor, CM Eakin, TRL Christensen, M Abbey, F Areki, RAKosaka, A Tewfik & J Oliver (2009). <i>The Coral Triangle and Climate Change: Ecosystems, People and Societies at Risk</i>: <a href="https://goo.gl/kRCnyl" target="_blank">Link</a>',
 					'Lam, V, W Cheung, W Swartz & RU Sumaila (2012). ‘Climate change impacts on fisheries in West Africa: Implications for economic, food and nutritional security’, <i>African Journal of Marine Science</i>, 34(1), pp.103-117.',
 				] 
 			},
@@ -331,7 +331,7 @@ var risk_details = [
 					'Under a ~2.8°C warming scenario, climate change is expected to contribute to an additional 143,000 heat-related deaths in people aged 65+ by 2050, in Asia alone<sup>1</sup>.',
 				],
 				'sources': [
-					'World Health Organisation (2014). <i>Quantitative risk assessment of the effects of climate change on selected causes of death, 2030s and 2050s</i>. <a href="https://goo.gl/ZBnDoH" target="_blank">https://goo.gl/ZBnDoH</a>',
+					'World Health Organisation (2014). <i>Quantitative risk assessment of the effects of climate change on selected causes of death, 2030s and 2050s</i>. <a href="https://goo.gl/ZBnDoH" target="_blank">Link</a>',
 				] 
 			},
 
@@ -366,7 +366,7 @@ var risk_details = [
 				],
 				'sources': [
 					'IPCC (2014). <i>Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">Link</a>',
-					'Iglesias, A, S Quiroga & A Diz (2011). ‘Looking into the future of agriculture in a changing climate’, <i>European Review of Agricultural Economics</i>, 38(3), pp.427-447.3.ICEM, 2013. <i>USAID Mekong ARCC Climate Change Impact and Adaptation Study for the Lower Mekong Basin: Main Report</i>. <a href="http://www.mekongarcc.net/resource" target="_blank">www.mekongarcc.net/resource</a>.',
+					'Iglesias, A, S Quiroga & A Diz (2011). ‘Looking into the future of agriculture in a changing climate’, <i>European Review of Agricultural Economics</i>, 38(3), pp.427-447.3.ICEM, 2013. <i>USAID Mekong ARCC Climate Change Impact and Adaptation Study for the Lower Mekong Basin: Main Report</i>. <a href="http://www.mekongarcc.net/resource" target="_blank">Link</a>.',
 					'ICEM (2013). <i>USAID Mekong ARCC Climate Change Impact and Adaptation Study for the Lower Mekong Basin: Main Report</i>. <a href=" http://www.mekongarcc.net/resource">Link</a>.',
 				] 
 			},			
@@ -434,7 +434,7 @@ var risk_details = [
 					'Oceans absorb CO<sub>2</sub> from the atmosphere, reducing the greenhouse effect and potential global warming experienced by the Earth. However, this increase in CO<sub>2</sub> is altering the ocean chemistry, making it more acidic. This makes it harder for marine calcifying organisms (such as corals, molluscs and crustaceans) to form their skeletons and shells, and results in slower coral reef growth (or net loss) and weakening of reef ecosystems<sup>1</sup>. As atmospheric CO<sub>2</sub> concentration continues to increase, the impacts of ocean acidification will worsen.'
 				],
 				'sources': [
-					' Hoegh-Guldberg, O, H Hoegh-Guldberg, J Veron, A Green, ED Gomez, JEN Lough, M King, Ambariyanto, L Hansen, J Cinner, G Dews, G Russ, HZ Schuttenberg, EL Peñaflor, CM Eakin, TRL Christensen, M Abbey, F Areki, RAKosaka, A Tewfik & J Oliver (2009). <i>The Coral Triangle and Climate Change: Ecosystems, People and Societies at Risk</i>: <a href="https://goo.gl/kRCnyl" target="_blank">https://goo.gl/kRCnyl</a>',
+					' Hoegh-Guldberg, O, H Hoegh-Guldberg, J Veron, A Green, ED Gomez, JEN Lough, M King, Ambariyanto, L Hansen, J Cinner, G Dews, G Russ, HZ Schuttenberg, EL Peñaflor, CM Eakin, TRL Christensen, M Abbey, F Areki, RAKosaka, A Tewfik & J Oliver (2009). <i>The Coral Triangle and Climate Change: Ecosystems, People and Societies at Risk</i>: <a href="https://goo.gl/kRCnyl" target="_blank">Link</a>',
 				] 
 			},			
 			//Risk: Species extinctions
@@ -463,7 +463,7 @@ var risk_details = [
 					'A doubling of present atmospheric CO<sub>2</sub> concentrations (which represents a further ~3°C warming) is expected to result in extinctions of 133–2,835 plants species and 10–213 vertebrates in Indo-Burma, and 105–1,522 plants and 5–77 vertebrates in China<sup>2</sup>.',
 				],
 				'sources': [
-					'IPCC (2007). <i>Climate Change 2007: Impacts, Adaptation and Vulnerability. Contribution of Working Group II to the Fourth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://goo.gl/Mk5lM8" target="_blank">https://goo.gl/Mk5lM8</a>',
+					'IPCC (2007). <i>Climate Change 2007: Impacts, Adaptation and Vulnerability. Contribution of Working Group II to the Fourth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://goo.gl/Mk5lM8" target="_blank">Link</a>',
 					'Malcolm, JR, C Liu, RP Neilson, L Hansen & L Hannah (2006). ‘Global warming and extinctions of endemic species from biodiversity hotspots’, <i>Conservation Biology</i>, 20(2), pp.538–548.',
 				] 
 			},			
@@ -506,10 +506,10 @@ var risk_details = [
 					'Vulnerable marine species will have a reduced spatial extent as they move closer to the Poles. This is expected to alter the marine species composition of zooplankton, which can impact some fish and shellfish populations<sup>3</sup>.',
 				],
 				'sources': [
-					'Durner, G, D Douglas, R Nielson, S Amstrup, T McDonald, I Stirling, M Mauritzen, EW Born, Ø Wiig, E DeWeaver, MC Serreze, SE Belikov, MM Holland, J Maslanik, J Aars & A Derocher, 2009. ‘Predicting 21st‐century polar bear habitat distribution from global climate models’, <i>Ecological Monographs</i>, 79(1), pp.25-58.',
+					'Durner, G, D Douglas, R Nielson, S Amstrup, T McDonald, I Stirling, M Mauritzen, EW Born, Ø Wiig, E DeWeaver, MC Serreze, SE Belikov, MM Holland, J Maslanik, J Aars & A Derocher (2009). ‘Predicting 21st‐century polar bear habitat distribution from global climate models’, <i>Ecological Monographs</i>, 79(1), pp.25-58.',
 					'Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">Link</a>',
-					'Callaghan, TV, LO Björn, Y Chernov, T Chapin, TR Christensen, B Huntley, RA Ims, M Johansson, D Jolly, S Jonasson, N Matveyeva, N Panikov, W Oechel, G Shaver, J Elster, H Henttonen, K Laine, K Taulavuori, E Taulavuori & C Zöckler, 2004. ‘Biodiversity, Distributions and Adaptations of Arctic Species in the Context of Environmental Change’, <i>Ambio</i>, 33(7), pp.404-17.',
-					'Storeheier, PV, BEH Van Oort, MA Sundset & SD Mathiesen, 2003. ‘Food intake of reindeer in winter’, <i>The Journal of Agricultural Science</i>, 141(1), pp.93-101.',
+					'Callaghan, TV, LO Björn, Y Chernov, T Chapin, TR Christensen, B Huntley, RA Ims, M Johansson, D Jolly, S Jonasson, N Matveyeva, N Panikov, W Oechel, G Shaver, J Elster, H Henttonen, K Laine, K Taulavuori, E Taulavuori & C Zöckler (2004). ‘Biodiversity, Distributions and Adaptations of Arctic Species in the Context of Environmental Change’, <i>Ambio</i>, 33(7), pp.404-17.',
+					'Storeheier, PV, BEH Van Oort, MA Sundset & SD Mathiesen (2003). ‘Food intake of reindeer in winter’, <i>The Journal of Agricultural Science</i>, 141(1), pp.93-101.',
 				] 
 			},
 
@@ -540,10 +540,10 @@ var risk_details = [
 					'Changes in the physical environment has resulted in a reduced livelihood and food security, and indigenous Arctic communities have been forced to re-locate as a consequence of reduced soil stability from thawing of permafrost. This has lead to an increasingly high number of suicides in the Arctic, especially amongst indigenous youth<sup>1,4</sup>.',
 				],
 				'sources': [
-					'Durkalec, A, C Furgal, M Skinner & T Sheldon, 2015, ‘Climate change influences on environment as a determinant of Indigenous health: Relationships to place, sea ice, and health in an Inuit community’, <i>Social Science & Medicine</i>, 136-137, pp. 17-26.',
-					'Tyler, NJC, JM Turi, MA Sundset, K Strøm Bull, MN Sara, E Reinert, N Oskal, C Nellemann, JJ McCarthy, SD Mathiesen, ML Martello, OH Magga, GK Hovelsrud, I Hanssen-Bauer, IMG Eira, NI Eira & RW Corell, 2007, ‘Saami reindeer pastoralism under climate change: Applying a generalized framework for vulnerability studies to a sub-arctic social–ecological system’, <i>Global Environmental Change</i>, 17(2), pp.191-206.',
-					'Epstein, P & D Ferber, 2011. <i>Changing Planet, Changing Health: How the Climate Crisis Threatens Our Health and What We Can Do About It</i>, University of California Press.',
-					'Rynor, B, 2012, ‘Climate change poses health threats in Arctic’, <i>Canadian Medical Association Journal</i>, 184(1), pp.333-34.',
+					'Durkalec, A, C Furgal, M Skinner & T Sheldon (2015), ‘Climate change influences on environment as a determinant of Indigenous health: Relationships to place, sea ice, and health in an Inuit community’, <i>Social Science & Medicine</i>, 136-137, pp. 17-26.',
+					'Tyler, NJC, JM Turi, MA Sundset, K Strøm Bull, MN Sara, E Reinert, N Oskal, C Nellemann, JJ McCarthy, SD Mathiesen, ML Martello, OH Magga, GK Hovelsrud, I Hanssen-Bauer, IMG Eira, NI Eira & RW Corell (2007), ‘Saami reindeer pastoralism under climate change: Applying a generalized framework for vulnerability studies to a sub-arctic social–ecological system’, <i>Global Environmental Change</i>, 17(2), pp.191-206.',
+					'Epstein, P & D Ferber (2011). <i>Changing Planet, Changing Health: How the Climate Crisis Threatens Our Health and What We Can Do About It</i>, University of California Press.',
+					'Rynor, B (2012), ‘Climate change poses health threats in Arctic’, <i>Canadian Medical Association Journal</i>, 184(1), pp.333-34.',
 				] 
 			},			
 		]
@@ -593,10 +593,10 @@ var risk_details = [
 					'In the Caribbean, it’s estimated that a 1m rise in sea level will place 49% to 60% of tourist resort properties at risk of beach erosion damage. This would potentially transform the competitive position and sustainability of coastal tourism destinations in the region<sup>4</sup>.',
 				],
 				'sources': [
-					'IPCC, 1990. <i>Climate Change: The IPCC Impacts Assessment. Contribution of Working Group II to the First Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://goo.gl/k25fCz" target="_blank">https://goo.gl/k25fCz</a>',
-					'Betzold, C, 2015, ‘Adapting to climate change in small island developing states’, <i>Climatic Change</i>, 133(3), pp.481-489.',
-					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">https://www.ipcc.ch/report/ar5/wg2/</a>',
-					'Scott, D, MC Simpson & R Sim, 2012. ‘The vulnerability of Caribbean coastal tourism to scenarios of climate change related sea level rise’, <i>Journal of Sustainable Tourism</i>, 20(6), pp.883-898.',
+					'IPCC (1990). <i>Climate Change: The IPCC Impacts Assessment. Contribution of Working Group II to the First Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://goo.gl/k25fCz" target="_blank">Link</a>',
+					'Betzold, C (2015), ‘Adapting to climate change in small island developing states’, <i>Climatic Change</i>, 133(3), pp.481-489.',
+					'IPCC (2014). <i>Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">Link</a>',				
+					'Scott, D, MC Simpson & R Sim (2012). ‘The vulnerability of Caribbean coastal tourism to scenarios of climate change related sea level rise’, <i>Journal of Sustainable Tourism</i>, 20(6), pp.883-898.',
 				] 
 			},
 			//Risk: Decline of coral reef ecosystems
@@ -633,9 +633,9 @@ var risk_details = [
 					'A 2.8°C warming is likely to increase average sea surface temperatures by 1.8-2.3°C by 2100<sup>2</sup>, and will pose a risk to 99% of all current coral reefs by 2100<sup>3</sup>. This being said, increased sea surface temperatures may also result in suitable conditions for coral reefs in new areas<sup>1</sup>.',
 				],
 				'sources': [
-					'Descombes, P, MS Wisz, F Leprieur, V Parravicini, C Heine, SM Olsen, D Swingedouw, M Kulbicki, D Mouillot & L Pellissier, 2015, ‘Forecasted coral reef decline in marine biodiversity hotspots under climate change’, <i>Global Change Biology</i>, 21(7), pp.2479–2487.',
-					'IPCC, 2014. <i>Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>: <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">https://www.ipcc.ch/report/ar5/wg2/</a>',
-					'Schleussner, CF, TK Lissner, EM Fischer, J Wohland, M Perrette, A Golly, J Rogelj, KChilders, J Schewe, K Frieler, M Mengel, W Hare & M Schaeffer, 2016. ‘Differential climate impacts for policy-relevant limits to global warming: the case of 1.5 °C and 2 °C’, <i>Earth System Dynamics</i>, 7(2), pp.327-351.',
+					'Descombes, P, MS Wisz, F Leprieur, V Parravicini, C Heine, SM Olsen, D Swingedouw, M Kulbicki, D Mouillot & L Pellissier (2015), ‘Forecasted coral reef decline in marine biodiversity hotspots under climate change’, <i>Global Change Biology</i>, 21(7), pp.2479–2487.',
+					'IPCC (2014). <i>Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">Link</a>',					
+					'Schleussner, CF, TK Lissner, EM Fischer, J Wohland, M Perrette, A Golly, J Rogelj, KChilders, J Schewe, K Frieler, M Mengel, W Hare & M Schaeffer (2016). ‘Differential climate impacts for policy-relevant limits to global warming: the case of 1.5 °C and 2 °C’, <i>Earth System Dynamics</i>, 7(2), pp.327-351.',
 				] 
 			},			
 		]
@@ -853,6 +853,7 @@ var risk_details = [
 			},			
 		]
 	},
+	
 
 	//Central and South America
 	{
@@ -896,7 +897,7 @@ var risk_details = [
 				'sources': [
 					'Rabatel, A, B Francou, A Soruco, J Gomez, B Cáceres, JL Ceballos, R Basantes, M Vuille, JE Sicart, C Huggel, M Scheel, Y Lejeune, Y Arnaud, M Collet, T Condom, G Consoli, V Favier, V Jomelli, R Galarraga, P Ginot, L Maisincho, J Mendoza, M Ménégoz, E Ramirez, P Ribstein, W Suarez, M Villacis & P Wagnon (2013). ‘Current state of glaciers in the tropical Andes: a multi-century perspective on glacier evolution and climate change’, <i>The Cryosphere</i>, 7, pp.81-102.',
 					'Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">Link</a>',
-					'Climate & Development Knowledge Network (2014). <i>The IPCC’s Fifth Assessment Report Executive Summary: What’s in it for Latin America?</i> <a href="https://goo.gl/pnaoAc">Link</a>',
+					'Climate & Development Knowledge Network (2014). <i>The IPCC’s Fifth Assessment Report Executive Summary: What’s in it for Latin America?</i> <a href="https://goo.gl/pnaoAc" target="_blank">Link</a>',
 					'Maurer EP, JC Adam & AW Wood (2009). ‘Climate model based consensus on the hydrologic impacts of climate change to the Rio Lempa basin of Central America’, <i>Hydrology and Earth System Sciences</i>, 13(2), pp.183-194.',
 				] 
 			},
@@ -995,7 +996,7 @@ var risk_details = [
 					'Little is known about how frequency and ranges of vector-borne diseases will continue to change under future climate scenarios. This uncertainty represents a significant risk to human populations.<sup>1</sup>',
 				],
 				'sources': [
-					'Climate & Development Knowledge Network (2014). <i>The IPCC’s Fifth Assessment Report Executive Summary: What’s in it for Latin America?</i> <a href="https://goo.gl/pnaoAc">Link</a>',
+					'Climate & Development Knowledge Network (2014). <i>The IPCC’s Fifth Assessment Report Executive Summary: What’s in it for Latin America?</i> <a href="https://goo.gl/pnaoAc" target="_blank">Link</a>',
 					'IPCC (2014). <i>Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">Link</a>',					
 				] 
 			},			
@@ -1008,163 +1009,118 @@ var risk_details = [
 		'code': '',
 		'name': 'The Ocean',
 		'risks': [
-			//Risk: Reduced crop productivity
+			//Risk: Mortality of large fauna 
 			{
-				'id': 'productivity',
-				'name': 'Reduced crop productivity',
+				'id': 'large_fauna',
+				'name': 'Mortality of large fauna ',
 				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
+					'present': 3,
+					'degree2': 7,
+					'degree4': 9
 				},
-				'icon': '',
+				'icon': 'mortality-of-large-fauna.png',
 				'climatic_drivers': [
 					{
-						'title': '',
-						'img_file': '', 
-					}
+						'title': 'Warming trend',
+						'img_file': 'warming-trend.png', 
+					},
+					{
+						'title': 'Hypoxia',
+						'img_file': 'hypoxia.png', 
+					},
 				],
 				'key_facts':[
+					'Warmer temperatures in the Pacific regions could reduce the number of male sea turtle offspring and threaten turtle populations. The sex of sea turtle hatchlings is dependent on temperature, with warmer temperatures increasing the number of female sea turtles – this creates an imbalance in the reproductive capacity of the species.',
+					'Excessive concentrations of nutrients in coastal waters have in some areas resulted in decreased oxygen concentrations, commonly referred to as hypoxia. Hypoxia can pose a serious threat to marine ecosystems, and can, together with increased ocean temperatures, result in “dead zones”, where yields are lower than what can be explained by nutrient loading alone<sup>1</sup>.',
+					'Increased temperatures have reduced the extent of Antarctic sea ice during winter, which in turn is believed to have resulted in significant reduction of krill. Krill is one of the major food sources for many large marine fauna, including the blue whale and penguins. Reduced populations of species at the bottom of the food web can therefore cause significant implications for predators<sup>2</sup>.',
+					'A 4°C increase by 2100, combined with associated ocean acidification, has been linked to a significant reduction in tropical juvenile shark survival rates, with survival rates decreasing by up to 44%<sup>2</sup>.',
 				],
 				'sources': [
+					'IPCC (2014). <i>Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">Link</a>',
+					'Rosa, R, M Baptista, VM Lopes, MR Pegado, JR Paula, K Trübenbach, MC Leal, R Calado & T Repolho (2014). ‘Early-life exposure to climate change impairs tropical shark survival’, <i>Proceedings. Biological Sciences/The Royal Society</i>, 281(1793), pp.1-7.',
 				] 
 			},
-			//Risk: Adverse effects on livestock
+			//Risk: Coastal inundation and habitat loss
 			{
-				'id': 'livestock',
-				'name': 'Adverse effects on livestock',
+				'id': 'habitat_loss',
+				'name': 'Coastal inundation and habitat loss',
 				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
+					'present': 5,
+					'degree2': 7,
+					'degree4': 9
 				},
-				'icon': '',
+				'icon': 'coastal-inundation-and-habitat-loss.png',
 				'climatic_drivers': [
 					{
-						'title': '',
-						'img_file': '', 
-					}
+						'title': 'Warming trend',
+						'img_file': 'warming-trend.png', 
+					},
+					{
+						'title': 'Damaging cyclones',
+						'img_file': 'cyclones.png', 
+					},
+					{
+						'title': 'Sea level rise',
+						'img_file': 'seal-level-rise.png', 
+					},
+					{
+						'title': 'Extreme precipitation',
+						'img_file': 'extreme-precipitation.png', 
+					},
 				],
 				'key_facts':[
+					'Sea level rise can increase the damage caused by storms because mean water level (the base level for storm effects) is higher, waves can attack higher on the shore profile, and coastal erosion often is accelerated, bringing structures nearer the shoreline and potentially removing protection offered by dunes and other protective features.',
+					'Global mean sea level is likely to rise by 0.44 metres to 0.74 metres by 2081–2100 (relative to 1986–2005)<sup>1</sup>.',
+					'Sea level rise, flooding and storm activity will lead to the inundation of multiple small and, critically, low-lying islands in the region, especially in the Indonesian and Philippine archipelagos, with Indonesia projected to lose 2,000 small islands by 2030 (it’s worth noting that less than half of Indonesia’s >13,500 islands are inhabited)<sup>2</sup>.',
+					'Coastal habitats, such as wetlands and mangroves, will be reduced as a result of sea level rise and coastal inundation. In addition to these primary impacts of climate change, further habitat loss is expected as a result of the relocation of human populations in low-lying coastal regions into the hinterland. In some areas, such as the Indo-Malaysian islands (which may be affected by 7 to 48 million sea level rise refugees), species are more vulnerable to these secondary effects<sup>3</sup>.',
 				],
 				'sources': [
+					'IPCC (2013). <i>Climate Change 2013: The Physical Science Basis. Contribution of Working Group I to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar5/wg1/" target="_blank">Link</a>',
+					'CENTRA Technology, Inc. Scitor Corporation (2010). <i>Southeast Asia: The Impact of Climate Change to 2030: Geopolitical Implications</i>. <a href="https://www.hsdl.org/?abstract&did=24131" target="_blank">Link</a>',
+					' Wetzel, FT, D Kissling, H Beissmann & DJ Penn (2012). ‘Future climate change driven sea-level rise secondary consequences from human displacement for island biodiversity’, <i>Global Change Biology</i>, 18(9), pp.2707-2719.',
 				] 
 			},			
-			//Risk: Loss of fisheries		
+			//Risk: Reduced livelihoods and increased		
 			{
-				'id': 'fisheries',
-				'name': 'Loss of fisheries',
+				'id': 'reduced_livelihoods',
+				'name': 'Reduced livelihoods and increased poverty',
 				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
+					'present': 5,
+					'degree2': 9,
+					'degree4': 10
 				},
-				'icon': '',
+				'icon': 'reduced-livelihoods-and-increased-poverty.png',
 				'climatic_drivers': [
 					{
-						'title': '',
-						'img_file': '', 
-					}
+						'title': 'Warming trend',
+						'img_file': 'warming-trend.png', 
+					},
+					{
+						'title': 'Damaging cyclones',
+						'img_file': 'cyclones.png', 
+					},
+					{
+						'title': 'Extreme temperature',
+						'img_file': 'extreme-temperature.png', 
+					},
+					{
+						'title': 'Sea level rise',
+						'img_file': 'seal-level-rise.png', 
+					},
+					{
+						'title': 'Extreme precipitation',
+						'img_file': 'extreme-precipitation.png', 
+					},
 				],
 				'key_facts':[
+					'Changes in ocean temperature and chemistry will result in changed distribution and abundance of fish, resulting in some areas being ‘winners’ and others being ‘losers’. While increased sea surface temperatures and acidity will reduce production in existing coral reefs, the higher latitude fisheries have so far benefited from increased ocean temperatures.',
+					'Many small island economies are dependent on coral reefs for food and livelihood, meaning reduced coral reef productivity will have severe consequences in these regions.',
+					'Increased atmospheric temperatures of 2 – 5.4°C have been projected to cause a 19 – 29% reduction in large fish catch in the North Pacific, while the total primary production in the same region is estimated to reduce by 10 – 20%<sup>1</sup>.',
 				],
 				'sources': [
+					'IPCC (2014). <i>Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">Link</a>',
 				] 
 			},			
-			//Risk: Undernutrition		
-			{
-				'id': 'undernutrition',
-				'name': 'Undernutrition',
-				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				},
-				'icon': '',
-				'climatic_drivers': [
-					{
-						'title': '',
-						'img_file': '', 
-					}
-				],
-				'key_facts':[
-				],
-				'sources': [
-				] 
-			},			
-			//Risk: Water scarcity	
-			{
-				'id': 'waterscarcity',
-				'name': 'Water scarcity',
-				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				},
-				'icon': '',
-				'climatic_drivers': [
-					{
-						'title': '',
-						'img_file': '', 
-					}
-				],
-				'key_facts':[
-				],
-				'sources': [
-				] 
-			},			
-			//Risk: Disease
-			{
-				'id': 'disease',
-				'name': 'Disease',
-				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				},
-				'icon': '',
-				'climatic_drivers': [
-					{
-						'title': '',
-						'img_file': '', 
-					}
-				],
-				'key_facts':[
-				],
-				'sources': [
-				] 
-			}
 		]
 	}
 ];
-
-/*
-var risk_details = [
-	{
-		'id': '',
-		'name': '',
-		'risks': [
-			{
-				'id': '',
-				'name': '',
-				'level': [
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				],
-				'icon': '',
-				'climatic_drivers': [
-					{
-						'title': '',
-						'img_file': '', 
-					}
-				],
-				'key_facts':[
-				],
-				'sources': [
-				] 
-			},
-		]
-	}
-];
-*/

@@ -42,7 +42,7 @@ var risk_details = [
 					'UNEP (2008). <i>Africa Atlas of our Changing Environment</i>, Nairobi, Kenya.',
 					'IPCC (2014). <i>Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">Link</a>',
 					'Raxworthy, CJ, RG Pearson, N Rabibisoa, AM Rakotondrazafy, JB Ramanamanjato, AP Raselimanana, S Wu, RA Nussbaum & DA Stone (2008). <i>Extinction vulnerability of tropical montane endemism from warming and upslope displacement: a preliminary appraisal for the highest massif in Madagascar</i>, Global Change Biology, 14(8), pp. 1703-1720.',
-					'Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">https://goo.gl/PxI2Au</a>'
+					'Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">Link</a>',
 				] 
 			},
 
@@ -80,7 +80,7 @@ var risk_details = [
 					'Agricultural yields could decline by 15 – 35% under a 4°C warming scenario<sup>1</sup>',
 				],
 				'sources': [
-					' Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">https://goo.gl/PxI2Au</a>',
+					'Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">Link</a>',
 				] 
 			},
 
@@ -155,7 +155,7 @@ var risk_details = [
 					'  Up to 80 million more people could be exposed to malaria in Africa under a 4°C warming scenario<sup>1</sup>.',
 				],
 				'sources': [
-					'Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">https://goo.gl/PxI2Au</a>',
+					'Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">Link</a>',
 				] 
 			},
 
@@ -197,7 +197,7 @@ var risk_details = [
 					'Potentially a 30 – 50% decrease in water availability in Southern Africa under a 4°C warming scenario<sup>1</sup>.',
 				],
 				'sources': [
-					'Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">https://goo.gl/PxI2Au</a>',
+					'Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">Link</a>',
 				] 
 			},
 		]
@@ -268,7 +268,7 @@ var risk_details = [
 					'In Southern Europe, serious droughts could occur once every 10 years under a 3°C warming scenario<sup>1</sup>.',
 				],
 				'sources': [
-					' Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">https://goo.gl/PxI2Au</a>',
+					'Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">Link</a>',
 				] 
 			},		
 
@@ -507,7 +507,7 @@ var risk_details = [
 				],
 				'sources': [
 					'Durner, G, D Douglas, R Nielson, S Amstrup, T McDonald, I Stirling, M Mauritzen, EW Born, Ø Wiig, E DeWeaver, MC Serreze, SE Belikov, MM Holland, J Maslanik, J Aars & A Derocher, 2009. ‘Predicting 21st‐century polar bear habitat distribution from global climate models’, <i>Ecological Monographs</i>, 79(1), pp.25-58.',
-					'Stern, NH, 2007. <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">https://goo.gl/PxI2Au</a>',
+					'Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">Link</a>',
 					'Callaghan, TV, LO Björn, Y Chernov, T Chapin, TR Christensen, B Huntley, RA Ims, M Johansson, D Jolly, S Jonasson, N Matveyeva, N Panikov, W Oechel, G Shaver, J Elster, H Henttonen, K Laine, K Taulavuori, E Taulavuori & C Zöckler, 2004. ‘Biodiversity, Distributions and Adaptations of Arctic Species in the Context of Environmental Change’, <i>Ambio</i>, 33(7), pp.404-17.',
 					'Storeheier, PV, BEH Van Oort, MA Sundset & SD Mathiesen, 2003. ‘Food intake of reindeer in winter’, <i>The Journal of Agricultural Science</i>, 141(1), pp.93-101.',
 				] 
@@ -859,132 +859,146 @@ var risk_details = [
 		'code': '',
 		'name': 'Central and South America',
 		'risks': [
-			//Risk: Reduced crop productivity
+			//Risk: Water availability, flooding and landslides
 			{
-				'id': 'productivity',
-				'name': 'Reduced crop productivity',
+				'id': 'water_availability',
+				'name': 'Water availability, flooding and landslides',
 				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
+					'present': 5,
+					'degree2': 9,
+					'degree4': 10
 				},
-				'icon': '',
+				'icon': 'water-availability-flooding-landslides.png',
 				'climatic_drivers': [
 					{
-						'title': '',
-						'img_file': '', 
-					}
+						'title': 'Warming trend',
+						'img_file': 'warming-trend.png', 
+					},
+					{
+						'title': 'Drying trend',
+						'img_file': 'drying-trend.png', 
+					},
+					{
+						'title': 'Increased Extreme precipitation',
+						'img_file': 'extreme-precipitation.png', 
+					},
+					{
+						'title': 'Decreased Snow cover',
+						'img_file': 'snow-cover.png', 
+					},
 				],
 				'key_facts':[
+					'Small tropical glaciers in the Andes are expected to disappear completely, even with only +1˚C change. Andean glaciers have shrunk at an increasing rate since the 1970s, especially smaller, lower-altitude glaciers<sup>1</sup>. Initially, smaller glaciers can lead to flooding as they lose their ability to absorb large precipitation events. As they disappear, reduced melt-water runoff threatens the water supply of 50 million people<sup>2</sup>.',
+					'Water shortages in Bolivia have led to social and economic stress by threatening livelihoods<sup>3</sup>.',
+					'Under a 2˚C warming scenario, climate change projections for the Lempa River basin (one of the largest basins in Central America) predict increased evaporation and reduced precipitation by 2070-2099, implying a 13% reduction of inflows to major reservoirs in this system<sup>4</sup>.',
+					'Climate change could contribute to a 70% rise in the projected number of people with severe difficulties in accessing safe water. Around 40 million people may be at risk of reduced water supply for human consumption, hydro-power and agriculture in 2020, rising to 50 million in 2050 through the predicted melting of tropical Andean glaciers between 2010 and 2050. The cities of Quito, Lima and La Paz are likely to be most affected<sup>2</sup>.',
 				],
 				'sources': [
+					'Rabatel, A, B Francou, A Soruco, J Gomez, B Cáceres, JL Ceballos, R Basantes, M Vuille, JE Sicart, C Huggel, M Scheel, Y Lejeune, Y Arnaud, M Collet, T Condom, G Consoli, V Favier, V Jomelli, R Galarraga, P Ginot, L Maisincho, J Mendoza, M Ménégoz, E Ramirez, P Ribstein, W Suarez, M Villacis & P Wagnon (2013). ‘Current state of glaciers in the tropical Andes: a multi-century perspective on glacier evolution and climate change’, <i>The Cryosphere</i>, 7, pp.81-102.',
+					'Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">Link</a>',
+					'Climate & Development Knowledge Network (2014). <i>The IPCC’s Fifth Assessment Report Executive Summary: What’s in it for Latin America?</i> <a href="https://goo.gl/pnaoAc">Link</a>',
+					'Maurer EP, JC Adam & AW Wood (2009). ‘Climate model based consensus on the hydrologic impacts of climate change to the Rio Lempa basin of Central America’, <i>Hydrology and Earth System Sciences</i>, 13(2), pp.183-194.',
 				] 
 			},
-			//Risk: Adverse effects on livestock
+			//Risk: Coral reef bleaching
 			{
-				'id': 'livestock',
-				'name': 'Adverse effects on livestock',
+				'id': 'coral_reef',
+				'name': 'Coral reef bleaching',
 				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
+					'present': 7,
+					'degree2': 9,
+					'degree4': 9
 				},
-				'icon': '',
+				'icon': 'coral-reef-bleaching.png',
 				'climatic_drivers': [
 					{
-						'title': '',
-						'img_file': '', 
-					}
+						'title': 'Warming trend',
+						'img_file': 'warming-trend.png', 
+					},
+					{
+						'title': 'Ocean acidification',
+						'img_file': 'ocean-acidification.png', 
+					},
 				],
 				'key_facts':[
+					'Increased sea surface temperature and ocean acidification make coral reefs significantly more vulnerable to bleaching and mortality events. Bleaching occurs when corals are exposed to higher than normal seawater temperatures during the warm season, which disrupts their algal symbiosis. This physiological symptom of stress is followed by large-scale mortality if temperatures are high enough or exposure long enough.',
+					'By 2030, climate-related threats are projected to be high along the mainland coast from Mexico to Colombia, due to the confluence of thermal stress and acidification threats. Under a “business-as-usual” scenario (which correlates to ~2.8˚C warming by 2100), climate-related threats are projected to push the proportion of reefs at risk to 90 percent in 2030, and up to 100 percent by 2050, with about 85 percent at high, very high, or critical levels<sup>1</sup>.',
+					'Under a 4˚C warming scenario, complete collapse of the Mesoamerican coral reef is expected along the coasts of Belize, Honduras, and Guatemala. In Belize alone, the annual value of reefs is US $359 million annually in tourism, fisheries and coastal protection<sup>2</sup>.',
 				],
 				'sources': [
+					'Burke, L, K Reytar, M Spalding & A Perry (2011). <i>Reefs at Risk Revisited</i>. <a href="http://pdf.wri.org/reefs_at_risk_revisited.pdf" target="_blank">Link</a>',
+					'IPCC (2014). <i>Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">Link</a>',
 				] 
 			},			
-			//Risk: Loss of fisheries		
+			//Risk: Decreased food production	
 			{
-				'id': 'fisheries',
-				'name': 'Loss of fisheries',
+				'id': 'decreased_food',
+				'name': 'Decreased food production',
 				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
+					'present': 7,
+					'degree2': 9,
+					'degree4': 10
 				},
-				'icon': '',
+				'icon': 'decreased-food-production.png',
 				'climatic_drivers': [
 					{
-						'title': '',
-						'img_file': '', 
-					}
+						'title': 'Extreme temperature',
+						'img_file': 'extreme-temperature.png', 
+					},
+					{
+						'title': 'Precipitation',
+						'img_file': 'precipitation.png', 
+					},
 				],
 				'key_facts':[
+					'There will be large spatial variability in the climate impacts on food production. For example, in south-eastern South America, where rainfall is expected to increase in response to climate change, average food productivity could be sustained or increased until the mid-century. Whereas in Central America and part of the Andean region, temperature increases and reduced rainfall is expected to reduce productivity and threaten local food security<sup>1</sup>.',
+					'In the Amazon region, warming of ~3.8˚C (correlating with a 30% decline in precipitation) is predicted to reduce soybean yields soybean yields by 44% by 2050<sup>2</sup>.',
+					'2˚C of warming could result in a 6-20% decrease in maximum catch potential of fish and invertebrates along most South and Central American coastal waters. For some some areas this yield reduction could be as high as 21-50%, while the southernmost areas may experience increases in catch potential<sup>3</sup>.',
 				],
 				'sources': [
+					'Marengo JA, SC Chou, RR Torres, A Giarolla, LM Alves & A Lyra (2014). <i>Climate change in Central and South America: Recent trends, future projections, and impacts on regional agriculture</i>. CCAFS Working Paper no. 73. <a href="https://goo.gl/wBqc9w" target="_blank">Link</a>',
+					'Lapola, DM, R Schaldach, J Alcamo, A Bondeau, S Msangi, JA Priess, R Silvestrini & BS Soares (2011). ‘Impacts of Climate Change and the End of Deforestation on Land Use in the Brazilian Legal Amazon’, <i>Earth Interactions</i>, 15, pp.1-29.',
+					'IPCC (2014). <i>AR5 Synthesis Report</i>. <a href="http://ar5-syr.ipcc.ch/topic_futurechanges.php" target="_blank">Link</a>',
 				] 
 			},			
-			//Risk: Undernutrition		
+			//Risk: Increases in vector-borne disease  	
 			{
-				'id': 'undernutrition',
-				'name': 'Undernutrition',
+				'id': 'vector_borne_disease  ',
+				'name': 'Increases in vector-borne disease',
 				'level': {
-					'present': 0,
+					'present': 9,
 					'degree2': 0,
 					'degree4': 0
 				},
 				'icon': '',
 				'climatic_drivers': [
 					{
-						'title': '',
-						'img_file': '', 
-					}
+						'title': 'Warming trend',
+						'img_file': 'warming-trend.png', 
+					},
+					{
+						'title': 'Extreme temperature',
+						'img_file': 'extreme-temperature.png', 
+					},
+					{
+						'title': 'Precipitation',
+						'img_file': 'precipitation.png', 
+					},
+					{
+						'title': 'Extreme precipitation',
+						'img_file': 'extreme-precipitation.png', 
+					},
 				],
 				'key_facts':[
+					'Vector-borne diseases will spread to new altitudes and latitudes across the region, due to change in average and extreme temperature and rainfall.<sup>1</sup>',
+					'Vector-borne diseases affected by climate change around Central and South America include malaria, dengue, yellow fever, leishmaniasis. For example, malaria has appeared the Andes and dengue in Central America and Southern South America, where they have not previously been found. This change in distribution is strongly linked to the climate variability that has already occurred in recent decades.<sup>2</sup>',
+					'Little is known about how frequency and ranges of vector-borne diseases will continue to change under future climate scenarios. This uncertainty represents a significant risk to human populations.<sup>1</sup>',
 				],
 				'sources': [
+					'Climate & Development Knowledge Network (2014). <i>The IPCC’s Fifth Assessment Report Executive Summary: What’s in it for Latin America?</i> <a href="https://goo.gl/pnaoAc">Link</a>',
+					'IPCC (2014). <i>Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">Link</a>',					
 				] 
 			},			
-			//Risk: Water scarcity	
-			{
-				'id': 'waterscarcity',
-				'name': 'Water scarcity',
-				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				},
-				'icon': '',
-				'climatic_drivers': [
-					{
-						'title': '',
-						'img_file': '', 
-					}
-				],
-				'key_facts':[
-				],
-				'sources': [
-				] 
-			},			
-			//Risk: Disease
-			{
-				'id': 'disease',
-				'name': 'Disease',
-				'level': {
-					'present': 0,
-					'degree2': 0,
-					'degree4': 0
-				},
-				'icon': '',
-				'climatic_drivers': [
-					{
-						'title': '',
-						'img_file': '', 
-					}
-				],
-				'key_facts':[
-				],
-				'sources': [
-				] 
-			}
 		]
 	},
 

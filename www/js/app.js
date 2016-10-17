@@ -192,8 +192,14 @@ $(document).ready(function(){
 		//Init risk_level
 		//Present
 		var present_value = risk_info['level']['present'];
-		var present_width = (present_value * 10) + '%';
-		$('#present_level').attr('aria-valuenow', present_value).css('width', present_width);
+		if( present_value == 'Unknown') {
+			var present_width = '100%';
+			$('#present_level').css('width', present_width);
+		}
+		else {
+			var present_width = (present_value * 10) + '%';
+			$('#present_level').attr('aria-valuenow', present_value).css('width', present_width);			
+		}
 		var present_color = '';
 		var present_text = '';
 		switch(present_value) {
@@ -222,13 +228,23 @@ $(document).ready(function(){
 				present_color = 'DarkRed';
 				present_text = 'Very high';
 				break;
+			case 'Unknown':
+				present_color = 'LightGrey';
+				present_text = 'Unknown';
+				break;
 		}
-		$('#present_level').css('background', present_color).text(present_text);
+		$('#present_level').attr('aria-valuetext', present_text).css('background', present_color).text(present_text);
 
 		//Degree 2
 		var degree2_value = risk_info['level']['degree2'];
-		var degree2_width = (degree2_value * 10) + '%';
-		$('#degree2_level').attr('aria-valuenow', degree2_value).css('width', degree2_width);
+		if( degree2_value == 'Unknown') {
+			var degree2_width = '100%';
+			$('#degree2_level').css('width', degree2_width);
+		}
+		else {
+			var degree2_width = (degree2_value * 10) + '%';
+			$('#degree2_level').attr('aria-valuenow', degree2_value).css('width', degree2_width);
+		}
 		var degree2_color = '';
 		var degree2_text = '';
 		switch(degree2_value) {
@@ -257,13 +273,23 @@ $(document).ready(function(){
 				degree2_color = 'DarkRed';
 				degree2_text = 'Very high';
 				break;
+			case 'Unknown':
+				degree2_color = 'LightGrey';
+				degree2_text = 'Unknown';
+				break;
 		}
-		$('#degree2_level').css('background', degree2_color).text(degree2_text);
+		$('#degree2_level').attr('aria-valuetext', degree2_text).css('background', degree2_color).text(degree2_text);
 
 		//Degree 4
 		var degree4_value = risk_info['level']['degree4'];
-		var degree4_width = (degree4_value * 10) + '%';
-		$('#degree4_level').attr('aria-valuenow', degree4_value).css('width', degree4_width);
+		if( degree4_value == 'Unknown') {
+			var degree4_width = '100%';
+			$('#degree4_level').css('width', degree4_width);
+		}
+		else {
+			var degree4_width = (degree4_value * 10) + '%';
+			$('#degree4_level').attr('aria-valuenow', degree4_value).css('width', degree4_width);
+		}
 		var degree4_color = '';
 		var degree4_text = '';
 		switch(degree4_value) {
@@ -292,8 +318,12 @@ $(document).ready(function(){
 				degree4_color = 'DarkRed';
 				degree4_text = 'Very high';
 				break;
+			case 'Unknown':
+				degree4_color = 'LightGrey';
+				degree4_text = 'Unknown';
+				break;
 		}
-		$('#degree4_level').css('background', degree4_color).text(degree4_text);
+		$('#degree4_level').attr('aria-valuetext', degree4_text).css('background', degree4_color).text(degree4_text);
 
 		//Init risk_details
 		//Detail title

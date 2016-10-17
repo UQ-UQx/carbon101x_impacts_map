@@ -880,11 +880,11 @@ var risk_details = [
 						'img_file': 'drying-trend.png', 
 					},
 					{
-						'title': 'Increased Extreme precipitation',
+						'title': 'Extreme precipitation',
 						'img_file': 'extreme-precipitation.png', 
 					},
 					{
-						'title': 'Decreased Snow cover',
+						'title': 'Snow cover',
 						'img_file': 'snow-cover.png', 
 					},
 				],
@@ -947,6 +947,14 @@ var risk_details = [
 						'img_file': 'extreme-temperature.png', 
 					},
 					{
+						'title': 'Extreme precipitation',
+						'img_file': 'extreme-precipitation.png', 
+					},
+					{
+						'title': 'Carbon dioxide fertilization',
+						'img_file': 'carbon101x-CO2fertilization-01.png', 
+					},
+					{
 						'title': 'Precipitation',
 						'img_file': 'precipitation.png', 
 					},
@@ -968,10 +976,10 @@ var risk_details = [
 				'name': 'Increases in vector-borne disease',
 				'level': {
 					'present': 9,
-					'degree2': 0,
-					'degree4': 0
+					'degree2': 'Unknown',
+					'degree4': 'Unknown'
 				},
-				'icon': '',
+				'icon': 'vector-borne diseases.png',
 				'climatic_drivers': [
 					{
 						'title': 'Warming trend',

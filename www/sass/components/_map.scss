@@ -9,9 +9,14 @@
   display: none;
 }
 
+text.region-label, text.smallisland-label, #graticule {
+  pointer-events: none;
+}
+
+
 .region-label, .smallisland-label {
   fill: black;
-  fill-opacity: .7;
+  fill-opacity: .5;
   font-size: 14px;
   font-weight: 600;
   text-anchor: middle;
@@ -25,10 +30,10 @@
 }
 
 .smallislands_box {
-  fill: #9ce6e6;
+  fill: #0070FF;
   fill-opacity: .7;
   &:hover{
-    fill: #62cccc;
+    fill: #296abf;
   }
 }
 
@@ -40,49 +45,51 @@
   fill: white;
 }
 
-.asia {
+path.polar {
+  fill: #98df8a;
+  &:hover{
+    fill: #66c653;
+  }
+}
+
+
+path.asia {
   fill: #FFA600;
   &:hover{
     fill: #e6a62e;
   }
 }
 
-.africa {
+path.africa {
   fill: #00B295;
   &:hover{
     fill: #1e9884;
   }
 }
 
-.europe {
+path.europe {
   fill: #DEAB76;
   &:hover{
     fill: #c58642;
   }
 }
 
-.na {
-  fill: #0070FF;
-  &:hover{
-    fill: #296abf;
-  }
-}
 
-.sa {
+path.sa {
   fill: #E8005D;
   &:hover{
     fill: #ad214d;
   }
 }
 
-.polar {
+path.na {
   fill: #76C3DE;
   &:hover{
     fill: #42a2c5;
   }
 }
 
-.australasia {
+path.australasia {
   fill: #F095FF;
   &:hover{
     fill: #d358e6;
@@ -92,7 +99,7 @@
 .svgrect {
   fill: #F0F8FF;
   &:hover{
-    fill: #DDEEFF;
+    fill: #E0FFFF;
   }
 }
 

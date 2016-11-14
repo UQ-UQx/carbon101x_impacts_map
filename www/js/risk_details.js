@@ -115,7 +115,7 @@ var risk_details = [
 				'key_facts':[
 					'Increased sea surface temperature and ocean acidification make coral reefs significantly more vulnerable to bleaching and mortality events.',
 					'A global warming increase of more than 2°C will eliminate two thirds of the Earth’s coral-dominated reef ecosystems<sup>1</sup>.',
-					'Coral reefs currently account for 20 – 25% of fish harvested in Africa. However, degradation of coral reefs will result in loss of fishery stocks – under a warming scenario of ~3°C, the ability of reef systems to provide food for coastal populations decreases by 80% by 2100<sup>2</sup>.',
+					'Coral reefs currently account for 20 – 25% of fish harvested in Africa. However, degradation of coral reefs will result in loss of fishery stocks. Under a warming scenario of ~3°C, the ability of reef systems to provide food for coastal populations decreases by 80% by 2100<sup>2</sup>.',
 					'Coastal countries of West Africa will experience a significant negative impact from climate change. Under a warming scenario of ~3°C by 2050, the annual landed value of fish for that region is estimated to decline by 21%, resulting in a nearly 50% decline in fisheries-related employment and a total annual loss of US$311 million to the region’s economy<sup>3</sup>.',
 				],
 				'sources': [
@@ -192,8 +192,8 @@ var risk_details = [
 					},
 				],
 				'key_facts':[
-					'Compounded stress on water resources facing significant strain from overexploitation and degradation at present and increased demand in the future, with drought stress exacerbated in drought-prone regions of Africa.',
-					' Potentially a 20 – 30% decrease in water availability in some vulnerable regions in Southern Africa under a 2°C warming scenario<sup>1</sup>.',
+					'More stress is expected on water resources, which are already facing other threats, including over-exploitation and degredation. Problems with increased demand for water into the future will be exacerbated by climate change, especially in drought-prone regions.',
+					'Potentially a 20 – 30% decrease in water availability in some vulnerable regions in Southern Africa under a 2°C warming scenario<sup>1</sup>.',
 					'Potentially a 30 – 50% decrease in water availability in Southern Africa under a 4°C warming scenario<sup>1</sup>.',
 				],
 				'sources': [
@@ -366,8 +366,8 @@ var risk_details = [
 				],
 				'sources': [
 					'IPCC (2014). <i>Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">Link</a>',
-					'Iglesias, A, S Quiroga & A Diz (2011). ‘Looking into the future of agriculture in a changing climate’, <i>European Review of Agricultural Economics</i>, 38(3), pp.427-447.3.ICEM, 2013. <i>USAID Mekong ARCC Climate Change Impact and Adaptation Study for the Lower Mekong Basin: Main Report</i>. <a href="http://www.mekongarcc.net/resource" target="_blank">Link</a>.',
-					'ICEM (2013). <i>USAID Mekong ARCC Climate Change Impact and Adaptation Study for the Lower Mekong Basin: Main Report</i>. <a href=" http://www.mekongarcc.net/resource">Link</a>.',
+					'Iglesias, A, S Quiroga & A Diz (2011). ‘Looking into the future of agriculture in a changing climate’, <i>European Review of Agricultural Economics</i>, 38(3), pp.427-447.',
+					'ICEM, 2013. <i>USAID Mekong ARCC Climate Change Impact and Adaptation Study for the Lower Mekong Basin: Main Report</i>. <a href="http://www.mekongarcc.net/resource" target="_blank">Link</a>.',
 				] 
 			},			
 			//Risk: Exacerbated poverty and inequalities	
@@ -501,7 +501,7 @@ var risk_details = [
 				],
 				'key_facts':[
 					'Global warming is most pronounced in the Arctic, altering the extent, thickness and duration of sea ice. This endangers the habitat and existence of polar bears by giving them less time to hunt during the winter. A 2.8°C warming has been projected to cause up to a 68% reduction in polar bear habitat by 2100<sup>1</sup>.',
-					'Under a 4-degree scenario, around half of Arctic tundra will be lost<sup>2</sup>. A decline in natural habitats is likely to reduce the populations of reindeers, lemmings and caribous, as deciduous shrubs replace mosses and lichens in the Arctic<sup>3</sup>.',
+					'Under a 4-degree scenario, around half of Arctic tundra will be lost<sup>2</sup>. A decline in natural habitats is likely to reduce the populations of reindeers, lemmings and caribou, as deciduous shrubs replace mosses and lichens in the Arctic<sup>3</sup>.',
 					'Increased frequency of thawing-freezing events during winter can create denser snow layers, restricting access to vegetation for Arctic herbivores. This negatively impacts herbivore populations, which in turn will negatively impact on carnivore populations that prey upon these herbivores<sup>4</sup>.',
 					'Vulnerable marine species will have a reduced spatial extent as they move closer to the Poles. This is expected to alter the marine species composition of zooplankton, which can impact some fish and shellfish populations<sup>3</sup>.',
 				],
@@ -537,7 +537,7 @@ var risk_details = [
 					'Extreme weather events, such as storms, blizzards and inundation, are expected to become more frequent in a warmer climate. This can cause severe threats to human life and loss of access to critical supplies and services for rural or isolated communities.',
 					'Changes in animal and plant populations in the Arctic can negatively impact remote and indigenous populations who depend on natural resources for livelihoods and food security<sup>1,2</sup>.',
 					'Harmful algal blooms (HABs), whose biotoxins can be a serious health hazard to humans or animals (resulting in paralysis or death), are increasing globally and expected to increase in the Arctic. HABs are influenced directly by climate change-related factors such as temperature, winds, currents, nutrients, and runoff<sup>3</sup>.',
-					'Changes in the physical environment has resulted in a reduced livelihood and food security, and indigenous Arctic communities have been forced to re-locate as a consequence of reduced soil stability from thawing of permafrost. This has lead to an increasingly high number of suicides in the Arctic, especially amongst indigenous youth<sup>1,4</sup>.',
+					'Changes in the physical environment have resulted in reduced livelihood and food security, and indigenous Arctic communities have been forced to re-locate as a consequence of reduced soil stability from thawing of permafrost. This has lead to an increasingly high number of suicides in the Arctic, especially amongst indigenous youth<sup>1,4</sup>.',
 				],
 				'sources': [
 					'Durkalec, A, C Furgal, M Skinner & T Sheldon (2015), ‘Climate change influences on environment as a determinant of Indigenous health: Relationships to place, sea ice, and health in an Inuit community’, <i>Social Science & Medicine</i>, 136-137, pp. 17-26.',
@@ -777,7 +777,7 @@ var risk_details = [
 				'key_facts':[
 					'Wildfire risk depends on a number of factors, including temperature, soil moisture, and the presence of trees, shrubs and other potential fuel. Warmer temperatures and drier conditions increase the chances of a fire starting, or help a burning fire spread.',
 					'Wildfires in the western United States have been increasing in frequency and duration since the mid-1980s (comparisons are between 1970-1986 and 1986-2003), occurring nearly four times more often, burning more than six times the land area, and lasting almost five times as long. These changes are strongly associated with increased spring and summer temperatures and an earlier spring melt<sup>1</sup>.',
-					'For every 1°C of temperature increase, a 200-400% increase in wildfire area burned is expected in western North American regions<sup>2</sup>. The IPCC estimates that North America will warm by 2-4°C by 2100 (relative to 1986-2005 baseline period)<sup>3</sup>.',
+					' For warming levels of 1 to 2°C, a 200-400% increase in wildfire area burned is expected in western North American regions for each degree of warming<sup>2</sup>. The IPCC estimates that North America will warm by 2-4°C by 2100 (relative to 1986-2005 baseline period)<sup>3</sup>.',
 				],
 				'sources': [
 					' Westerling, AL, HG Hidalgo, DR Cayan, TW Swetnam (2006). ‘Warming and earlier spring increase Western US forest wildfire activity’, <i>Science</i>, 313(5789), pp.940-943.',
@@ -961,8 +961,8 @@ var risk_details = [
 				],
 				'key_facts':[
 					'There will be large spatial variability in the climate impacts on food production. For example, in south-eastern South America, where rainfall is expected to increase in response to climate change, average food productivity could be sustained or increased until the mid-century. Whereas in Central America and part of the Andean region, temperature increases and reduced rainfall is expected to reduce productivity and threaten local food security<sup>1</sup>.',
-					'In the Amazon region, warming of ~3.8˚C (correlating with a 30% decline in precipitation) is predicted to reduce soybean yields soybean yields by 44% by 2050<sup>2</sup>.',
-					'2˚C of warming could result in a 6-20% decrease in maximum catch potential of fish and invertebrates along most South and Central American coastal waters. For some some areas this yield reduction could be as high as 21-50%, while the southernmost areas may experience increases in catch potential<sup>3</sup>.',
+					'In the Amazon region, warming of ~3.8˚C (correlating with a 30% decline in precipitation) is predicted to reduce soybean yields by 44% by 2050<sup>2</sup>.',
+					'2˚C of warming could result in a 6-20% decrease in maximum catch potential of fish and invertebrates along most South and Central American coastal waters. For some some areas this yield reduction could be as high as 21-50%. In contrast, the southernmost areas may experience increases in catch potential<sup>3</sup>.',
 				],
 				'sources': [
 					'Marengo JA, SC Chou, RR Torres, A Giarolla, LM Alves & A Lyra (2014). <i>Climate change in Central and South America: Recent trends, future projections, and impacts on regional agriculture</i>. CCAFS Working Paper no. 73. <a href="https://goo.gl/wBqc9w" target="_blank">Link</a>',
@@ -973,7 +973,7 @@ var risk_details = [
 			//Risk: Increases in vector-borne disease  	
 			{
 				'id': 'vector_borne_disease  ',
-				'name': 'Increases in vector-borne disease',
+				'name': 'Increased vector-borne disease',
 				'level': {
 					'present': 9,
 					'degree2': 'Unknown',

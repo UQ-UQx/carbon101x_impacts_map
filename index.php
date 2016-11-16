@@ -32,7 +32,7 @@
     <div class="row">
         <div id="smallmap" class="col-xs-12 col-sm-4 col-md-4 hidden"></div>
         <div id="key_impact_risks" class="col-xs-12 col-sm-8 col-md-8 hidden">
-            <h4>Key Impact Risks</h4>
+            <h4 id="key_impact_risks_title">Key Impact Risks</h4>
             <div class="risks">
             </div>
         </div>

@@ -147,7 +147,9 @@ $(document).ready(function(){
 		$('#smallmap').removeClass('hidden');
 		make_small_map('#smallmap', region, color);
 		$('#key_impact_risks').removeClass('hidden');
-	
+		var key_impact_risks_title = 'Key Impact Risks - ' + region.toUpperCase();
+		$('#key_impact_risks_title').text(key_impact_risks_title);
+
 		impact_risks = get_impact_risks(region_name);
 		if(impact_risks == null) {
 			console.log('Region did not find, please check the region name.');

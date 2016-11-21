@@ -14,6 +14,9 @@
 <!-- Risks Data-->
 <script src="www/js/risk_details.js"></script>
 
+<!-- tether -->
+<script src="node_modules/tether/dist/js/tether.min.js"></script>
+
 <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
 

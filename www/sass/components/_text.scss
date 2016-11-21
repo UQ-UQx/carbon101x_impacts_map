@@ -24,6 +24,36 @@
 	visibility: visible;
 }
 
+
+/* tooltip for Small map */
+.smallmap_tooltip {
+	visibility: hidden;	
+	//background-color: #777;
+	background-image: repeating-linear-gradient(-45deg, rgba(119, 119, 119, 0.4), rgba(119, 119, 119, 0.4) 5px, rgba(119, 119, 119, 0.7) 5px, rgba(119, 119, 119, 0.7) 10px);
+
+	margin-left: 25%;
+	margin-right: 25%;
+	//margin-top: 25%;
+	//margin-bottom: 25%;
+
+	font-size: 16px;
+	color: white;
+
+	text-align: center;
+	vertical-align: middle;	
+	border-radius: 5px;
+
+	position: absolute;
+	top: 0px;
+	right: 0px; 
+	z-index: 1;
+}
+
+#smallmap:hover .smallmap_tooltip {
+	visibility: visible;
+}
+
+
 h5 {
 	color: #325B7F !important;  
 }

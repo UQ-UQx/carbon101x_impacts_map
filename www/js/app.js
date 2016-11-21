@@ -21,9 +21,28 @@ var topojson = require('topojson');
 $(document).ready(function(){
 	var region_name, impact_risks;
 
-	//var map_div = $('#worldmap');
 	make_large_map('#worldmap');
-	//make_map('#smallmap', 'small');
+
+	/*
+	$('#smallmap').tooltip({
+		'container': 'body',
+		'placement': function(tip, element) {
+
+			console.log('placement');
+			//var width = $(element).width()
+			//$(tip).css('background-color', '#777');
+			console.log('tip', $(tip));
+			//$(tip).css('width', '50%');
+			//$(tip).css('height', '50%');
+
+			console.log('position', $(element).position());
+			console.log('offset', $(element).offset());
+
+			//$(tip).offset($(element).offset());
+			return $(element).position();
+		},
+	}); 
+	*/
 
 
     $('.risks').on("change", ".radio input[type='radio']", function() {
@@ -53,7 +72,7 @@ $(document).ready(function(){
 		var scaleRatio = 153/960;
 
     	if(!$("#worldmap").hasClass('hidden')) {
-    		console.log('worldmap');
+    		//console.log('worldmap');
 
 			var margin = {top: 10, left: 10, bottom: 10, right: 10};		
 			var width = $("#worldmap").width() - margin.left - margin.right;
@@ -65,13 +84,13 @@ $(document).ready(function(){
     			.attr("width", width)
     			.attr("height", height);
 
-    		console.log('svg', svg);
+    		//console.log('svg', svg);
 
     		//Change scale and projection
     		var projection = d3_geoprojection.geoCylindricalStereographic().scale(scale).translate([width/2, height/2]);
 
     		var path = d3_geo.geoPath().projection(projection);
-    		console.log('path_new', path);
+    		//console.log('path_new', path);
 
     		svg.select('#graticule').attr('d', path);
     		svg.selectAll('.regions').attr('d', path);
@@ -100,7 +119,7 @@ $(document).ready(function(){
     	}
 
     	if(!$("#smallmap").hasClass('hidden')) {
-    		console.log('smallmap');
+    		//console.log('smallmap');
 			var margin = {top: 2, left: 0, bottom: 2, right: 0};		
 			var width = $("#smallmap").width() - margin.left - margin.right;
 			var height = Math.round(width * heightRatio);
@@ -133,26 +152,52 @@ $(document).ready(function(){
 			svg.select('rect.svgrect_small')
 				.attr("width", "100%")
 				.attr("height", "100%");
+
+
+			//Change smallmap_tooltip css
+			var smallmap_tooltip = $('.smallmap_tooltip');
+			var sm_tooltip_width = $('#smallmap').width() / 2;
+			var sm_tooltip_height = sm_tooltip_width * 611 / 960;
+			smallmap_tooltip.css('width', sm_tooltip_width);
+			smallmap_tooltip.css('height', sm_tooltip_height);
+			smallmap_tooltip.css('margin-top', sm_tooltip_height / 2);
+			smallmap_tooltip.css('margin_bottom', sm_tooltip_height / 2);
+			smallmap_tooltip.css('line-height', sm_tooltip_height + 'px');
     	}
 
     }
 
+
+
 	function large_map_clicked(region, color) {
-		console.log('large_map_clicked', region, color);
+		//console.log('large_map_clicked', region, color);
 		region_name = region;
 
 		$('#risk_details').css('border-color', color);
 
 		$('#worldmap').addClass('hidden');
 		$('#smallmap').removeClass('hidden');
-		make_small_map('#smallmap', region, color);
+		make_small_map('#smallmap', region, color);			
+		var smallmap_tooltip = $('<div class="smallmap_tooltip">Click to go back</div>');
+		$('#smallmap').append(smallmap_tooltip);
+
+		// Set smallmap_tooltip css
+		var sm_tooltip_width = $('#smallmap').width() / 2;
+		var sm_tooltip_height = sm_tooltip_width * 611 / 960;
+		smallmap_tooltip.css('width', sm_tooltip_width);
+		smallmap_tooltip.css('height', sm_tooltip_height);
+		smallmap_tooltip.css('margin-top', sm_tooltip_height / 2);
+		smallmap_tooltip.css('margin_bottom', sm_tooltip_height / 2);
+		smallmap_tooltip.css('line-height', sm_tooltip_height + 'px');
+
+
 		$('#key_impact_risks').removeClass('hidden');
 		var key_impact_risks_title = 'Key Impact Risks - ' + region.toUpperCase();
 		$('#key_impact_risks_title').text(key_impact_risks_title);
 
 		impact_risks = get_impact_risks(region_name);
 		if(impact_risks == null) {
-			console.log('Region did not find, please check the region name.');
+			//console.log('Region did not find, please check the region name.');
 		}
 		else {
 			init_risks(impact_risks);
@@ -378,7 +423,7 @@ $(document).ready(function(){
 		var scaleRatio = 153/960;
 		var height = Math.round(width * heightRatio);
 		var scale = Math.floor(width * scaleRatio);
-//		console.log(heightRatio, scaleRatio, height, scale);
+		//console.log(heightRatio, scaleRatio, height, scale);
 
 		var svg = d3.select(map_div).append("svg")
 				.attr("width", width)
@@ -391,7 +436,7 @@ $(document).ready(function(){
 
 		var projection = d3_geoprojection.geoCylindricalStereographic().scale(scale).translate([width/2, height/2]);
 		var path = d3_geo.geoPath().projection(projection);
-		console.log('path_origin', path);
+		//console.log('path_origin', path);
 		var graticule = d3_geo.geoGraticule();
 
 		svg.append("path")
@@ -486,7 +531,7 @@ $(document).ready(function(){
 			});
 			small_island_box.on({
 				"click": function(d, i) {
-					console.log(d);
+					//console.log(d);
 					var color = d3.select(small_island_box[0][i]).style("fill");
 					//var lighter_color = d3.rgb(color).brighter().toString();
 					large_map_clicked(d.name, color);
@@ -571,7 +616,7 @@ $(document).ready(function(){
 				});;
 
 			if(regionname == "The Ocean") {
-				console.log(d3.select(svgrect[0][0]));
+				//console.log(d3.select(svgrect[0][0]));
 				d3.select(svgrect[0][0]).style("fill", color);
 			}
 

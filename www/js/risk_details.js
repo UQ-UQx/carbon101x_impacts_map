@@ -290,11 +290,12 @@ var risk_details = [
 				],
 				'key_facts':[
 					'As the global atmospheric temperature increases, so too will the frequency and magnitude of extreme heat events in Europe.',
-					'Extreme heat events cause economic losses; impact on health and well-being, labour productivity, crop production, and air quality; and increase the risk of wildfires in southern Europe and in the Russian boreal region.',
-					'Under a warming scenario of 2.5°C, the annual increase in human mortality (caused by heat and without acclimatization) is estimated at 60,000<sup>1</sup>.',
+					'Extreme heat events cause economic losses; impact on health and well-being, labour productivity, crop production, and air quality; and increase the risk of wildfires in southern Europe and in the Russian boreal region<sup>1</sup>.',
+					'Under a warming scenario of 2.5°C, the annual increase in human mortality (caused by heat and without acclimatization) is estimated at 60,000<sup>2</sup>.',
 				],
 				'sources': [
-					' Ciscar, JC, A Iglesias, L Feyen, L Szabo, D Van Regemorter, B Amelung, R Nicholls, P Watkiss, OB Christensen, R Dankers, L Garrote, CM Goodess, A Hunt, A Moreno, J Richards & A Soria (2011). ‘Physical and economic consequences of climate change in Europe’. <i>Proceedings of the National Academy of Sciences of the United States of America, 108, pp.2678-2683</i>.',
+					'IPCC (2014). <i>Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">Link</a>',
+					'Ciscar, JC, A Iglesias, L Feyen, L Szabo, D Van Regemorter, B Amelung, R Nicholls, P Watkiss, OB Christensen, R Dankers, L Garrote, CM Goodess, A Hunt, A Moreno, J Richards & A Soria (2011). ‘Physical and economic consequences of climate change in Europe’. <i>Proceedings of the National Academy of Sciences of the United States of America, 108, pp.2678-2683</i>.',
 				] 
 			}
 		]
@@ -1090,40 +1091,28 @@ var risk_details = [
 			},			
 			//Risk: Reduced livelihoods and increased		
 			{
-				'id': 'reduced_livelihoods',
-				'name': 'Reduced livelihoods and increased poverty',
+				'id': 'changes_in_ecosystem',
+				'name': 'Changes in ecosystem productivity',
 				'level': {
-					'present': 5,
-					'degree2': 9,
-					'degree4': 10
+					'present': 3,
+					'degree2': 5,
+					'degree4': 8
 				},
-				'icon': 'reduced-livelihoods-and-increased-poverty.png',
+				'icon': 'changes-in-ecosystem-productivity.png',
 				'climatic_drivers': [
 					{
 						'title': 'Warming trend',
 						'img_file': 'warming-trend.png', 
 					},
 					{
-						'title': 'Damaging cyclones',
-						'img_file': 'cyclones.png', 
-					},
-					{
 						'title': 'Extreme temperature',
 						'img_file': 'extreme-temperature.png', 
-					},
-					{
-						'title': 'Sea level rise',
-						'img_file': 'seal-level-rise.png', 
-					},
-					{
-						'title': 'Extreme precipitation',
-						'img_file': 'extreme-precipitation.png', 
 					},
 				],
 				'key_facts':[
 					'Changes in ocean temperature and chemistry will result in changed distribution and abundance of fish, resulting in some areas being ‘winners’ and others being ‘losers’. While increased sea surface temperatures and acidity will reduce production in existing coral reefs, the higher latitude fisheries have so far benefited from increased ocean temperatures.',
 					'Many small island economies are dependent on coral reefs for food and livelihood, meaning reduced coral reef productivity will have severe consequences in these regions.',
-					'Increased atmospheric temperatures of 2 – 5.4°C have been projected to cause a 19 – 29% reduction in large fish catch in the North Pacific, while the total primary production in the same region is estimated to reduce by 10 – 20%<sup>1</sup>.',
+					'Increased atmospheric temperatures of 2 – 5.4°C have been projected to cause a 19 – 29% reduction in large fish catch in the North Pacific, while the total primary production in the same region is estimated to reduce by 10 – 20% by 2100<sup>1</sup>.',
 				],
 				'sources': [
 					'IPCC (2014). <i>Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">Link</a>',

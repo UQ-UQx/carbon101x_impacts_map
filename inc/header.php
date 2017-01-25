@@ -4,9 +4,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Remove this livereload line on production -->
-<script src="//localhost:35729/livereload.js"></script>
-<!-- Remove this livereload line on production -->
 
 <!-- Input the base path here -->
 <base href="/carbon101x/carbon101x_impacts_map/" />

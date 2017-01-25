@@ -16,9 +16,9 @@
   	$invalid_message = '<p class="uqx-invalid text-center">LTI Invalid
   						- contact UQx Technical Team</p>';
 
-  	echo $dev_message;
+  	//echo $dev_message;
   	if($lti_valid) {
-  		echo $valid_message;
+  		//echo $valid_message;
   	} else {
   		echo $invalid_message;
   		//die();
@@ -87,7 +87,7 @@
         </div>
     </div>
 </div>
-<script type="text/javascript" src="build/js/app.js"></script>
+<script type="text/javascript" src="build/js/app.min.js"></script>
 
 </body>
 </html>

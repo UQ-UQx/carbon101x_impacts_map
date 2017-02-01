@@ -42,7 +42,7 @@ var risk_details = [
 					'UNEP (2008). <i>Africa Atlas of our Changing Environment</i>, Nairobi, Kenya.',
 					'IPCC (2014). <i>Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">Link</a>',
 					'Raxworthy, CJ, RG Pearson, N Rabibisoa, AM Rakotondrazafy, JB Ramanamanjato, AP Raselimanana, S Wu, RA Nussbaum & DA Stone (2008). <i>Extinction vulnerability of tropical montane endemism from warming and upslope displacement: a preliminary appraisal for the highest massif in Madagascar</i>, Global Change Biology, 14(8), pp. 1703-1720.',
-					'Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">Link</a>',
+					'Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">PDF</a>',
 				] 
 			},
 
@@ -80,7 +80,7 @@ var risk_details = [
 					'Agricultural yields could decline by 15 – 35% under a 4°C warming scenario<sup>1</sup>',
 				],
 				'sources': [
-					'Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">Link</a>',
+					'Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">PDF</a>',
 				] 
 			},
 
@@ -120,7 +120,7 @@ var risk_details = [
 				],
 				'sources': [
 					'Frieler, K, M Meinshausen, A Golly, M Megel, K Lebek, D Donner & O Hoegh-Guldberg (2013). ‘Limiting global warming to 2°C is unlikely to save most coral reefs’, <i>Nature Climate Change</i>, 3, pp.165-170.',
-					'Hoegh-Guldberg, O, H Hoegh-Guldberg, J Veron, A Green, ED Gomez, JEN Lough, M King, Ambariyanto, L Hansen, J Cinner, G Dews, G Russ, HZ Schuttenberg, EL Peñaflor, CM Eakin, TRL Christensen, M Abbey, F Areki, RAKosaka, A Tewfik & J Oliver (2009). <i>The Coral Triangle and Climate Change: Ecosystems, People and Societies at Risk</i>: <a href="https://goo.gl/kRCnyl" target="_blank">Link</a>',
+					'Hoegh-Guldberg, O, H Hoegh-Guldberg, J Veron, A Green, ED Gomez, JEN Lough, M King, Ambariyanto, L Hansen, J Cinner, G Dews, G Russ, HZ Schuttenberg, EL Peñaflor, CM Eakin, TRL Christensen, M Abbey, F Areki, RAKosaka, A Tewfik & J Oliver (2009). <i>The Coral Triangle and Climate Change: Ecosystems, People and Societies at Risk</i>: <a href="https://goo.gl/kRCnyl" target="_blank">PDF</a>',
 					'Lam, V, W Cheung, W Swartz & RU Sumaila (2012). ‘Climate change impacts on fisheries in West Africa: Implications for economic, food and nutritional security’, <i>African Journal of Marine Science</i>, 34(1), pp.103-117.',
 				] 
 			},
@@ -155,7 +155,7 @@ var risk_details = [
 					'  Up to 80 million more people could be exposed to malaria in Africa under a 4°C warming scenario<sup>1</sup>.',
 				],
 				'sources': [
-					'Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">Link</a>',
+					'Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">PDF</a>',
 				] 
 			},
 
@@ -197,7 +197,7 @@ var risk_details = [
 					'Potentially a 30 – 50% decrease in water availability in Southern Africa under a 4°C warming scenario<sup>1</sup>.',
 				],
 				'sources': [
-					'Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">Link</a>',
+					'Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">PDF</a>',
 				] 
 			},
 		]
@@ -229,12 +229,12 @@ var risk_details = [
 					},
 				],
 				'key_facts':[
-					'Climate change will increase the economic losses and number of people affected by flooding in river basins and coasts, driven by increasing urbanization, increasing sea levels, coastal erosion, and peak river discharges.',
+					'Climate change will increase the economic losses and number of people affected by flooding in river basins and coasts, driven by increasing urbanisation, increasing sea levels, coastal erosion, and peak river discharges.',
 					'River floods are currently the most common natural disaster in Europe, resulting in large economic losses through direct damage to infrastructure, property and agricultural land. Global warming is expected to increase the magnitude and frequency of extreme precipitation events, which may lead to more intense and frequent floods. Under a warming scenario of 2.5°C (without adaptation), the increase in direct economic damage from river floods is projected to be approximately 7.7 billion euros<sup>1</sup>.',
 					' The number of people in Europe annually affected by coastal floods in the reference year (1995) is estimated to be 36,000. Under a warming scenario of 2.5°C (without adaptation), the number of people affected annually by flooding is projected to increase to 775,000 people. The British Isles, Central Europe North, and Southern Europe are the areas potentially most affected by coastal floods<sup>1</sup>.',
 				],
 				'sources': [
-					'Ciscar, JC, A Iglesias, L Feyen, L Szabo, D Van Regemorter, B Amelung, R Nicholls, P Watkiss, OB Christensen, R Dankers, L Garrote, CM Goodess, A Hunt, A Moreno, J Richards & A Soria (2011). ‘Physical and economic consequences of climate change in Europe’. <i>Proceedings of the National Academy of Sciences of the United States of America, 108, pp.2678-2683</i>.',
+					'Ciscar, JC, A Iglesias, L Feyen, L Szabo, D Van Regemorter, B Amelung, R Nicholls, P Watkiss, OB Christensen, R Dankers, L Garrote, CM Goodess, A Hunt, A Moreno, J Richards & A Soria (2011). ‘Physical and economic consequences of climate change in Europe’. <i>Proceedings of the National Academy of Sciences of the United States of America</i>, 108, pp.2678-2683.',
 				] 
 			},
 
@@ -268,7 +268,7 @@ var risk_details = [
 					'In Southern Europe, serious droughts could occur once every 10 years under a 3°C warming scenario<sup>1</sup>.',
 				],
 				'sources': [
-					'Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">Link</a>',
+					'Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">PDF</a>',
 				] 
 			},		
 
@@ -291,11 +291,11 @@ var risk_details = [
 				'key_facts':[
 					'As the global atmospheric temperature increases, so too will the frequency and magnitude of extreme heat events in Europe.',
 					'Extreme heat events cause economic losses; impact on health and well-being, labour productivity, crop production, and air quality; and increase the risk of wildfires in southern Europe and in the Russian boreal region<sup>1</sup>.',
-					'Under a warming scenario of 2.5°C, the annual increase in human mortality (caused by heat and without acclimatization) is estimated at 60,000<sup>2</sup>.',
+					'Under a warming scenario of 2.5°C, the annual increase in human mortality (caused by heat and without acclimatisation) is estimated at 60,000<sup>2</sup>.',
 				],
 				'sources': [
 					'IPCC (2014). <i>Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">Link</a>',
-					'Ciscar, JC, A Iglesias, L Feyen, L Szabo, D Van Regemorter, B Amelung, R Nicholls, P Watkiss, OB Christensen, R Dankers, L Garrote, CM Goodess, A Hunt, A Moreno, J Richards & A Soria (2011). ‘Physical and economic consequences of climate change in Europe’. <i>Proceedings of the National Academy of Sciences of the United States of America, 108, pp.2678-2683</i>.',
+					'Ciscar, JC, A Iglesias, L Feyen, L Szabo, D Van Regemorter, B Amelung, R Nicholls, P Watkiss, OB Christensen, R Dankers, L Garrote, CM Goodess, A Hunt, A Moreno, J Richards & A Soria (2011). ‘Physical and economic consequences of climate change in Europe’. <i>Proceedings of the National Academy of Sciences of the United States of America</i>, 108, pp.2678-2683.',
 				] 
 			}
 		]
@@ -332,7 +332,7 @@ var risk_details = [
 					'Under a ~2.8°C warming scenario, climate change is expected to contribute to an additional 143,000 heat-related deaths in people aged 65+ by 2050, in Asia alone<sup>1</sup>.',
 				],
 				'sources': [
-					'World Health Organisation (2014). <i>Quantitative risk assessment of the effects of climate change on selected causes of death, 2030s and 2050s</i>. <a href="https://goo.gl/ZBnDoH" target="_blank">Link</a>',
+					'World Health Organisation (2014). <i>Quantitative risk assessment of the effects of climate change on selected causes of death, 2030s and 2050s</i>. <a href="https://goo.gl/ZBnDoH" target="_blank">PDF</a>',
 				] 
 			},
 
@@ -368,7 +368,7 @@ var risk_details = [
 				'sources': [
 					'IPCC (2014). <i>Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">Link</a>',
 					'Iglesias, A, S Quiroga & A Diz (2011). ‘Looking into the future of agriculture in a changing climate’, <i>European Review of Agricultural Economics</i>, 38(3), pp.427-447.',
-					'ICEM, 2013. <i>USAID Mekong ARCC Climate Change Impact and Adaptation Study for the Lower Mekong Basin: Main Report</i>. <a href="http://www.mekongarcc.net/resource" target="_blank">Link</a>.',
+					'ICEM, 2013. <i>USAID Mekong ARCC Climate Change Impact and Adaptation Study for the Lower Mekong Basin: Main Report</i>. <a href="http://www.mekongarcc.net/resource/reports-usaid-mekong-arcc-climate-change-impact-and-adaptation-study-lower-mekong-basin-ful?resource_keyword=USAID%20Mekong%20ARCC%20Climate%20Change%20Impact%20and%20Adaptation%20Study%20for%20the%20Lower%20Mekong%20Basin&resource_search=1" target="_blank">Link</a>.',
 				] 
 			},			
 			//Risk: Exacerbated poverty and inequalities	
@@ -435,7 +435,7 @@ var risk_details = [
 					'Oceans absorb CO<sub>2</sub> from the atmosphere, reducing the greenhouse effect and potential global warming experienced by the Earth. However, this increase in CO<sub>2</sub> is altering the ocean chemistry, making it more acidic. This makes it harder for marine calcifying organisms (such as corals, molluscs and crustaceans) to form their skeletons and shells, and results in slower coral reef growth (or net loss) and weakening of reef ecosystems<sup>1</sup>. As atmospheric CO<sub>2</sub> concentration continues to increase, the impacts of ocean acidification will worsen.'
 				],
 				'sources': [
-					' Hoegh-Guldberg, O, H Hoegh-Guldberg, J Veron, A Green, ED Gomez, JEN Lough, M King, Ambariyanto, L Hansen, J Cinner, G Dews, G Russ, HZ Schuttenberg, EL Peñaflor, CM Eakin, TRL Christensen, M Abbey, F Areki, RAKosaka, A Tewfik & J Oliver (2009). <i>The Coral Triangle and Climate Change: Ecosystems, People and Societies at Risk</i>: <a href="https://goo.gl/kRCnyl" target="_blank">Link</a>',
+					' Hoegh-Guldberg, O, H Hoegh-Guldberg, J Veron, A Green, ED Gomez, JEN Lough, M King, Ambariyanto, L Hansen, J Cinner, G Dews, G Russ, HZ Schuttenberg, EL Peñaflor, CM Eakin, TRL Christensen, M Abbey, F Areki, RAKosaka, A Tewfik & J Oliver (2009). <i>The Coral Triangle and Climate Change: Ecosystems, People and Societies at Risk</i>: <a href="https://goo.gl/kRCnyl" target="_blank">PDF</a>',
 				] 
 			},			
 			//Risk: Species extinctions
@@ -508,7 +508,7 @@ var risk_details = [
 				],
 				'sources': [
 					'Durner, G, D Douglas, R Nielson, S Amstrup, T McDonald, I Stirling, M Mauritzen, EW Born, Ø Wiig, E DeWeaver, MC Serreze, SE Belikov, MM Holland, J Maslanik, J Aars & A Derocher (2009). ‘Predicting 21st‐century polar bear habitat distribution from global climate models’, <i>Ecological Monographs</i>, 79(1), pp.25-58.',
-					'Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">Link</a>',
+					'Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">PDF</a>',
 					'Callaghan, TV, LO Björn, Y Chernov, T Chapin, TR Christensen, B Huntley, RA Ims, M Johansson, D Jolly, S Jonasson, N Matveyeva, N Panikov, W Oechel, G Shaver, J Elster, H Henttonen, K Laine, K Taulavuori, E Taulavuori & C Zöckler (2004). ‘Biodiversity, Distributions and Adaptations of Arctic Species in the Context of Environmental Change’, <i>Ambio</i>, 33(7), pp.404-17.',
 					'Storeheier, PV, BEH Van Oort, MA Sundset & SD Mathiesen (2003). ‘Food intake of reindeer in winter’, <i>The Journal of Agricultural Science</i>, 141(1), pp.93-101.',
 				] 
@@ -680,7 +680,7 @@ var risk_details = [
 					'Predictions suggest an increase in the frequency of severe weather events, which could lead to more serious physical damage, with less time between events to recover. The most immediate impact is coral breakage, dislocation and degradation from wind and waves. Heavy rainfall events also lead to flood plumes, exposing inshore coral reefs to freshwater inundations and nutrient overload.',
 				],
 				'sources': [
-					'Burke, L, K Reytar, M Spalding & A Perry (2011). <i>Reefs at Risk Revisited</i>. <a href="http://pdf.wri.org/reefs_at_risk_revisited.pdf" target="_blank">Link</a>',
+					'Burke, L, K Reytar, M Spalding & A Perry (2011). <i>Reefs at Risk Revisited</i>. <a href="http://pdf.wri.org/reefs_at_risk_revisited.pdf" target="_blank">PDF</a>',
 					'IPCC (2007). <i>Climate Change 2007: Impacts, Adaptation and Vulnerability. Contribution of Working Group II to the Fourth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://goo.gl/Mk5lM8" target="_blank">Link</a>',
 				] 
 			},
@@ -714,7 +714,7 @@ var risk_details = [
 					'One of the most vulnerable Australian ecosystems is the alpine zone because of loss of snow cover, invasions by exotic species, and changed species interactions<sup>2</sup>. This is also true of New Zealand – it has been estimated that 3°C of warming would result in the loss of 80% of discrete alpine areas in New Zealand, and extinction of 200-300 species of native vascular plants<sup>3</sup>.',
 				],
 				'sources': [
-					' Pouliquen-Young, O & P Newman (2000). <i>The implications of Climate Change for Land-Based Nature Conservation Strategies 1996-1999: Final Report to Environment Australia.</i>',
+					' Pouliquen-Young, O & P Newman (2000). <i>The Implications of Climate Change for Land-Based Nature Conservation Strategies 1996-1999: Final Report to Environment Australia.</i>',
 					'IPCC (2014). <i>Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">Link</a>',
 					' Hallow, SRP & AF Mark (2003). ‘Climate-change effects on alpine plant biodiversity: a New Zealand perspective on quantifying the threat’, <i>Arctic Antarctic and Alpine Research</i>, 35(2), pp.248-254.',
 				] 
@@ -742,7 +742,7 @@ var risk_details = [
 					'Morbidity and mortality is expected to increase as the global warming trend continues. For example, a threefold increase in heat-related deaths is projected for Sydney by 2100 under a ~3.4°C, assuming no adaptation<sup>2</sup>.',
 				],
 				'sources': [
-					'Hughes, L, E Hanna & J Fenwick (2016). <i>The Silent Killer: Climate Change and the Health Impacts of Extreme Heat</i>. <a href="https://goo.gl/PYAaDA" target="_blank">Link</a>',
+					'Hughes, L, E Hanna & J Fenwick (2016). <i>The Silent Killer: Climate Change and the Health Impacts of Extreme Heat</i>. <a href="https://goo.gl/PYAaDA" target="_blank">PDF</a>',
 					'Gosling, SN, GR McGregor & JA Lowe (2009). ‘Climate change and heat-related mortality in six cities. Part 2: climate model evaluation and projected impacts from changes in the mean and variability of temperature with climate change’, <i>International Journal of Biometeorology</i>, 53(1), pp.31-51.',
 				] 
 			},			
@@ -778,7 +778,7 @@ var risk_details = [
 				'key_facts':[
 					'Wildfire risk depends on a number of factors, including temperature, soil moisture, and the presence of trees, shrubs and other potential fuel. Warmer temperatures and drier conditions increase the chances of a fire starting, or help a burning fire spread.',
 					'Wildfires in the western United States have been increasing in frequency and duration since the mid-1980s (comparisons are between 1970-1986 and 1986-2003), occurring nearly four times more often, burning more than six times the land area, and lasting almost five times as long. These changes are strongly associated with increased spring and summer temperatures and an earlier spring melt<sup>1</sup>.',
-					' For warming levels of 1 to 2°C, a 200-400% increase in wildfire area burned is expected in western North American regions for each degree of warming<sup>2</sup>. The IPCC estimates that North America will warm by 2-4°C by 2100 (relative to 1986-2005 baseline period)<sup>3</sup>.',
+					'For warming levels of 1 to 2°C, a 200-400% increase in wildfire area burned is expected in western North American regions for each degree of warming<sup>2</sup>. The IPCC estimates that North America will warm by 2 - 4°C by 2100 (relative to 1986-2005 baseline period)<sup>3</sup>.',
 				],
 				'sources': [
 					' Westerling, AL, HG Hidalgo, DR Cayan, TW Swetnam (2006). ‘Warming and earlier spring increase Western US forest wildfire activity’, <i>Science</i>, 313(5789), pp.940-943.',
@@ -810,7 +810,7 @@ var risk_details = [
 					'In addition to mortality, extreme heat events cause economic losses; impact on health and well-being, labour productivity, crop production, and air quality; and increase the risk of wildfires.',
 				],
 				'sources': [
-					'Centers for Disease Control & Prevention (2012). <i>Climate Change and Extreme Heat Events</i>. <a href="https://goo.gl/8IqA5o"target="_blank">Link</a>',
+					'Centers for Disease Control & Prevention (2012). <i>Climate Change and Extreme Heat Events</i>. <a href="https://goo.gl/8IqA5o"target="_blank">PDF</a>',
 					'Jones, B, BC O’Neill, L McDaniel, S McGinnis, LO Mearns, C Tebaldi (2015). ‘Future population exposure to US heat extreme’, <i>Nature Climate Change</i>, 5(7), pp.652-655.',
 					'Hayhoe, K, S Sheridan, L Kalstein & S Greene (2010). ‘Climate change, heat waves, and mortality projections for Chicago’, <i>Journal of Great Lakes Research</i>, 36, pp.65-73.',
 				] 
@@ -841,7 +841,7 @@ var risk_details = [
 				],
 				'key_facts':[
 					'Climate change is expected to increase the frequency and intensity of cyclones (such as Hurricane Katrina in 2005) and extreme precipitation events in North America, increasing the risk of flooding in urban areas.',
-					'In the United States, the annual average cost of flooding is presently US$2.7 billion<sup>1</sup>. It has been estimated that these damage losses will increase to US$7 (under ~1.8°C warming scenario) to US$19 billion (under ~3.4°C warming scenario) annually by 2100 depending on emission scenario and economic growth rate<sup>2</sup>.',
+					'In the United States, the annual average cost of flooding is presently US$2.7 billion<sup>1</sup>. It has been estimated that these damage losses will increase to US$7 billion (under ~1.8°C warming scenario) to US$19 billion (under ~3.4°C warming scenario) annually by 2100 depending on emission scenario and economic growth rate<sup>2</sup>.',
 					'In Canada, floods are presently the costliest natural disaster in terms of property damage<sup>3</sup>.',
 					'A study of the Fraser Basin (Vancouver, Canada) shows that if sea level rise were to reach 1 metre by 2100 (a likely outcome under 4°C of warming), the number of buildings damaged or destroyed by river floods would more than double<sup>4</sup>.',
 				],
@@ -849,7 +849,7 @@ var risk_details = [
 					'Changnon, SA (2008). ‘Assessment of flood losses in the United States’, <i>Journal of Contemporary Water Research & Education</i>, 138(1), pp.38–44.',
 					'Ntelekos, AA, M Oppenheimer, JA Smith & AJ Miller (2008). ‘Urbanization, climate change and flood policy in the United States’, <i>Climatic Change</i>, 103(3), pp.597-616.',
 					'Public Safety Canada (2015). <i>Floods</i>. <a href="https://www.publicsafety.gc.ca/cnt/mrgnc-mngmnt/ntrl-hzrds/fld-eng.aspx" target="_blank">Link</a>',
-					'Fraser Basin Council (2016). <i>Lower Mainland Flood Management Strategy: Phase 1 Summary Report</i>. <a href="https://goo.gl/Cn0hOL" target="_blank">Link</a>',
+					'Fraser Basin Council (2016). <i>Lower Mainland Flood Management Strategy: Phase 1 Summary Report</i>. <a href="https://goo.gl/Cn0hOL" target="_blank">PDF</a>',
 				] 
 			},			
 		]
@@ -897,8 +897,8 @@ var risk_details = [
 				],
 				'sources': [
 					'Rabatel, A, B Francou, A Soruco, J Gomez, B Cáceres, JL Ceballos, R Basantes, M Vuille, JE Sicart, C Huggel, M Scheel, Y Lejeune, Y Arnaud, M Collet, T Condom, G Consoli, V Favier, V Jomelli, R Galarraga, P Ginot, L Maisincho, J Mendoza, M Ménégoz, E Ramirez, P Ribstein, W Suarez, M Villacis & P Wagnon (2013). ‘Current state of glaciers in the tropical Andes: a multi-century perspective on glacier evolution and climate change’, <i>The Cryosphere</i>, 7, pp.81-102.',
-					'Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">Link</a>',
-					'Climate & Development Knowledge Network (2014). <i>The IPCC’s Fifth Assessment Report Executive Summary: What’s in it for Latin America?</i> <a href="https://goo.gl/pnaoAc" target="_blank">Link</a>',
+					'Stern, NH (2007). <i>The Economics of Climate Change: The Stern Review</i>. <a href="https://goo.gl/PxI2Au" target="_blank">PDF</a>',
+					'Climate & Development Knowledge Network (2014). <i>The IPCC’s Fifth Assessment Report Executive Summary: What’s in it for Latin America?</i> <a href="https://goo.gl/pnaoAc" target="_blank">PDF</a>',
 					'Maurer EP, JC Adam & AW Wood (2009). ‘Climate model based consensus on the hydrologic impacts of climate change to the Rio Lempa basin of Central America’, <i>Hydrology and Earth System Sciences</i>, 13(2), pp.183-194.',
 				] 
 			},
@@ -928,7 +928,7 @@ var risk_details = [
 					'Under a 4˚C warming scenario, complete collapse of the Mesoamerican coral reef is expected along the coasts of Belize, Honduras, and Guatemala. In Belize alone, the annual value of reefs is US $359 million annually in tourism, fisheries and coastal protection<sup>2</sup>.',
 				],
 				'sources': [
-					'Burke, L, K Reytar, M Spalding & A Perry (2011). <i>Reefs at Risk Revisited</i>. <a href="http://pdf.wri.org/reefs_at_risk_revisited.pdf" target="_blank">Link</a>',
+					'Burke, L, K Reytar, M Spalding & A Perry (2011). <i>Reefs at Risk Revisited</i>. <a href="http://pdf.wri.org/reefs_at_risk_revisited.pdf" target="_blank">PDF</a>',
 					'IPCC (2014). <i>Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">Link</a>',
 				] 
 			},			
@@ -966,7 +966,7 @@ var risk_details = [
 					'2˚C of warming could result in a 6-20% decrease in maximum catch potential of fish and invertebrates along most South and Central American coastal waters. For some some areas this yield reduction could be as high as 21-50%. In contrast, the southernmost areas may experience increases in catch potential<sup>3</sup>.',
 				],
 				'sources': [
-					'Marengo JA, SC Chou, RR Torres, A Giarolla, LM Alves & A Lyra (2014). <i>Climate change in Central and South America: Recent trends, future projections, and impacts on regional agriculture</i>. CCAFS Working Paper no. 73. <a href="https://goo.gl/wBqc9w" target="_blank">Link</a>',
+					'Marengo JA, SC Chou, RR Torres, A Giarolla, LM Alves & A Lyra (2014). <i>Climate change in Central and South America: Recent trends, future projections, and impacts on regional agriculture</i>. CCAFS Working Paper no. 73. <a href="https://goo.gl/wBqc9w" target="_blank">PDF</a>',
 					'Lapola, DM, R Schaldach, J Alcamo, A Bondeau, S Msangi, JA Priess, R Silvestrini & BS Soares (2011). ‘Impacts of Climate Change and the End of Deforestation on Land Use in the Brazilian Legal Amazon’, <i>Earth Interactions</i>, 15, pp.1-29.',
 					'IPCC (2014). <i>AR5 Synthesis Report</i>. <a href="http://ar5-syr.ipcc.ch/topic_futurechanges.php" target="_blank">Link</a>',
 				] 
@@ -1005,7 +1005,7 @@ var risk_details = [
 					'Little is known about how frequency and ranges of vector-borne diseases will continue to change under future climate scenarios. This uncertainty represents a significant risk to human populations.<sup>1</sup>',
 				],
 				'sources': [
-					'Climate & Development Knowledge Network (2014). <i>The IPCC’s Fifth Assessment Report Executive Summary: What’s in it for Latin America?</i> <a href="https://goo.gl/pnaoAc" target="_blank">Link</a>',
+					'Climate & Development Knowledge Network (2014). <i>The IPCC’s Fifth Assessment Report Executive Summary: What’s in it for Latin America?</i> <a href="https://goo.gl/pnaoAc" target="_blank">PDF</a>',
 					'IPCC (2014). <i>Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">Link</a>',					
 				] 
 			},			

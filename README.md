@@ -31,7 +31,7 @@ These steps will ensure that your js and css are being watched by grunt and will
 		'lti_keys'=>array(
 			'YOUR_CLIENT_KEY'=>'YOUR_CLIENT_SECRET'
 		),
-		'use_db'=>true,
+		'use_db'=>no,
 		'db'=>array(
 			'driver'=>'mysql',
 			'hostname'=>'localhost',
@@ -44,12 +44,12 @@ These steps will ensure that your js and css are being watched by grunt and will
 ```
 
 ### Database Setup
-1. Create database and user account for this database. The information is needed by config.php
+This application does not use DB.
 
 ### Config Setup
 1. Edit config.php with your respective LTI keys and optional database details
 2. Host on a https server (LTI with edX requires HTTPS)
-3. Add the respective keys in the edX advanced settings
+3. Add the respective keys in the edX advanced settings or other sysetm's LTI settings
 4. Create a new LTI component and point it to the correct URL
 
 That's it! you're done with the setup :)

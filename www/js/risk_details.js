@@ -120,7 +120,7 @@ var risk_details = [
 				],
 				'sources': [
 					'Frieler, K, M Meinshausen, A Golly, M Megel, K Lebek, D Donner & O Hoegh-Guldberg (2013). ‘Limiting global warming to 2°C is unlikely to save most coral reefs’, <i>Nature Climate Change</i>, 3, pp.165-170.',
-					'Hoegh-Guldberg, O, H Hoegh-Guldberg, J Veron, A Green, ED Gomez, JEN Lough, M King, Ambariyanto, L Hansen, J Cinner, G Dews, G Russ, HZ Schuttenberg, EL Peñaflor, CM Eakin, TRL Christensen, M Abbey, F Areki, RAKosaka, A Tewfik & J Oliver (2009). <i>The Coral Triangle and Climate Change: Ecosystems, People and Societies at Risk</i>: <a href="https://goo.gl/kRCnyl" target="_blank">PDF</a>',
+					'Hoegh-Guldberg, O, H Hoegh-Guldberg, J Veron, A Green, ED Gomez, JEN Lough, M King, Ambariyanto, L Hansen, J Cinner, G Dews, G Russ, HZ Schuttenberg, EL Peñaflor, CM Eakin, TRL Christensen, M Abbey, F Areki, RAKosaka, A Tewfik & J Oliver (2009). <i>The Coral Triangle and Climate Change: Ecosystems, People and Societies at Risk</i>: <a href="https://www.wwf.de/fileadmin/fm-wwf/Publikationen-PDF/climate_change___coral_triangle___full_report.pdf" target="_blank">PDF</a>',
 					'Lam, V, W Cheung, W Swartz & RU Sumaila (2012). ‘Climate change impacts on fisheries in West Africa: Implications for economic, food and nutritional security’, <i>African Journal of Marine Science</i>, 34(1), pp.103-117.',
 				] 
 			},
@@ -368,7 +368,7 @@ var risk_details = [
 				'sources': [
 					'IPCC (2014). <i>Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">Link</a>',
 					'Iglesias, A, S Quiroga & A Diz (2011). ‘Looking into the future of agriculture in a changing climate’, <i>European Review of Agricultural Economics</i>, 38(3), pp.427-447.',
-					'ICEM, 2013. <i>USAID Mekong ARCC Climate Change Impact and Adaptation Study for the Lower Mekong Basin: Main Report</i>. <a href="http://www.mekongarcc.net/resource/reports-usaid-mekong-arcc-climate-change-impact-and-adaptation-study-lower-mekong-basin-ful?resource_keyword=USAID%20Mekong%20ARCC%20Climate%20Change%20Impact%20and%20Adaptation%20Study%20for%20the%20Lower%20Mekong%20Basin&resource_search=1" target="_blank">Link</a>.',
+					'ICEM, 2013. <i>USAID Mekong ARCC Climate Change Impact and Adaptation Study for the Lower Mekong Basin: Main Report</i>. <a href="https://www.usaid.gov/asia-regional/documents/usaid-mekong-climate-change-study-main-report-2013" target="_blank">Link</a>.',
 				] 
 			},			
 			//Risk: Exacerbated poverty and inequalities	
@@ -435,7 +435,7 @@ var risk_details = [
 					'Oceans absorb CO<sub>2</sub> from the atmosphere, reducing the greenhouse effect and potential global warming experienced by the Earth. However, this increase in CO<sub>2</sub> is altering the ocean chemistry, making it more acidic. This makes it harder for marine calcifying organisms (such as corals, molluscs and crustaceans) to form their skeletons and shells, and results in slower coral reef growth (or net loss) and weakening of reef ecosystems<sup>1</sup>. As atmospheric CO<sub>2</sub> concentration continues to increase, the impacts of ocean acidification will worsen.'
 				],
 				'sources': [
-					' Hoegh-Guldberg, O, H Hoegh-Guldberg, J Veron, A Green, ED Gomez, JEN Lough, M King, Ambariyanto, L Hansen, J Cinner, G Dews, G Russ, HZ Schuttenberg, EL Peñaflor, CM Eakin, TRL Christensen, M Abbey, F Areki, RAKosaka, A Tewfik & J Oliver (2009). <i>The Coral Triangle and Climate Change: Ecosystems, People and Societies at Risk</i>: <a href="https://goo.gl/kRCnyl" target="_blank">PDF</a>',
+					' Hoegh-Guldberg, O, H Hoegh-Guldberg, J Veron, A Green, ED Gomez, JEN Lough, M King, Ambariyanto, L Hansen, J Cinner, G Dews, G Russ, HZ Schuttenberg, EL Peñaflor, CM Eakin, TRL Christensen, M Abbey, F Areki, RAKosaka, A Tewfik & J Oliver (2009). <i>The Coral Triangle and Climate Change: Ecosystems, People and Societies at Risk</i>: <a href="https://www.wwf.de/fileadmin/fm-wwf/Publikationen-PDF/climate_change___coral_triangle___full_report.pdf" target="_blank">PDF</a>',
 				] 
 			},			
 			//Risk: Species extinctions
@@ -464,7 +464,7 @@ var risk_details = [
 					'A doubling of present atmospheric CO<sub>2</sub> concentrations (which represents a further ~3°C warming) is expected to result in extinctions of 133–2,835 plants species and 10–213 vertebrates in Indo-Burma, and 105–1,522 plants and 5–77 vertebrates in China<sup>2</sup>.',
 				],
 				'sources': [
-					'IPCC (2007). <i>Climate Change 2007: Impacts, Adaptation and Vulnerability. Contribution of Working Group II to the Fourth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://goo.gl/Mk5lM8" target="_blank">Link</a>',
+					'IPCC (2007). <i>Climate Change 2007: Impacts, Adaptation and Vulnerability. Contribution of Working Group II to the Fourth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar4/wg2/" target="_blank">Link</a>',
 					'Malcolm, JR, C Liu, RP Neilson, L Hansen & L Hannah (2006). ‘Global warming and extinctions of endemic species from biodiversity hotspots’, <i>Conservation Biology</i>, 20(2), pp.538–548.',
 				] 
 			},			
@@ -594,7 +594,6 @@ var risk_details = [
 					'In the Caribbean, it’s estimated that a 1m rise in sea level will place 49% to 60% of tourist resort properties at risk of beach erosion damage. This would potentially transform the competitive position and sustainability of coastal tourism destinations in the region<sup>4</sup>.',
 				],
 				'sources': [
-					'IPCC (1990). <i>Climate Change: The IPCC Impacts Assessment. Contribution of Working Group II to the First Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://goo.gl/k25fCz" target="_blank">Link</a>',
 					'Betzold, C (2015), ‘Adapting to climate change in small island developing states’, <i>Climatic Change</i>, 133(3), pp.481-489.',
 					'IPCC (2014). <i>Climate Change 2014: Impacts, Adaptation, and Vulnerability. Part B: Regional Aspects. Contribution of Working Group II to the Fifth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar5/wg2/" target="_blank">Link</a>',				
 					'Scott, D, MC Simpson & R Sim (2012). ‘The vulnerability of Caribbean coastal tourism to scenarios of climate change related sea level rise’, <i>Journal of Sustainable Tourism</i>, 20(6), pp.883-898.',
@@ -681,7 +680,7 @@ var risk_details = [
 				],
 				'sources': [
 					'Burke, L, K Reytar, M Spalding & A Perry (2011). <i>Reefs at Risk Revisited</i>. <a href="http://pdf.wri.org/reefs_at_risk_revisited.pdf" target="_blank">PDF</a>',
-					'IPCC (2007). <i>Climate Change 2007: Impacts, Adaptation and Vulnerability. Contribution of Working Group II to the Fourth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://goo.gl/Mk5lM8" target="_blank">Link</a>',
+					'IPCC (2007). <i>Climate Change 2007: Impacts, Adaptation and Vulnerability. Contribution of Working Group II to the Fourth Assessment Report of the Intergovernmental Panel on Climate Change</i>. <a href="https://www.ipcc.ch/report/ar4/wg2/" target="_blank">Link</a>',
 				] 
 			},
 			//Risk: Biodiversity loss
